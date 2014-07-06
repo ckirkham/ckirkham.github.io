@@ -1,0 +1,399 @@
+/*----------------------------------------------------------------------------------------
+	Imports
+----------------------------------------------------------------------------------------*/
+@import 'mixins.scss';
+@import 'reset.scss';
+@import 'ie.scss';
+@import 'grid.scss';
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,400italic,700);
+@import url(http://i.icomoon.io/public/temp/4c62ebc70b/UntitledProject1/style.css);
+@import 'projects.scss';
+
+/*----------------------------------------------------------------------------------------
+1. 	Global styles (across all pages) & Typography
+----------------------------------------------------------------------------------------*/
+	/*------------------------------------------------------------------------------------
+		Natural anchors
+	------------------------------------------------------------------------------------*/
+	body { font: 18px/30px 'Lato', sans-serif; color: $off-black; background: $cloud-white;
+		&>nav {	border-top: $coral-border(); } }
+	h1,h2,h3,h4,h5,h6 {	margin: 1em 0 0.500em 0; line-height: 1.5; @include hyphenate(); }
+	h1 { font-weight: 300; font-size: 2.5em; line-height: 1.2; }
+	h2 { font-size: 1.5em; }
+	h4 { text-transform: uppercase; color: $coral-red; font-weight: 700; letter-spacing: 1px; }
+	a {	color: $off-black; text-decoration: none; border-bottom: 1px solid $coral-red; }
+	p {	line-height: 1.65; margin-bottom: 1em; }
+	q {	display: block;	border-left: $coral-border;	padding-left: 20px;	font-style: italic;	margin-left: -1.5em; margin-top: 1em; margin-bottom: 2em; }
+	pre { background: #262626; padding: 20px; border-radius: 10px; color: #f1f1f1; display: block; margin: 1em 0 3em 0; }
+	::selection { background: #808798; /* Safari */	color: #f1f1f1;	}
+	::-moz-selection { background: #808798; /* Firefox */ color: #f1f1f1; }
+	hr { opacity: 0.2; margin: 2em 0 2em 0; }
+	img { margin: 1em 0; }
+	small {	font-size: 0.750em; line-height: 1 }
+	p>span { margin-right: 10px; }
+	/*------------------------------------------------------------------------------------
+		ID's & Classes
+	------------------------------------------------------------------------------------*/
+	.active a { color: #ff5b54; }
+	.social { color: $off-black; border: none; font-size: 0.750em;
+		&:hover { color: $coral-red; } }
+	.list {	list-style-type: none;
+		li { margin-bottom: 1em; line-height: 1.5;
+		span { float: right; } }
+		h3:not(:first-child) { margin-top: 40px; } }
+	/*------------------------------------------------------------------------------------
+		Uppernav
+	------------------------------------------------------------------------------------*/
+	#uppernav { position: absolute; z-index: 1000; display: block; width: 100%;
+		li { a { border: none; } }
+		li:last-child { float: right; }
+		.monogram-fixed { position: fixed; }
+		.white-label { fill: white; }
+		#monogram {	margin-left: 10px; margin-top: 5px;	width: 40px; height: 40px; }
+		#searchicon { margin-right: 5px; margin-top: 5px; width: 40px; height: 40px; } }
+	#main {	text-align: center;
+		ul { position: relative; margin-left: -50%;	margin-right: -50%; li a { font-size: 1.250em; padding: 0.5em; border: none; } } }
+	#uppernav li, #main li { list-style-type: none; display: inline-block; }
+	/*------------------------------------------------------------------------------------
+		Footer
+	------------------------------------------------------------------------------------*/
+	footer { text-align: center; clear: both; padding: 30px 0 40px;
+		ul { list-style: none; }
+		li { font-size: 14px; }
+		a {	text-decoration: none; } }
+
+/*----------------------------------------------------------------------------------------
+2. 	Specific pages
+----------------------------------------------------------------------------------------*/
+	/*------------------------------------------------------------------------------------
+		Homepage
+	------------------------------------------------------------------------------------*/
+	#title { text-align: center; margin: 1.5em auto 0 auto; padding-bottom: 1.5em; width: 80%;
+		h1 { font-size: 1.5em; border: none; margin: 0;	}
+		h4 { margin: 0; } }
+	#about {
+		p:last-child { color: #37a247;
+			a {	border-bottom: 1px solid #37a247;
+				&:hover { color: #37a247; border: none; } } } }
+	.avatar { background: url('../img/avatar.jpg') no-repeat; height: 220px; width: 100%; border-bottom: 5px solid #ff5b54; background-size: cover;	background-position: 0; }
+	.home-header { padding: 0; }
+	#ballAnimation { display: none; }
+	/*------------------------------------------------------------------------------------
+		Post
+	------------------------------------------------------------------------------------*/
+	#post {	margin-top: 10%;
+		h1 { margin: 0 0 1em 0;
+			a { border: none; } }
+		p:first-of-type { font-size: 1.250em; line-height: 1.5; } }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*	Article page
+----------------------------------------------------------------------------------------*/
+.download {
+	float: left;
+	clear: both;
+	margin-right: 2em;
+	display: inline-block;
+	margin-bottom: 1em;
+	position: relative;
+	border-radius: 5px;
+	margin-top: -0.75em;
+	width: 100%;
+	height: 175px;
+	h5 {
+		position: absolute;
+		bottom: 20px;
+		width: 100%;
+		right: 0;
+		text-align: center;
+		small {
+			position: absolute;
+			bottom: 0;
+			width: 100%;
+			text-align: center;
+			right: 0;
+			font-size: 0.5em;
+		}
+	}
+}
+.sketch {
+	background: url('../img/sketch_icon.png') no-repeat;
+	@include image-2x("../img/sketch_icon@2x", 100px, 125px);
+	background-position: 50% -5%;
+}
+.content {
+	img {
+		margin-left: -13%;
+		max-width: 126%;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*	Media Queries
+----------------------------------------------------------------------------------------*/
+	/*	Mobile
+	------------------------------------------------------------------------------------*/
+	@media screen and (orientation: landscape) {
+		.avatar {
+			background: none;
+			height:10px;
+		}
+		#uppernav li a {
+			color: $off-black !important;
+			text-shadow: none !important;
+		}
+	}
+	/*	640 and up
+	------------------------------------------------------------------------------------*/
+	@media (min-width: 640px) {
+		/*	Global Styles
+		--------------------------------------------------------------------------------*/
+			/*	Natural anchors
+			----------------------------------------------------------------------------*/
+			a {
+				color: #262626;
+			}
+			a:hover {
+				color: #ff5b54;
+				border: none;
+			}
+			/*	ID's & classes
+			----------------------------------------------------------------------------*/
+			.slidey form input {
+				width: 75%;
+			}
+			#top {
+				border-bottom: $coral-border;
+			}
+			.push-down {
+				margin-top: 10em;
+			}
+			.home-header {
+				max-width: 100%%;
+				/* padding-top: 8em; */
+				margin-bottom: 3em;
+				height: 100%;
+				padding: 0 !important;
+				min-width: 100%;
+			    display: -webkit-box;
+			    -webkit-box-align: center;
+			    -webkit-box-pack: center;
+			     
+			    display: -ms-flexbox;
+			    -ms-flex-align: center;
+			    -ms-flex-pack: center;
+			     
+			    display: box;
+			    box-align: center;
+			    box-pack: center;
+			}
+			@-moz-document url-prefix() {
+			    .home-header {
+			        padding-top: 15% !important;
+			    }
+			}
+			/*	Uppernav
+			----------------------------------------------------------------------------*/
+			#uppernav {
+				.white-label {
+					fill: black;
+				}
+			}
+		/*	Home page
+		--------------------------------------------------------------------------------*/
+		#ballAnimation {
+			display: block;
+			background: #f1f1f1;
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: -100;
+		}
+			/*	Avatar and title row
+			----------------------------------------------------------------------------*/
+			.avatar {
+				@include circle(50%);
+				background: url('../images/avatar.jpg') no-repeat;
+				height: 130px;
+				width: 130px;
+				border: none;
+				background-size: cover;
+				margin: 0 auto;
+			}
+			/*	LHS navigation
+			----------------------------------------------------------------------------*/
+			#main {
+				margin-bottom: 1em;
+				ul {
+					margin: 0 auto;
+					li {
+						text-align: left;
+					}
+				}
+			}
+			/*	Body copy
+			----------------------------------------------------------------------------*/
+			#freelance a:hover {
+				color: #37a247;
+				border: none;
+			}
+			#recentblog {
+				margin-top: 2.5em;
+			}
+		/*	Article page
+		--------------------------------------------------------------------------------*/
+		.download {
+			width: 100px;
+			background-position: 0 0;
+			height: 175px;
+		}
+		.content {
+			margin-top: 0;
+		}
+	}
+	
+	/*	810 and up
+	------------------------------------------------------------------------------------*/
+	@media screen and (min-width: 810px) {
+	}
+	
+	/*	1024 and up
+	------------------------------------------------------------------------------------*/
+	@media (min-width: 1024px) {
+		/*	Uppernav
+		--------------------------------------------------------------------------------*/
+		#uppernav {
+			#monogram {					
+				width: 58px;
+				height: 58px;
+				margin-top: 0;
+				margin-left: 10px;
+				-webkit-transition: all .5s ease-in-out;
+				&:hover {
+					-webkit-transform: scale(1.1);
+					fill: $coral-red;
+				}
+			}
+			#searchicon {			
+				width: 58px;
+				height: 58px;
+				margin-top: 0;
+				margin-right: 5px;
+				-webkit-transition: all .5s ease-in-out;
+				&:hover {
+					-webkit-transform: scale(1.1);
+					fill: $coral-red;
+				}
+			}
+			.white-label {
+				fill: black;
+			}
+		}
+		
+		/*	Home page
+		--------------------------------------------------------------------------------*/
+		#uppernav li a {
+			font-size: 2em;
+		}
+		#title {
+			margin: 3em auto 0 auto;
+		}
+		.avatar {
+			height:155px;
+			width:155px;
+		}
+	}
+
+/*	Retina styles
+------------------------------------------------------------------------------------*/
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dppx),
+only screen and (                min-resolution: 2dppx) { 
+	.avatar {
+		background: url('../images/avatar_@2x.jpg') no-repeat;
+		background-size: cover;
+		background-position: 0;
+	}
+}

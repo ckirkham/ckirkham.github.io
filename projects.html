@@ -1,0 +1,22 @@
+---
+layout: default
+---
+
+<section class="grid-container">
+
+	<section class="grid-1"></section>
+
+	<section id="post" class="grid-4">
+		<ul>
+			{% for project in site.projects %}
+		    <li>
+		      <a href="{{ project.url }}">{{ project.date | date: "%B %d, %Y" }}</a>
+		      <h1><a href="{{ project.url }}">{{ project.title }}</a></h1>
+		    </li>
+		  	{% endfor %}
+		</ul>
+	</section>
+	
+	<section class="grid-1"></section>
+
+</section>

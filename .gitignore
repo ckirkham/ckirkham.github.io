@@ -1,0 +1,12 @@
+site/vendor/*
+*.sass-cache*
+*.pyc
+*.DS_Store
+*/.DS_Store
+.vagrant/*
+_site
+_drafts/
+_site/
+*.swp
+node_modules/
+*.lock
