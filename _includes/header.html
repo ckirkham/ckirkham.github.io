@@ -26,7 +26,7 @@
 		<link rel="logo" type="image/svg" href="http://ckirkham.com/assets/images/monogram.svg"/>
 
 		<!-- CSS -->
-		{% capture root %}{% if page.root %}{{ page.root }}{% else %}{{ post.root }}{% endif %}{%endcapture%}
+		{% capture root %}{% if page.root %}{{ page.root }}{% else %}{{ post.root }}{% endif %}{% endcapture %}
 		<link rel="stylesheet" type="text/css" href="{{ root }}/assets/css/style.min.css" />
 
 		<!--[if lt IE 9]>

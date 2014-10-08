@@ -6,7 +6,6 @@
 @import 'ie.scss';
 @import 'grid.scss';
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400,400italic,700);
-@import url(http://i.icomoon.io/public/temp/4c62ebc70b/UntitledProject1/style.css);
 @import 'projects.scss';
 
 /*----------------------------------------------------------------------------------------
@@ -61,6 +60,35 @@
 		ul { list-style: none; }
 		li { font-size: 14px; }
 		a {	text-decoration: none; } }
+	/*------------------------------------------------------------------------------------
+		Typography
+	------------------------------------------------------------------------------------*/
+	@font-face {
+		font-family: 'icomoon';
+		src:url('../fonts/icomoon.eot?ymvmm7');
+		src:url('../fonts/icomoon.eot?#iefixymvmm7') format('embedded-opentype'),
+			url('../fonts/icomoon.woff?ymvmm7') format('woff'),
+			url('../fonts/icomoon.ttf?ymvmm7') format('truetype'),
+			url('../fonts/icomoon.svg?ymvmm7#icomoon') format('svg');
+		font-weight: normal;
+		font-style: normal;
+	}
+	[class^="icon-"], [class*=" icon-"] {
+		font-family: 'icomoon';
+		speak: none;
+		font-style: normal;
+		font-weight: normal;
+		font-variant: normal;
+		text-transform: none;
+		line-height: 1;
+
+		/* Better Font Rendering =========== */
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	}
+	.icon-checkmark-circle:before {
+		content: "\e600";
+	}
 
 /*----------------------------------------------------------------------------------------
 2. 	Specific pages
