@@ -3,6 +3,6 @@ markdown: kramdown
 exclude: ['node_modules','gruntfile.js','package.json','README.md','Vagrantfile','Gemfile','Gemfile.lock']
 
 collections:
-  projects:
+  project:
     output: true
     permalink: /project/:path/
