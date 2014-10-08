@@ -2,6 +2,8 @@ highlighter: pygments
 markdown: kramdown
 exclude: ['node_modules','gruntfile.js','package.json','README.md','Vagrantfile','Gemfile','Gemfile.lock']
 
+repository: https://github.com/ckirkham/ckirkham.github.io
+
 collections:
   projects:
     output: true
