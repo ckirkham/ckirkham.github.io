@@ -7,3 +7,4 @@ repository: https://github.com/ckirkham/ckirkham.github.io
 collections:
   projects:
     output: true
+    permalink: /work/:path/
