@@ -5,4 +5,4 @@ exclude: ['node_modules','gruntfile.js','package.json','README.md','Vagrantfile'
 collections:
   projects:
     output: true
-    permalink: /project/:path/
+    # permalink: /project/:path/
