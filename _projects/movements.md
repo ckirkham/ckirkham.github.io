@@ -1,6 +1,5 @@
 ---
 layout: project
-permalink: project/movements
 title: Movements
 ---
 

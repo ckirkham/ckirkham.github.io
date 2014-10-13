@@ -1,6 +1,5 @@
 ---
 layout: project
-permalink: project/backdoor-action
 title: Backdoor Action
 ---
 

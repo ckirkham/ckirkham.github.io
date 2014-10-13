@@ -5,5 +5,5 @@ exclude: ['node_modules','gruntfile.js','package.json','README.md','Vagrantfile'
 repository: https://github.com/ckirkham/ckirkham.github.io
 
 collections:
-  work:
+  projects:
     output: true

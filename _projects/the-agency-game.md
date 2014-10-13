@@ -1,6 +1,5 @@
 ---
 layout: project
-permalink: project/the-agency-game
 title: The Agency Game
 ---
 

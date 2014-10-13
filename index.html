@@ -18,7 +18,7 @@ title: Christian Kirkham
 			<ul>
 				<li class="active"><a href="/" title="Home">Home</a></li>
 		        <li><a href="blog.html" title="Blog">Blog</a></li>
-			    <li><a href="projects.html" title="Projects">Projects</a></li>
+			    <li><a href="work.html" title="Projects">Projects</a></li>
 				<li><a href="http://feeds.feedburner.com/ckirkham" title="RSS feed">RSS</a></li>
 			</ul>
 		</nav>
@@ -53,8 +53,8 @@ title: Christian Kirkham
 	<section class="grid-2">
 		<h2>Recent projects:</h2>
 		<ul class="list">
-		{% for works in site.work limit: 5%}
-			<li><a href="{{ site.baseurl }}{{ works.url }}">{{ works.title }}</a></li>
+		{% for project in site.projects limit: 5%}
+			<li><a href="{{ site.baseurl }}{{ project.url }}">{{ project.title }}</a></li>
 		{% endfor %}
 		</ul>
 	</section>
