@@ -10,6 +10,12 @@
  * http://cssreset.com
  */
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400,400italic,700);
+* {
+  margin: 0; }
+
+html, body {
+  height: 100%; }
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -157,68 +163,6 @@ body {
     width: 100%;
     background: coral;
     height: 400px; }
-
-.btn {
-  font-size: 0.8em !important;
-  letter-spacing: 1px;
-  border: none;
-  font-family: inherit;
-  font-size: inherit;
-  color: inherit;
-  background: none;
-  cursor: pointer;
-  padding: 15px 40px;
-  display: inline-block;
-  text-transform: uppercase;
-  text-align: center;
-  font-weight: 700;
-  outline: none;
-  position: relative;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  transition: all 0.3s;
-  margin-bottom: 1em; }
-  .btn:after {
-    content: '';
-    position: absolute;
-    z-index: -1;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    transition: all 0.3s; }
-
-.btn-2 {
-  background: #36c77b;
-  color: #fff;
-  box-shadow: 0 6px #08512a;
-  -webkit-transition: none;
-  -moz-transition: none;
-  transition: none; }
-
-.btn-2c {
-  border-radius: 5px; }
-  .btn-2c:hover {
-    box-shadow: 0 4px #08512a;
-    top: 2px; }
-  .btn-2c:active {
-    box-shadow: 0 0 #08512a;
-    top: 6px; }
-
-.btn-disabled {
-  background: #262626;
-  color: #fff;
-  box-shadow: 0 6px #262626;
-  -webkit-transition: none;
-  -moz-transition: none;
-  transition: none; }
-
-.btn-disabledc {
-  border-radius: 5px; }
-  .btn-disabledc:hover {
-    box-shadow: 0 4px #262626;
-    top: 2px; }
-  .btn-disabledc:active {
-    box-shadow: 0 0 #262626;
-    top: 6px; }
 
 /*	SMS Media app
 ------------------------------------------------------------------------------------*/
@@ -468,7 +412,10 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   font-weight: 300;
   font-size: 2.5em;
-  line-height: 1.2; }
+  line-height: 1.2;
+  margin: 0 0 0 0; }
+  h1 a {
+    border: none; }
 
 h2 {
   font-size: 1.5em; }
@@ -494,8 +441,18 @@ q {
   padding-left: 20px;
   font-style: italic;
   margin-left: -1.5em;
-  margin-top: 1em;
+  margin-top: 2em;
   margin-bottom: 2em; }
+
+input {
+  font-size: 0.750em;
+  position: relative;
+  top: 6px;
+  padding: 14px;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #e1e1e1;
+  outline: none; }
 
 pre {
   background: #262626;
@@ -529,9 +486,40 @@ small {
 p > span {
   margin-right: 10px; }
 
+button {
+  font-size: 0.750em;
+  border: none;
+  font-family: inherit;
+  cursor: pointer;
+  padding: 15px 0 15px 0;
+  width: 100%;
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: 700;
+  position: relative;
+  background: #36c77b;
+  color: #fff;
+  box-shadow: 0 6px #08512a;
+  border-radius: 5px;
+  outline: none; }
+  button:after {
+    content: '';
+    position: absolute;
+    z-index: -1; }
+  button:hover {
+    box-shadow: 0 4px #08512a;
+    top: 2px; }
+  button:active {
+    box-shadow: 0 0 #08512a;
+    top: 6px; }
+
 /*------------------------------------------------------------------------------------
 	ID's & Classes
 ------------------------------------------------------------------------------------*/
+#wrapper {
+  min-height: 100%;
+  margin-top: -5px; }
+
 .active a {
   color: #ff5b54; }
 
@@ -551,6 +539,9 @@ p > span {
       float: right; }
   .list h3:not(:first-child) {
     margin-top: 40px; }
+
+.push {
+  padding-top: 10% !important; }
 
 /*------------------------------------------------------------------------------------
 	Uppernav
@@ -599,8 +590,10 @@ p > span {
 ------------------------------------------------------------------------------------*/
 footer {
   text-align: center;
-  clear: both;
-  padding: 30px 0 40px; }
+  width: 100%;
+  opacity: 0.8;
+  height: 80px;
+  line-height: 4em; }
   footer ul {
     list-style: none; }
   footer li {
@@ -631,6 +624,9 @@ footer {
 
 .icon-checkmark-circle:before {
   content: "\e600"; }
+
+.icon-twitter:before {
+  content: "\e601"; }
 
 /*----------------------------------------------------------------------------------------
 2. 	Specific pages
@@ -667,7 +663,7 @@ footer {
   background-position: 0; }
 
 .home-header {
-  padding: 0; }
+  padding: 0 !important; }
 
 #ballAnimation {
   display: none; }
@@ -675,15 +671,22 @@ footer {
 /*------------------------------------------------------------------------------------
 	Post
 ------------------------------------------------------------------------------------*/
-#post {
-  margin-top: 10%; }
-  #post h1 {
-    margin: 0 0 1em 0; }
-    #post h1 a {
-      border: none; }
-  #post p:first-of-type {
-    font-size: 1.250em;
-    line-height: 1.5; }
+#post h1 {
+  margin-bottom: 1em; }
+#post p:first-of-type {
+  font-size: 1.250em;
+  line-height: 1.5; }
+
+/*------------------------------------------------------------------------------------
+	Search
+------------------------------------------------------------------------------------*/
+#search {
+  margin-top: 100px; }
+  #search form .grid-5 {
+    margin-left: 0; }
+  #search form .grid-1 {
+    margin-right: 0;
+    float: right; }
 
 /*	Article page
 ----------------------------------------------------------------------------------------*/

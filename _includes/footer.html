@@ -1,16 +1,18 @@
-		<footer class="grid-full">
-			<a href="http://www.twitter.com/Chris_Kirkham" class="social">
-				<span class="icon-twitter"></span>
-			</a>
-        </footer>
+	{% if page.url != "/index.html" %}
+	</div>
+	{% endif %}
 
+	<footer class="grid-full">
+		<a href="http://www.twitter.com/Chris_Kirkham" class="social">
+			<span class="icon-twitter"></span>
+		</a>
+	</footer>
 		
 		<!-- JS -->
 		<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
 		{% capture root %}{% if page.root %}{{ page.root }}{% else %}{{ post.root }}{% endif %}{%endcapture%}
 		<script type="text/javascript" src="{{ root }}/assets/js/site.min.js"></script>
- 		{% if page.path contains '_posts' %}
-		{% else %}
+ 		{% if page.url == "/index.html" %}
 		<!-- PaperScript animation -->
 		<script type="text/paperscript" canvas="ballAnimation">
 			function getRandomArbitrary(min, max) {

@@ -1,0 +1,19 @@
+---
+layout: default
+---
+
+<section class="grid-1"></section>
+
+<section class="grid-4 push">
+	<ul>
+	  {% for project in site.projects reversed %}
+	    <li>
+	      <small{{ project.date | date: "%B %d, %Y" }}</small>
+	      <h1><a href="{{ project.url }}">{{ project.title }}</a></h1>
+	    </li>
+	    <hr>
+	  {% endfor %}
+	</ul>
+</section>
+
+<section class="grid-1"></section>

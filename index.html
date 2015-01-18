@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Christian Kirkham
+search_omit: true
 ---
 
 <!-- Full-bleed header section -->
@@ -18,7 +19,7 @@ title: Christian Kirkham
 			<ul>
 				<li class="active"><a href="/" title="Home">Home</a></li>
 		        <li><a href="blog.html" title="Blog">Blog</a></li>
-			    <li><a href="work.html" title="Projects">Projects</a></li>
+			    <li><a href="projects.html" title="Projects">Projects</a></li>
 				<li><a href="http://feeds.feedburner.com/ckirkham" title="RSS feed">RSS</a></li>
 			</ul>
 		</nav>
@@ -26,101 +27,6 @@ title: Christian Kirkham
 	<!-- Background Canvas animation using PaperScript -->
 	<canvas id="ballAnimation" resize="true" keepalive="true" width="100%"></canvas>
 </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- CLEAN THIS SHIT UP -->
-
-<!-- Search form -->
-<form method="get" action="/search" data-search-form>
-<label for="q">Search term</label>
-<input type="search" name="q" id="q" placeholder="Enter search term" data-search-input />
-<input type="submit" value="Search" />
-</form>
-
-<!-- Search results placeholder -->
-<p data-search-found>
-<span data-search-found-count></span> result(s) found for &ldquo;<span data-search-found-term></span>&rdquo;.
-</p>
-<div data-search-results></div>
-
-<!-- Search result template -->
-<script type="text/x-template" id="search-result">
-<div>
-  <h1><a href="##Url##">##Title##</a></h1>
-  <h2>##Date##</h2>
-</div>
-</script>
-
-<!-- Search script - Must appear after template
-<script src="/scripts/search.js"></script> -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 <!-- Content -->
 <section class="grid-container">
@@ -136,7 +42,7 @@ title: Christian Kirkham
 	<section class="grid-3">
 		<h2>Recent bloggings:</h2>
 		<ul class="list">
-		{% for post in site.posts limit:5 %}
+		{% for post in site.posts limit: 5 %}
 			<li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
 		{% endfor %}
 		</ul>
@@ -148,7 +54,7 @@ title: Christian Kirkham
 	<section class="grid-2">
 		<h2>Recent projects:</h2>
 		<ul class="list">
-		{% for project in site.projects limit: 5%}
+		{% for project in site.projects reversed limit: 5%}
 			<li><a href="{{ site.baseurl }}{{ project.url }}">{{ project.title }}</a></li>
 		{% endfor %}
 		</ul>

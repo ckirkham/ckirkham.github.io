@@ -17,12 +17,15 @@
 	body { font: 18px/30px 'Lato', sans-serif; color: $off-black; background: $cloud-white;
 		&>nav {	border-top: $coral-border(); } }
 	h1,h2,h3,h4,h5,h6 {	margin: 1em 0 0.500em 0; line-height: 1.5; @include hyphenate(); }
-	h1 { font-weight: 300; font-size: 2.5em; line-height: 1.2; }
+	h1 { font-weight: 300; font-size: 2.5em; line-height: 1.2; margin: 0 0 0 0;
+		a { border: none; } }
 	h2 { font-size: 1.5em; }
+	h3 { }
 	h4 { text-transform: uppercase; color: $coral-red; font-weight: 700; letter-spacing: 1px; }
 	a {	color: $off-black; text-decoration: none; border-bottom: 1px solid $coral-red; }
 	p {	line-height: 1.65; margin-bottom: 1em; }
-	q {	display: block;	border-left: $coral-border;	padding-left: 20px;	font-style: italic;	margin-left: -1.5em; margin-top: 1em; margin-bottom: 2em; }
+	q {	display: block;	border-left: $coral-border;	padding-left: 20px;	font-style: italic;	margin-left: -1.5em; margin-top: 2em; margin-bottom: 2em; }
+	input {	font-size: 0.750em;	position: relative;	top: 6px; padding: 14px; width: 100%; border-radius: 5px; border: 1px solid #e1e1e1; outline: none; }
 	pre { background: #262626; padding: 20px; border-radius: 10px; color: #f1f1f1; display: block; margin: 1em 0 3em 0; }
 	::selection { background: #808798; /* Safari */	color: #f1f1f1;	}
 	::-moz-selection { background: #808798; /* Firefox */ color: #f1f1f1; }
@@ -30,9 +33,32 @@
 	img { margin: 1em 0; }
 	small {	font-size: 0.750em; line-height: 1 }
 	p>span { margin-right: 10px; }
+	button {
+		font-size: 0.750em;
+		border: none;
+		font-family: inherit;
+		cursor: pointer;
+		padding: 15px 0 15px 0;
+		width: 100%;
+		display: inline-block;
+		text-transform: uppercase;
+		font-weight: 700;
+		position: relative;
+		background: #36c77b;
+		color: #fff;
+		box-shadow: 0 6px #08512a;
+		border-radius: 5px;
+		outline: none;
+		&:after { content: ''; position: absolute; z-index: -1; }
+		&:hover { box-shadow: 0 4px #08512a; top: 2px; }
+		&:active { box-shadow: 0 0 #08512a; top: 6px; } }
 	/*------------------------------------------------------------------------------------
 		ID's & Classes
 	------------------------------------------------------------------------------------*/
+	#wrapper {
+		min-height:100%;
+		margin-top: -5px; // Fix for top coral nav border pushing the #wrapper 5px down
+	}
 	.active a { color: #ff5b54; }
 	.social { color: $off-black; border: none; font-size: 0.750em;
 		&:hover { color: $coral-red; } }
@@ -40,6 +66,7 @@
 		li { margin-bottom: 1em; line-height: 1.5;
 		span { float: right; } }
 		h3:not(:first-child) { margin-top: 40px; } }
+	.push { padding-top: 10% !important; }
 	/*------------------------------------------------------------------------------------
 		Uppernav
 	------------------------------------------------------------------------------------*/
@@ -56,7 +83,12 @@
 	/*------------------------------------------------------------------------------------
 		Footer
 	------------------------------------------------------------------------------------*/
-	footer { text-align: center; clear: both; padding: 30px 0 40px;
+	footer {
+		text-align: center;
+		width: 100%;
+		opacity: 0.8;
+		height: 80px;
+		line-height: 4em;
 		ul { list-style: none; }
 		li { font-size: 14px; }
 		a {	text-decoration: none; } }
@@ -81,14 +113,12 @@
 		font-variant: normal;
 		text-transform: none;
 		line-height: 1;
-
 		/* Better Font Rendering =========== */
 		-webkit-font-smoothing: antialiased;
 		-moz-osx-font-smoothing: grayscale;
 	}
-	.icon-checkmark-circle:before {
-		content: "\e600";
-	}
+	.icon-checkmark-circle:before { content: "\e600"; }
+	.icon-twitter:before { content: "\e601"; }
 
 /*----------------------------------------------------------------------------------------
 2. 	Specific pages
@@ -104,17 +134,23 @@
 			a {	border-bottom: 1px solid #37a247;
 				&:hover { color: #37a247; border: none; } } } }
 	.avatar { background: url('../img/avatar.jpg') no-repeat; height: 220px; width: 100%; border-bottom: 5px solid #ff5b54; background-size: cover;	background-position: 0; }
-	.home-header { padding: 0; }
+	.home-header { padding: 0 !important; }
 	#ballAnimation { display: none; }
 	/*------------------------------------------------------------------------------------
 		Post
 	------------------------------------------------------------------------------------*/
-	#post {	margin-top: 10%;
-		h1 { margin: 0 0 1em 0;
-			a { border: none; } }
+	#post {
+		h1 {margin-bottom: 1em; }
 		p:first-of-type { font-size: 1.250em; line-height: 1.5; } }
-
-
+	/*------------------------------------------------------------------------------------
+		Search
+	------------------------------------------------------------------------------------*/
+	#search { margin-top: 100px;
+		form {
+			.grid-5 { margin-left: 0; }
+			.grid-1 { margin-right: 0; float: right; }
+		}
+	}
 
 
 

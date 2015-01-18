@@ -2,21 +2,19 @@
 layout: default
 ---
 
-<section class="grid-container">
+<section class="grid-1"></section>
 
-	<section class="grid-1"></section>
-
-	<section id="post" class="grid-4">
-		<ul>
-		  {% for post in site.posts %}
-		    <li>
-		      <a href="{{ post.url }}">{{ post.date | date: "%B %d, %Y" }}</a>
-		      <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
-		    </li>
-		  {% endfor %}
-		</ul>
-	</section>
-	
-	<section class="grid-1"></section>
-
+<section class="grid-4 push">
+	<ul>
+		{% for post in site.posts %}
+			<li>
+				<small>Posted on </small>
+				<small>{{ post.date | date: "%B %d, %Y" }}</small>
+				<h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+			</li>
+			<hr>
+	  	{% endfor %}
+	</ul>
 </section>
+
+<section class="grid-1"></section>
