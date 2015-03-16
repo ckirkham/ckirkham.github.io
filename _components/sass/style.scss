@@ -30,7 +30,7 @@
 	::selection { background: #808798; /* Safari */	color: #f1f1f1;	}
 	::-moz-selection { background: #808798; /* Firefox */ color: #f1f1f1; }
 	hr { opacity: 0.2; margin: 2em 0 2em 0; }
-	img { margin: 1em 0; }
+	img { margin: 1em 0; width: 100%; }
 	small {	font-size: 0.750em; line-height: 1 }
 	p>span { margin-right: 10px; }
 	button {
@@ -49,6 +49,8 @@
 		box-shadow: 0 6px #08512a;
 		border-radius: 5px;
 		outline: none;
+		margin-bottom: 6px;
+		margin-top: 20px;
 		&:after { content: ''; position: absolute; z-index: -1; }
 		&:hover { box-shadow: 0 4px #08512a; top: 2px; }
 		&:active { box-shadow: 0 0 #08512a; top: 6px; } }
@@ -145,12 +147,7 @@
 	/*------------------------------------------------------------------------------------
 		Search
 	------------------------------------------------------------------------------------*/
-	#search { margin-top: 100px;
-		form {
-			.grid-5 { margin-left: 0; }
-			.grid-1 { margin-right: 0; float: right; }
-		}
-	}
+	// #search { margin-top: 100px; form { .grid-5 { margin-left: 0; } .grid-1 { margin-right: 0; float: right; } } } //
 
 
 
@@ -208,8 +205,8 @@
 
 
 
-
-/*	Article page
+/*----------------------------------------------------------------------------------------
+	Article page
 ----------------------------------------------------------------------------------------*/
 .download {
 	float: left;
@@ -270,8 +267,8 @@
 
 
 
-
-/*	Media Queries
+/*----------------------------------------------------------------------------------------
+	Media Queries
 ----------------------------------------------------------------------------------------*/
 	/*	Mobile
 	------------------------------------------------------------------------------------*/
@@ -311,7 +308,7 @@
 				margin-top: 10em;
 			}
 			.home-header {
-				max-width: 100%%;
+				max-width: 100%;
 				/* padding-top: 8em; */
 				margin-bottom: 3em;
 				height: 100%;
@@ -416,17 +413,17 @@
 					fill: $coral-red;
 				}
 			}
-			#searchicon {			
-				width: 58px;
-				height: 58px;
-				margin-top: 0;
-				margin-right: 5px;
-				-webkit-transition: all .5s ease-in-out;
-				&:hover {
-					-webkit-transform: scale(1.1);
-					fill: $coral-red;
-				}
-			}
+			// #searchicon {			
+			// 	width: 58px;
+			// 	height: 58px;
+			// 	margin-top: 0;
+			// 	margin-right: 5px;
+			// 	-webkit-transition: all .5s ease-in-out;
+			// 	&:hover {
+			// 		-webkit-transform: scale(1.1);
+			// 		fill: $coral-red;
+			// 	}
+			// }
 			.white-label {
 				fill: black;
 			}
