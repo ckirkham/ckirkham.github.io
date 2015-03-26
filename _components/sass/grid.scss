@@ -1,106 +1,43 @@
-/////////////////
-// Semantic.gs // for SCSS: http://sass-lang.com/
-/////////////////
-
-// Defaults which you can freely override
-$column-width: 150px;
-$gutter-width: 20px;
-$columns: 6;
-
-// Utility function — you should never need to modify this
-@function gridsystem-width($columns:$columns) {
-	@return ($column-width * $columns) + ($gutter-width * $columns);
-}
-
-// Set $total-width to 100% for a fluid layout
-$total-width: 100%; // $total-width: gridsystem-width($columns);
-
-// The micro clearfix http://nicolasgallagher.com/micro-clearfix-hack/
-@mixin clearfix() {
-	*zoom:1;
-	&:before,
-	&:after {
-	    content:"";
-	    display:table;
+/*------------------------------------------------------------------------------------
+	Grid
+------------------------------------------------------------------------------------*/
+.wrapper {
+	@include outer-container;
+	padding: 0 5%;
+	#about, #recent, #blog, #post, #projects {
 	}
-	&:after {
-	    clear:both;
-	}
-}
-
-//////////
-// GRID //
-//////////
-
-body {
-	width: 100%;
-	@include clearfix();
-}
-@mixin row($columns:$columns) {
-	display: block;
-	width: $total-width*(($gutter-width + gridsystem-width($columns))/gridsystem-width($columns));
-	margin: 0 $total-width*((($gutter-width*.5)/gridsystem-width($columns))*-1);
-	// *width: $total-width*(($gutter-width + gridsystem-width($columns))/gridsystem-width($columns))-$correction;
-	// *margin: 0 $total-width*((($gutter-width*.5)/gridsystem-width($columns))*-1)-$correction;
-	@include clearfix();
-}
-@mixin column($x,$columns:$columns) {
-	display: inline;
-	float: left;
-	width: $total-width*(((($gutter-width+$column-width)*$x)-$gutter-width) / gridsystem-width($columns));
-	margin: 0 $total-width*(($gutter-width*.5)/gridsystem-width($columns));
-	// *width: $total-width*(((($gutter-width+$column-width)*$x)-$gutter-width) / gridsystem-width($columns))-$correction;
-	// *margin: 0 $total-width*(($gutter-width*.5)/gridsystem-width($columns))-$correction;
-}
-@mixin push($offset:1) {
-	margin-left: $total-width*((($gutter-width+$column-width)*$offset) / gridsystem-width($columns)) + $total-width*(($gutter-width*.5)/gridsystem-width($columns));
-}
-@mixin pull($offset:1) {
-	margin-right: $total-width*((($gutter-width+$column-width)*$offset) / gridsystem-width($columns)) + $total-width*(($gutter-width*.5)/gridsystem-width($columns));
-}
-
-/////////////////
-// USER DRIVES //
-/////////////////
-
-/*	Screen sizes mobile and up
-----------------------------------------------------------------------------------------*/
-.grid-container {
-	// @include .clearfix;
-	padding: 0 10%;
-	margin: 0 auto;
-	position: relative;
-	overflow: hidden;
-}
-
-/*	Screen sizes 640px and up
-----------------------------------------------------------------------------------------*/
-@media (min-width: 640px) {
-	.grid-container {
-		padding: 0;
-		max-width: 1000px;
-		padding-left: 1% !important;
-		padding-right: 1% !important;
-	}
-	.grid-1 {
-		@include column(1);
-	}
-	.grid-2 {
-		@include column(2);
-	}
-	.grid-3 {
-		@include column(3);
-	}
-	.grid-4 {
-		@include column(4);
-	}
-	.grid-5 {
-		@include column(5);
-	}
-	.grid-6 {
-		@include column(6);
-	}
-	.grid-1,.grid-2,.grid-3,.grid-4,.grid-5,.grid-6 {
-		margin-bottom: 1em;
+	@media screen and (min-width: 640px) {
+		.col-three {	@include span-columns(3); }
+		.col-four {	@include span-columns(4); }
+		.col-four-shift-one { @include span-columns(4); @include shift(1) }
+		.col-four-shift-two { @include span-columns(4); @include shift(2) }
+		.col-four-shift-two { @include span-columns(4); @include shift(2) }
+		.col-five-shift-one { @include span-columns(5); @include shift(1) }
+		.col-six {	@include span-columns(6); }
+		.col-six-shift-one { @include span-columns(6); @include shift(1); }
+		.col-six-shift-two { @include span-columns(6); @include shift(2); }
+		.col-seven-shift-one { @include span-columns(7); @include shift(1); }
+		.col-eight { @include span-columns(8); }
+		.col-eight-shift-two { @include span-columns(8); @include shift(2) }
+		.col-twelve { @include span-columns(12); }
+		#about {
+			@include span-columns(10);
+			@include shift(1);
+			padding-bottom: 5%;
+		}
+		#recent {
+			aside:first-child {
+				@include shift(1);
+				@include span-columns(6);
+			}
+			aside:last-child {
+				@include span-columns(5);
+			}
+		}
+		#blog, #post, #projects {
+			padding-top: 20%;
+			@include span-columns(8);
+			@include shift(2);
+		}
 	}
 }

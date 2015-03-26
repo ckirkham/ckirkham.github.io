@@ -2,18 +2,92 @@
 layout: default
 ---
 
-<section class="grid-1"></section>
+<div id="projects">
 
-<section class="grid-4">
-	<ul>
+	<div class="mb-banner banner" data-0="background-position:0px -200px;" data-100000="background-position:0px -50000px;">
+		<div class="heading-section">
+			<h1>MightyBee</h1>
+			<h3>Coconut Water Brand Strategy &amp; UX</h3>
+			<h4>UX, Visual design, Front-end development</h4>
+			<p>MightyBee is an organic coconut water brand dealing in London.</p>
+			<button>
+				<a href="http://127.0.0.1:4000/projects/2015-02-10-mightybee.html">View project</a>
+			</button>
+		</div>
+	</div>
+
+	<div class="icarus-banner banner">
+		<div class="heading-section">
+			<h1>Icarus Concierge</h1>
+			<h3>Website &amp; product design</h3>
+			<h4>UX, Visual design, Front-end development, Animation</h4>
+			<p>Icarus is an exclusive members concierge service that caters to high-quality lifestyle individuals.</p>
+			<button>
+				<a href="http://127.0.0.1:4000/projects/2014-02-23-icarus.html">View project</a>
+			</button>
+		</div>
+	</div>
+
+	<div class="ctm-banner banner">
+		<div class="heading-section">
+			<h1>Compare the Market Meerkat App</h1>
+			<h3>Meerkat App</h3>
+			<h4>UX, Visual design</h4>
+			<p>Meerkat app was a conceptual piece, created to work out the future stepping stones for the Compare the Market service proposition.</p>
+			<button>
+				<a href="http://127.0.0.1:4000/projects/2014-02-28-ctmconcept.html">View project</a>
+			</button>
+		</div>
+	</div>
+
+	<div class="rk-banner banner">
+		<div class="heading-section">
+			<h1>Rival Kingdoms</h1>
+			<h3>Website UX &amp; Design</h3>
+			<h4>UX, Visual design</h4>
+			<p>Rival Kingdoms is a mobile MMORPG created by Space Ape games.</p>
+			<button>
+				<a href="http://127.0.0.1:4000/projects/2014-11-14-rivalkingdoms.html">View project</a>
+			</button>
+		</div>
+	</div>
+
+	<div class="movements-banner banner">
+		<div class="heading-section">
+			<h1>Movements</h1>
+			<h3>Web application service</h3>
+			<h4>UX, Visual design</h4>
+			<p>Movements is crowdsourcing human rights. It connects human rights activists in closed societies with those with skills to help them around the world.</p>
+			<button>
+				<a href="http://127.0.0.1:4000/projects/2014-06-21-movements.html">View project</a>
+			</button>
+		</div>
+	</div>
+
+	<div class="cd-banner banner">
+		<div class="heading-section">
+			<h1>Chemist Direct</h1>
+			<h3>UX E-commerce Platform</h3>
+			<h4>UX, Visual design, Animation</h4>
+			<p>Case study of the Chemist Direct e-commerce site being re-built from the ground up for the responsive web, in a sprint led, agile workflow.</p>
+			<button>
+				<a href="http://127.0.0.1:4000/projects/2013-07-14-chemistdirect.html">View project</a>
+			</button>
+		</div>
+	</div>
+
+</div>
+
+<!-- <section class="wrapper">
+	<ul id="projects">
 	  {% for project in site.projects reversed %}
+	  {% if project.visible== 1  %}
 	    <li>
-	      <small{{ project.date | date: "%B %d, %Y" }}</small>
-	      <h1><a href="{{ project.url }}">{{ project.title }}</a></h1>
+			<small>{{ project.date | date: "%B %d, %Y" }}</small>
+			<h2><a href="{{ project.url }}">{{ project.title }}</a></h2>
 	    </li>
 	    <hr>
+	  {% endif %}
 	  {% endfor %}
 	</ul>
-</section>
-
-<section class="grid-1"></section>
+</section> -->

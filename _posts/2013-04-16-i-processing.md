@@ -10,6 +10,8 @@ snippet: "Being seated next to new people at weddings, birthdays etc. the go-to 
 
 <p>Being a self-teacher for as long as I can remember, I'm constantly learning something new and working on different projects – I think in an industry that is changing every day, there's no better way to stay ahead of the curve and to remain inspired than to experience new technologies. So I've set out on a new learning obsession with the Processing scripting language and the freedom that it offers me to explore in my workflow.</p>
 
+<hr />
+
 <h2>Looking at the language</h2>
 
 <p>Processing is an <a href="http://www.openprocessing.org">Open Source</a> visual scripting language, created to teach the fundamentals of computer programming concepts to people. John Resig wrote a brilliant summary <a href="http://ejohn.org/blog/overview-of-processing/">article</a> on the subject and touches on the key principles and core concepts – give this a read if you've got time, it covers everything you need to know to get started.</p>

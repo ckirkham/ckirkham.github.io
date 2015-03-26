@@ -5,7 +5,7 @@ search_omit: true
 ---
 
 <!-- Full-bleed header section -->
-<section class="grid-container home-header">
+<section class="home-header">
 	<div>
 		<!-- Avatar -->
 		<div class="avatar"></div>
@@ -20,43 +20,58 @@ search_omit: true
 				<li class="active"><a href="/" title="Home">Home</a></li>
 		        <li><a href="blog.html" title="Blog">Blog</a></li>
 			    <li><a href="projects.html" title="Projects">Projects</a></li>
-				<li><a href="http://feeds.feedburner.com/ckirkham" title="RSS feed">RSS</a></li>
 			</ul>
 		</nav>
+		<footer>
+			<a href="https://dribbble.com/ckirkham" class="social">
+				<span class="icon-dribbble"></span>
+			</a>
+			<a href="http://www.twitter.com/Chris_Kirkham" class="social">
+				<span class="icon-twitter"></span>
+			</a>
+			<a href="http://www.linkedin.com/in/christiankirkham/" class="social">
+				<span class="icon-linkedin"></span>
+			</a>
+			<a href="https://github.com/ckirkham" class="social">
+				<span class="icon-github"></span>
+			</a>
+		</footer>
 	</div>
 	<!-- Background Canvas animation using PaperScript -->
 	<canvas id="ballAnimation" resize="true" keepalive="true" width="100%"></canvas>
 </section>
 
 <!-- Content -->
-<section class="grid-container">
-	<!-- Short about section -->
-	<section id="about" class="grid-6">
-		<h2>A bit about me</h2>
-		<p>London based interaction designer &amp; creative technologist, focusing on human interaction around digital. I currently work user testing, designing UI’s, coding front-end environments and animating motion graphics.</p>
-		<p>Check out some of my other work on <a href="http://www.dribbble.com/ckirkham">Dribbble</a> and <a href="http://ckirkham.prosite.com/">Bēhance</a> or follow me on <a href="http://www.twitter.com/Chris_Kirkham">Twitter</a>.</p>
-		<p><span class="icon-checkmark-circle"></span>I'm available for freelance work depending on my schedule. Just <a href="mailto:ck_web_contact@icloud.com">contact me</a> and we can sort something out!</p>
-	</section>
+<!-- <div class="white">
+	<section class="wrapper" style="background: #fbfbfb;">
+		<! Short about section -->
+		<!-- <section id="about">
+			<h3>A bit about me</h3>
+			<p>London based interaction designer &amp; creative technologist, focusing on human interaction around digital. I currently work user testing, designing UI’s, coding front-end environments and animating motion graphics.</p>
+			<p>Check out some of my other work on <a href="http://www.dribbble.com/ckirkham">Dribbble</a> and <a href="http://ckirkham.prosite.com/">Bēhance</a> or follow me on <a href="http://www.twitter.com/Chris_Kirkham">Twitter</a>.</p>
+			<p><span class="icon-checkmark-circle"></span>I'm available for freelance work depending on my schedule. Just <a href="mailto:ck_web_contact@icloud.com">contact me</a> and we can sort something out!</p>
+		</section>
 
-	<!-- Recent Blog Posts -->
-	<section class="grid-3">
-		<h2>Recent bloggings:</h2>
-		<ul class="list">
-		{% for post in site.posts limit: 5 %}
-			<li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
-		{% endfor %}
-		</ul>
-	</section>
+		<section id="recent">
+			<! Recent Blog Posts -->
+			<!-- <aside>
+				<h3>Recent bloggings:</h3>
+				<ul class="list">
+				{% for post in site.posts limit: 5 %}
+					<li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+				{% endfor %}
+				</ul>
+			</aside>
 
-	<section class="grid-1"></section>
-
-	<!-- Recent Project Pages -->
-	<section class="grid-2">
-		<h2>Recent projects:</h2>
-		<ul class="list">
-		{% for project in site.projects reversed limit: 5%}
-			<li><a href="{{ site.baseurl }}{{ project.url }}">{{ project.title }}</a></li>
-		{% endfor %}
-		</ul>
+			<! Recent Project Pages -->
+			<!-- <aside>
+				<h3>Recent projects:</h3>
+				<ul class="list">
+				{% for project in site.projects reversed limit: 5%}
+					<li><a href="{{ site.baseurl }}{{ project.url }}">{{ project.title }}</a></li>
+				{% endfor %}
+				</ul>
+			</aside>
+		</section>
 	</section>
-</section>
+</div> -->

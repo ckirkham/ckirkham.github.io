@@ -2,15 +2,9 @@
 
 {% include nav.html %}
 
-{% if page.url != "/index.html" %}
-	<div id="wrapper">
-		<section class="grid-container push">
-{% endif %}
+<!-- {% if page.url != "/index.html" %}
+{% endif %} -->
 
 {{ content }}
-
-{% if page.url != "/index.html" %}
-		</section>
-{% endif %}
 
 {% include footer.html %}

@@ -2,10 +2,8 @@
 layout: default
 ---
 
-<section class="grid-1"></section>
-
-<section class="grid-4">
-	<ul>
+<section class="wrapper">
+	<ul id="blog">
 		{% for post in site.posts %}
 			<li>
 				<small>Posted on </small>
@@ -16,5 +14,3 @@ layout: default
 	  	{% endfor %}
 	</ul>
 </section>
-
-<section class="grid-1"></section>
