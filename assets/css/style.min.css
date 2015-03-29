@@ -476,19 +476,20 @@ footer {
   clear: both;
   padding-top: 1.5em;
   padding-bottom: 8%;
-  position: absolute;
+  position: relative;
   bottom: 0;
   left: 0; }
   @media screen and (min-width: 640px) {
     footer {
-      padding-bottom: 3%; } }
+      padding-bottom: 3%;
+      position: absolute; } }
   footer ul {
     list-style: none; }
   footer li {
     font-size: 14px; }
   footer .social {
     text-decoration: none;
-    color: #262626;
+    color: #fbfbfb;
     border: none;
     font-size: 0.750em;
     padding: 5%; }
@@ -508,7 +509,7 @@ footer {
   float: left;
   border-top: 5px solid #ff5b54;
   display: inline-block;
-  position: relative;
+  position: fixed;
   z-index: 10000; }
   #mobile-nav a {
     border: none;
@@ -527,7 +528,8 @@ footer {
 
 #nav.active {
   display: none;
-  height: auto; }
+  height: auto;
+  z-index: 1000000000; }
   @media screen and (min-width: 768px) {
     #nav.active {
       display: block;
@@ -542,7 +544,7 @@ footer {
   border-top: 5px solid #ff5b54; }
   #nav #uppernav, #nav #mobile-nav {
     width: 100%;
-    position: absolute;
+    position: fixed;
     z-index: 1000;
     height: 100%;
     background: rgba(0, 0, 0, 0.8);
@@ -571,8 +573,7 @@ footer {
       height: 0px;
       position: absolute;
       top: 0%;
-      content: '';
-      transform: translate(0%, -100%); }
+      content: ''; }
   #nav li {
     display: block; }
   #nav a {
@@ -616,7 +617,6 @@ footer {
 .avatar {
   background: url("../img/avatar.jpg") no-repeat;
   width: 100%;
-  border-bottom: 5px solid #ff5b54;
   background-size: cover;
   background-position: 0;
   padding-top: 40%;
@@ -645,29 +645,37 @@ footer {
       left: 0;
       z-index: -100; } }
 
-.home-header section {
-  width: 100%; }
-.home-header p {
-  padding: 35px; }
-@media screen and (min-width: 640px) {
-  .home-header {
-    position: absolute;
-    width: 100%;
-    opacity: 1;
-    padding: 0 5%;
-    width: 100vw;
-    height: 100%;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-align-items: center;
-    align-items: center;
-    -webkit-justify-content: center;
-    justify-content: center; }
-    .home-header p {
-      width: 28em;
-      padding: 1em 0 0 0;
-      margin: 0 auto;
-      text-align: center; } }
+.home-header {
+  position: relative;
+  color: white;
+  background: #262626; }
+  .home-header section {
+    width: 100%; }
+    @media screen and (min-width: 640px) {
+      .home-header section {
+        position: absolute;
+        left: 0; } }
+  .home-header p {
+    padding: 35px; }
+  @media screen and (min-width: 640px) {
+    .home-header {
+      background: none;
+      width: 100%;
+      opacity: 1;
+      padding: 0 5%;
+      width: 100vw;
+      height: 95%;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-align-items: center;
+      align-items: center;
+      -webkit-justify-content: center;
+      justify-content: center; }
+      .home-header p {
+        width: 28em;
+        padding: 1em 0 0 0;
+        margin: 0 auto;
+        text-align: center; } }
 
 /*------------------------------------------------------------------------------------
 	Blog list
@@ -868,7 +876,7 @@ footer {
 	Movements
 ----------------------------------------------------------------------------------------*/
 .movements-banner {
-  background: url(../images/work/movements/movements-photography.jpg) no-repeat center center fixed;
+  background: url(../images/work/movements/movements-photography.jpg) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -878,7 +886,7 @@ footer {
 	Compare the Market
 ----------------------------------------------------------------------------------------*/
 .ctm-banner {
-  background: url(../images/work/ctm/ctm-bg.jpg) no-repeat center center fixed;
+  background: url(../images/work/ctm/ctm-bg.jpg) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -888,7 +896,7 @@ footer {
 	Chemist Direct
 ----------------------------------------------------------------------------------------*/
 .cd-banner {
-  background: url(../images/work/chemistdirect/cd-bg.jpg) no-repeat center center fixed;
+  background: url(../images/work/chemistdirect/cd-bg.jpg) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -898,7 +906,7 @@ footer {
 	Icarus
 ----------------------------------------------------------------------------------------*/
 .icarus-banner {
-  background: url(../images/work/icarus/icarus-photography.jpg) no-repeat center center fixed;
+  background: url(../images/work/icarus/icarus-photography.jpg) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -906,14 +914,14 @@ footer {
 
 @media screen and (min-width: 640px) {
   .icarus-watch {
-    background: url(../images/work/icarus/icarus-watch.png) no-repeat center center fixed;
+    background: url(../images/work/icarus/icarus-watch.png) no-repeat center center;
     background-size: 20%;
     overflow: hidden; } }
 /*----------------------------------------------------------------------------------------
 	Rival Kingdoms
 ----------------------------------------------------------------------------------------*/
 .rk-banner {
-  background: url(../images/work/rivalkingdoms/rk-bg.jpg) no-repeat center center fixed;
+  background: url(../images/work/rivalkingdoms/rk-bg.jpg) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -923,19 +931,19 @@ footer {
 
 @media screen and (min-width: 640px) {
   .rk-illustration-one {
-    background: url(../images/work/rivalkingdoms/rk-tiamat.jpg) no-repeat center center fixed;
+    background: url(../images/work/rivalkingdoms/rk-tiamat.jpg) no-repeat center center;
     background-size: 30%;
     overflow: hidden; }
 
   .rk-illustration-two {
-    background: url(../images/work/rivalkingdoms/rk-gm.jpg) no-repeat center center fixed;
+    background: url(../images/work/rivalkingdoms/rk-gm.jpg) no-repeat center center;
     background-size: 30%;
     overflow: hidden; } }
 /*----------------------------------------------------------------------------------------
 	MightyBee
 ----------------------------------------------------------------------------------------*/
 .mb-banner {
-  background: url(../images/work/mightybee/mightybee-photography1.jpg) no-repeat center center fixed;
+  background: url(../images/work/mightybee/mightybee-photography1.jpg) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -943,7 +951,7 @@ footer {
 
 @media screen and (min-width: 640px) {
   .mb-illustration {
-    background: url(../images/work/mightybee/mightybee-illustration.png) no-repeat center center fixed;
+    background: url(../images/work/mightybee/mightybee-illustration.png) no-repeat center center;
     background-size: 20%;
     overflow: hidden; } }
 

@@ -85,17 +85,21 @@
 			});
 
 			// 
-			jQuery(document).ready(function() {
-			    jQuery('.toggle-nav').click(function(e) {
-			        jQuery(this).toggleClass('active');
-			        jQuery('#nav').toggleClass('active');
-			        e.preventDefault();
-			    });
-			});
-			
-		</script>
- 		{% if page.url == "/about.html" %}
+		    $('.toggle-nav').click(function(e) {
+		    	var $this = $(this);
+		        $(this).toggleClass('active');
+		        if($this.hasClass('active')) {
+		        	$this.text('Close');
+		        } else {
+		        	$this.text('Menu');
+		        }
+		        $('#nav').toggleClass('active');
+		        e.preventDefault();
+		    });
 
+		</script>
+
+ 		{% if page.url == "/index.html" %}
 		<!-- PaperScript animation -->
 		<script type="text/paperscript" canvas="ballAnimation">
 			function getRandomArbitrary(min, max) {

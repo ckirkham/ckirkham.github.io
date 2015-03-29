@@ -118,17 +118,18 @@
 		clear: both;
 		padding-top: 1.5em;
 		padding-bottom: 8%;
-		position: absolute;
+		position: relative;
 		bottom: 0;
 		left: 0;
 		@media screen and (min-width: 640px) {
 			padding-bottom: 3%;
+			position: absolute;
 		}
 		ul { list-style: none; }
 		li { font-size: 14px; }
 		.social {
 			text-decoration: none;
-			color: $off-black;
+			color: $cloud-white;
 			border: none;
 			font-size: 0.750em;
 			padding: 5%;
@@ -151,7 +152,7 @@
 	    float: left;
 		border-top: 5px solid #ff5b54;
 	    display:inline-block;
-	    position: relative;
+	    position: fixed;
 	    z-index: 10000;
 	    a {
 	    	border: none;
@@ -169,6 +170,7 @@
 	#nav.active {
 		display: none;
 		height: auto;
+		z-index: 1000000000;
 		@media screen and (min-width: 768px) {
 			display: block;
 			padding: 0 30px;
@@ -183,7 +185,7 @@
 		border-top: 5px solid #ff5b54;
 		#uppernav {
 			width:100%;
-	        position:absolute;
+	        position: fixed;
 			z-index: 1000;
 			height: 100%;
 			background: rgba(0,0,0,0.8);
@@ -213,7 +215,6 @@
 		        position:absolute;
 		        top:0%;
 		        content:'';
-		        transform:translate(0%, -100%);
 			}
 		}
 		li { display:block; }
@@ -259,7 +260,6 @@
 	.avatar {
 		background: url('../img/avatar.jpg') no-repeat;
 		width: 100%;
-		border-bottom: 5px solid #ff5b54;
 		background-size: cover;
 		background-position: 0;
 		padding-top: 40%;
@@ -287,19 +287,26 @@
 		}
 	}
 	.home-header {
+		position: relative;
+		color: white;
+		background: $off-black;
 		section {
     		width: 100%;
+    		@media screen and (min-width: 640px) {
+    			position: absolute;
+    			left: 0;
+    		}
     	}
     	p {
 			padding: 35px;
 		}
 		@media screen and (min-width: 640px) {
-			position: absolute;
+			background: none;
 		    width: 100%;
 		    opacity: 1;
 		    padding: 0 5%;
 		    width: 100vw;
-		    height: 100%;
+		    height: 95%;
 			display: -webkit-flex;
 			display: flex;
 			-webkit-align-items: center;
@@ -460,6 +467,7 @@ only screen and (                min-resolution: 2dppx) {
 	}
 }
 .banner {
+	// z-index: 1000000;
 	color: white;
 	position: relative;
 	width: 100%;
@@ -571,7 +579,7 @@ only screen and (                min-resolution: 2dppx) {
 	Movements
 ----------------------------------------------------------------------------------------*/
 .movements-banner {
-	background: url(../images/work/movements/movements-photography.jpg) no-repeat center center fixed;
+	background: url(../images/work/movements/movements-photography.jpg) no-repeat center center;
 	-webkit-background-size: cover;	-moz-background-size: cover; -o-background-size: cover;	background-size: cover;
 }
 
@@ -579,7 +587,7 @@ only screen and (                min-resolution: 2dppx) {
 	Compare the Market
 ----------------------------------------------------------------------------------------*/
 .ctm-banner {
-	background: url(../images/work/ctm/ctm-bg.jpg) no-repeat center center fixed;
+	background: url(../images/work/ctm/ctm-bg.jpg) no-repeat center center;
 	-webkit-background-size: cover;	-moz-background-size: cover; -o-background-size: cover;	background-size: cover;
 }
 
@@ -587,7 +595,7 @@ only screen and (                min-resolution: 2dppx) {
 	Chemist Direct
 ----------------------------------------------------------------------------------------*/
 .cd-banner {
-	background: url(../images/work/chemistdirect/cd-bg.jpg) no-repeat center center fixed;
+	background: url(../images/work/chemistdirect/cd-bg.jpg) no-repeat center center;
 	-webkit-background-size: cover;	-moz-background-size: cover; -o-background-size: cover;	background-size: cover;
 }
 
@@ -595,12 +603,12 @@ only screen and (                min-resolution: 2dppx) {
 	Icarus
 ----------------------------------------------------------------------------------------*/
 .icarus-banner {
-	background: url(../images/work/icarus/icarus-photography.jpg) no-repeat center center fixed;
+	background: url(../images/work/icarus/icarus-photography.jpg) no-repeat center center;
 	-webkit-background-size: cover;	-moz-background-size: cover; -o-background-size: cover;	background-size: cover;
 }
 @media screen and (min-width: 640px) {
 	.icarus-watch {
-		background: url(../images/work/icarus/icarus-watch.png) no-repeat center center fixed;
+		background: url(../images/work/icarus/icarus-watch.png) no-repeat center center;
 		background-size: 20%;
 		overflow: hidden;
 	}
@@ -610,7 +618,7 @@ only screen and (                min-resolution: 2dppx) {
 	Rival Kingdoms
 ----------------------------------------------------------------------------------------*/
 .rk-banner {
-	background: url(../images/work/rivalkingdoms/rk-bg.jpg) no-repeat center center fixed;
+	background: url(../images/work/rivalkingdoms/rk-bg.jpg) no-repeat center center;
 	-webkit-background-size: cover;	-moz-background-size: cover; -o-background-size: cover;	background-size: cover;
 	.heading-section {
 		background: rgba(0,0,0,0.4) !important;
@@ -618,12 +626,12 @@ only screen and (                min-resolution: 2dppx) {
 }
 @media screen and (min-width: 640px) {
 	.rk-illustration-one {
-		background: url(../images/work/rivalkingdoms/rk-tiamat.jpg) no-repeat center center fixed;
+		background: url(../images/work/rivalkingdoms/rk-tiamat.jpg) no-repeat center center;
 		background-size: 30%;
 		overflow: hidden;
 	}
 	.rk-illustration-two {
-		background: url(../images/work/rivalkingdoms/rk-gm.jpg) no-repeat center center fixed;
+		background: url(../images/work/rivalkingdoms/rk-gm.jpg) no-repeat center center;
 		background-size: 30%;
 		overflow: hidden;
 	}
@@ -633,12 +641,12 @@ only screen and (                min-resolution: 2dppx) {
 	MightyBee
 ----------------------------------------------------------------------------------------*/
 .mb-banner {
-	background: url(../images/work/mightybee/mightybee-photography1.jpg) no-repeat center center fixed;
+	background: url(../images/work/mightybee/mightybee-photography1.jpg) no-repeat center center;
 	-webkit-background-size: cover;	-moz-background-size: cover; -o-background-size: cover;	background-size: cover;
 }
 @media screen and (min-width: 640px) {
 	.mb-illustration {
-		background: url(../images/work/mightybee/mightybee-illustration.png) no-repeat center center fixed;
+		background: url(../images/work/mightybee/mightybee-illustration.png) no-repeat center center;
 		background-size: 20%;
 		overflow: hidden;
 	}
