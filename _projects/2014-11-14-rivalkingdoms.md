@@ -4,7 +4,7 @@ title: Rival Kingdoms
 visible: 1
 ---
 
-<div id="project-page" class="rk-banner banner" data-0="background-position: 0px 0px;" data-100000="background-position:0px -50000px;">
+<div id="project-page" class="rk-banner banner" data-0="background-position: 0px 0px;" data-100000="background-position:0px 50000px;">
 	<div class="heading-section">
 		<div data-0="top: 200px; opacity: 1;" data-450="top: 370px; opacity:0;">
 			<h1>{{ page.title }}</h1>
@@ -13,7 +13,7 @@ visible: 1
 	</div>
 </div>
 
-<div class="rk-illustration-one" data-0="background-position:-5% 1000px;" data-100000="background-position:10% -50000px;">
+<div id="project-content" class="rk-illustration-one" data-0="background-position:-5% 1000px;" data-100000="background-position:10% -50000px;">
 	<div class="rk-illustration-two" data-0="background-position:110% 800px;" data-100000="background-position:110% -17000px;">
 
 		<section class="wrapper project-copy">

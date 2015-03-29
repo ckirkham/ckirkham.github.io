@@ -4,7 +4,7 @@ title: Compare the Market Meerkat App
 visible: 1
 ---
 
-<div id="project-page" class="ctm-banner banner" data-0="background-position: 0px 0px;" data-100000="background-position:0px -50000px;">
+<div id="project-page" class="ctm-banner banner" data-0="background-position: 0px 0px;" data-100000="background-position:0px 50000px;">
 	<div class="heading-section">
 		<div data-0="top: 200px; opacity: 1;" data-450="top: 370px; opacity:0;">
 			<h1>{{ page.title }}</h1>
@@ -13,7 +13,7 @@ visible: 1
 	</div>
 </div>
 
-<div>
+<div id="project-content">
 	<section class="wrapper project-copy">
 
 		<section>
