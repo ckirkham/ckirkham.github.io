@@ -1,19 +1,19 @@
 ---
-layout: project
+layout: default
 title: MightyBee
 visible: 1
 ---
 
-<div class="mb-banner banner" data-0="background-position:0px 0px;" data-100000="background-position:0px -50000px;">
-	<div class="heading-section" data-0="top: 200px; opacity: 1;" data-450="top: 370px; opacity:0;">
-		<h1>{{ page.title }}</h1>
-		<h3>Coconut Water Brand Strategy &amp; UX</h3>
-		<h4>UX, Visual design, Front-end development</h4>
-		<p>MightyBee is an organic coconut water brand dealing in London.</p>
+<div id="project-page" class="mb-banner banner" data-0="background-position: 0px 0px;" data-100000="background-position:0px -20000px;">
+	<div class="heading-section">
+		<div data-0="top: 200px; opacity: 1;" data-450="top: 370px; opacity:0;">
+			<h1>{{ page.title }}</h1>
+			<h4>UX, Visual design, Front-end development</h4>
+		</div>
 	</div>
 </div>
 
-<div class="mb-illustration" data-0="background-position:10% 1500px;" data-100000="background-position:10% -50000px;">
+<div id="project-content" class="mb-illustration" data-0="background-position:10% 1500px;" data-100000="background-position:10% -50000px;">
 	<section class="wrapper project-copy">
 
 		<section>

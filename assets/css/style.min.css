@@ -1,7 +1,7 @@
 /*----------------------------------------------------------------------------------------
-	Imports
+1. Imports
 ----------------------------------------------------------------------------------------*/
-@import url(http://fonts.googleapis.com/css?family=Lato:300,400,400italic,700);
+@import url("http://fonts.googleapis.com/css?family=Lato:300,400,400italic,700");
 html {
   box-sizing: border-box; }
 
@@ -71,7 +71,7 @@ table {
 body, html {
   height: 100%; }
 
-h1, h2, h3, h4, h4, h5, #logo, #top, .slidey b, .slidey label, .counter, input, textarea, button, .pagination {
+h1, h2, h3, h4, h4, h5 {
   font-weight: 300; }
 
 /* Transitions and animations */
@@ -155,236 +155,8 @@ a, a img {
     height: auto;
     border: 1px solid transparent; }
 
-#projects .banner {
-  padding-bottom: 0;
-  margin-bottom: 0;
-  height: 500px; }
-#projects .heading-section {
-  top: 20%; }
-
-.heading-section {
-  position: absolute;
-  width: 100%;
-  opacity: 1;
-  top: 20%;
-  padding: 0 5%; }
-  @media screen and (min-width: 640px) {
-    .heading-section p {
-      width: 65%;
-      margin: 0 auto; } }
-  @media screen and (min-width: 810px) {
-    .heading-section {
-      padding: 0; }
-      .heading-section p {
-        width: 50%; } }
-  @media screen and (min-width: 1200px) {
-    .heading-section p {
-      width: 35%; } }
-
-/*----------------------------------------------------------------------------------------
-	Project page - mobile first
-----------------------------------------------------------------------------------------*/
-.slide {
-  background-attachment: fixed;
-  width: 100%;
-  height: 100%;
-  position: relative;
-  margin-bottom: 4em;
-  padding-top: 1.5em; }
-  .slide img {
-    margin: 0 !important; }
-
-.banner {
-  position: relative;
-  width: 100%;
-  height: 700px;
-  text-align: center;
-  padding-top: 160px;
-  margin-bottom: 5%; }
-  .banner small {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 31.76157%;
-    margin: 0 auto !important;
-    float: none;
-    line-height: 1.6;
-    padding-bottom: 20px; }
-    .banner small:last-child {
-      margin-right: 0; }
-
-.img-pull {
-  width: 118%;
-  margin-left: -9%; }
-  @media screen and (min-width: 640px) {
-    .img-pull {
-      width: 100%;
-      margin-left: 0; } }
-
-.project-copy {
-  clear: both;
-  overflow: hidden; }
-  .project-copy hr {
-    opacity: 0; }
-  .project-copy iframe {
-    width: 100%; }
-  @media screen and (min-width: 640px) {
-    .project-copy section {
-      position: relative;
-      float: left;
-      display: block;
-      margin-right: 2.35765%;
-      width: 65.88078%;
-      margin-left: 17.05961%; }
-      .project-copy section:last-child {
-        margin-right: 0; }
-    .project-copy small {
-      float: left;
-      display: block;
-      margin-right: 2.35765%;
-      width: 31.76157%;
-      text-align: right;
-      margin-top: 2em;
-      padding-bottom: 30px;
-      position: absolute;
-      left: -35%;
-      color: #ff5b54;
-      line-height: 1.4; }
-      .project-copy small:last-child {
-        margin-right: 0; } }
-
-.slick-prev {
-  margin-right: 1%;
-  margin-top: 0;
-  background: url(../images/arrow-left.svg) no-repeat;
-  border: none;
-  box-shadow: none;
-  width: 50px !important;
-  height: 50px;
-  padding: 0; }
-  .slick-prev:hover {
-    background: url(../images/arrow-left.svg) no-repeat;
-    margin-right: 2% !important; }
-
-.slick-next {
-  margin-left: 1%;
-  margin-top: 0;
-  background: url(../images/arrow-right.svg) no-repeat;
-  border: none;
-  box-shadow: none;
-  width: 50px !important;
-  height: 50px;
-  padding: 0; }
-  .slick-next:hover {
-    background: url(../images/arrow-right.svg) no-repeat;
-    margin-left: 2% !important; }
-
-.photography-gallery, .product-gallery {
-  text-align: center; }
-  .photography-gallery .slick-slide img, .product-gallery .slick-slide img {
-    padding: 0 10px; }
-  .photography-gallery .slick-next, .product-gallery .slick-next {
-    margin-left: 1%;
-    width: auto; }
-
-.product-gallery .slick-slide {
-  width: 768px; }
-.product-gallery .slick-slide {
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-  opacity: 0.2; }
-.product-gallery .slick-center {
-  opacity: 1; }
-
-/*----------------------------------------------------------------------------------------
-	Movements
-----------------------------------------------------------------------------------------*/
-.movements-banner {
-  background: url(../images/work/movements/movements_icons.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover; }
-
-/*----------------------------------------------------------------------------------------
-	Compare the Market
-----------------------------------------------------------------------------------------*/
-.ctm-banner {
-  background: url(../images/work/ctm/ctm-bg.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover; }
-
-/*----------------------------------------------------------------------------------------
-	Chemist Direct
-----------------------------------------------------------------------------------------*/
-.cd-banner {
-  background: url(../images/work/chemistdirect/cd-pattern.jpg) repeat center center fixed; }
-
-/*----------------------------------------------------------------------------------------
-	Icarus
-----------------------------------------------------------------------------------------*/
-.icarus-banner {
-  background: url(../images/work/icarus/icarus.jpg) no-repeat center 10%;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover; }
-  .icarus-banner .heading-section {
-    color: white; }
-    .icarus-banner .heading-section a {
-      color: white; }
-
-@media screen and (min-width: 640px) {
-  .icarus-watch {
-    background: url(../images/work/icarus/icarus-watch.png) no-repeat center center fixed;
-    background-size: 20%;
-    overflow: hidden; } }
-/*----------------------------------------------------------------------------------------
-	Rival Kingdoms
-----------------------------------------------------------------------------------------*/
-.rk-banner {
-  background: url(../images/work/rivalkingdoms/rk-bg.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover; }
-  .rk-banner .heading-section {
-    color: white; }
-    .rk-banner .heading-section a {
-      color: white; }
-
-@media screen and (min-width: 640px) {
-  .rk-illustration-one {
-    background: url(../images/work/rivalkingdoms/rk-tiamat.jpg) no-repeat center center fixed;
-    background-size: 30%;
-    overflow: hidden; }
-
-  .rk-illustration-two {
-    background: url(../images/work/rivalkingdoms/rk-gm.jpg) no-repeat center center fixed;
-    background-size: 30%;
-    overflow: hidden; } }
-/*----------------------------------------------------------------------------------------
-	MightyBee
-----------------------------------------------------------------------------------------*/
-.mb-banner {
-  background: url(../images/work/mightybee/mightybee.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover; }
-
-@media screen and (min-width: 640px) {
-  .mb-illustration {
-    background: url(../images/work/mightybee/mightybee-illustration.png) no-repeat center center fixed;
-    background-size: 20%;
-    overflow: hidden; } }
 /*------------------------------------------------------------------------------------
-	Grid
+2. Grid
 ------------------------------------------------------------------------------------*/
 .wrapper {
   max-width: 68em;
@@ -497,48 +269,18 @@ a, a img {
       margin-right: 2.35765%;
       width: 100%; }
       .wrapper .col-twelve:last-child {
-        margin-right: 0; }
-    .wrapper #about {
-      float: left;
-      display: block;
-      margin-right: 2.35765%;
-      width: 82.94039%;
-      margin-left: 8.5298%;
-      padding-bottom: 5%; }
-      .wrapper #about:last-child {
-        margin-right: 0; }
-    .wrapper #recent aside:first-child {
-      margin-left: 8.5298%;
-      float: left;
-      display: block;
-      margin-right: 2.35765%;
-      width: 48.82117%; }
-      .wrapper #recent aside:first-child:last-child {
-        margin-right: 0; }
-    .wrapper #recent aside:last-child {
-      float: left;
-      display: block;
-      margin-right: 2.35765%;
-      width: 40.29137%; }
-      .wrapper #recent aside:last-child:last-child {
-        margin-right: 0; }
-    .wrapper #blog, .wrapper #post, .wrapper #projects {
-      padding-top: 20%;
-      float: left;
-      display: block;
-      margin-right: 2.35765%;
-      width: 65.88078%;
-      margin-left: 17.05961%; }
-      .wrapper #blog:last-child, .wrapper #post:last-child, .wrapper #projects:last-child {
         margin-right: 0; } }
 
 /*----------------------------------------------------------------------------------------
-1. 	Global styles (across all pages) & Typography
+3. 	Global styles (across all pages) & Typography
 ----------------------------------------------------------------------------------------*/
 /*------------------------------------------------------------------------------------
 	Natural anchors
 ------------------------------------------------------------------------------------*/
 body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
   font: 18px/30px 'Lato', sans-serif;
   color: #262626;
   background: #fbfbfb; }
@@ -559,7 +301,8 @@ h1, h2, h3, h4, h4, h5, h6 {
 
 h1 {
   font-size: 2em;
-  line-height: 1.2; }
+  line-height: 1.2;
+  font-size: 2.5em; }
   @media screen and (min-width: 810px) {
     h1 {
       font-size: 2.5em; } }
@@ -598,7 +341,8 @@ a:hover {
 
 p {
   line-height: 1.65;
-  margin-bottom: 1em; }
+  margin-bottom: 1em;
+  font-weight: 400; }
   p:last-child {
     margin-bottom: 2em; }
 
@@ -691,98 +435,6 @@ button {
       color: white; }
 
 /*------------------------------------------------------------------------------------
-	ID's & Classes
-------------------------------------------------------------------------------------*/
-.active a {
-  color: #ff5b54; }
-
-.list {
-  list-style-type: none; }
-  .list li {
-    margin-bottom: 1em;
-    line-height: 1.5; }
-    .list li span {
-      float: right; }
-
-.push {
-  padding-top: 10% !important; }
-
-.push-five {
-  padding-top: 5% !important; }
-
-.white {
-  background: #fbfbfb;
-  padding-top: 5%; }
-
-/*------------------------------------------------------------------------------------
-	Uppernav
-------------------------------------------------------------------------------------*/
-#nav {
-  position: fixed;
-  z-index: 1000;
-  display: block;
-  width: 100%; }
-
-#uppernav a {
-  border: none;
-  float: left; }
-#uppernav #monogram {
-  margin-left: 10px;
-  margin-top: 5px;
-  width: 40px;
-  height: 40px; }
-
-#main {
-  text-align: center; }
-  #main ul li a {
-    font-size: 1.250em;
-    padding: 0.5em;
-    border: none; }
-
-#uppernav a:hover {
-  fill: #ff5b54; }
-#uppernav ul {
-  float: right; }
-  #uppernav ul li {
-    display: inline-block; }
-    #uppernav ul li a {
-      padding: 15px; }
-
-#main li {
-  list-style-type: none;
-  display: inline-block; }
-
-/*------------------------------------------------------------------------------------
-	Footer
-------------------------------------------------------------------------------------*/
-.social {
-  color: #262626;
-  border: none;
-  font-size: 0.750em;
-  padding: 4%; }
-  .social:hover {
-    color: #ff5b54; }
-
-footer {
-  text-align: center;
-  width: 100%;
-  clear: both;
-  padding-top: 1.5em;
-  padding-bottom: 5%;
-  position: absolute;
-  bottom: 0; }
-  footer ul {
-    list-style: none; }
-  footer li {
-    font-size: 14px; }
-  footer a {
-    text-decoration: none; }
-  @media screen and (min-width: 640px) {
-    footer {
-      padding-top: 0.5em;
-      position: static; } }
-
-/*------------------------------------------------------------------------------------
 	Typography
 ------------------------------------------------------------------------------------*/
 @font-face {
@@ -815,29 +467,152 @@ footer {
 .icon-linkedin:before {
   content: "\eac9"; }
 
+/*------------------------------------------------------------------------------------
+	Footer
+------------------------------------------------------------------------------------*/
+footer {
+  text-align: center;
+  width: 100%;
+  clear: both;
+  padding-top: 1.5em;
+  padding-bottom: 8%;
+  position: absolute;
+  bottom: 0;
+  left: 0; }
+  @media screen and (min-width: 640px) {
+    footer {
+      padding-bottom: 3%; } }
+  footer ul {
+    list-style: none; }
+  footer li {
+    font-size: 14px; }
+  footer .social {
+    text-decoration: none;
+    color: #262626;
+    border: none;
+    font-size: 0.750em;
+    padding: 5%; }
+    @media screen and (min-width: 640px) {
+      footer .social {
+        padding: 2%; } }
+    footer .social:hover {
+      color: #ff5b54; }
+
 /*----------------------------------------------------------------------------------------
-2. 	Specific pages
+	Navigation
+----------------------------------------------------------------------------------------*/
+#mobile-nav {
+  display: none;
+  width: 100%;
+  padding: 0 15px;
+  float: left;
+  border-top: 5px solid #ff5b54;
+  display: inline-block;
+  position: relative;
+  z-index: 10000; }
+  #mobile-nav a {
+    border: none;
+    float: left;
+    padding: 15px 10px;
+    text-transform: uppercase;
+    color: #fbfbfb;
+    letter-spacing: 3px;
+    font-size: 0.750em;
+    font-weight: 700; }
+  #mobile-nav li:last-child {
+    float: right; }
+  @media screen and (min-width: 768px) {
+    #mobile-nav {
+      display: none; } }
+
+#nav.active {
+  display: none;
+  height: auto; }
+  @media screen and (min-width: 768px) {
+    #nav.active {
+      display: block;
+      padding: 0 30px; } }
+
+#nav {
+  position: absolute;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  border-top: 5px solid #ff5b54; }
+  #nav #uppernav, #nav #mobile-nav {
+    width: 100%;
+    position: absolute;
+    z-index: 1000;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    padding-top: 200px; }
+    #nav #uppernav li, #nav #mobile-nav li {
+      display: inline-block;
+      width: 100%;
+      text-align: center; }
+      #nav #uppernav li:first-child, #nav #mobile-nav li:first-child {
+        display: none; }
+      #nav #uppernav li a, #nav #mobile-nav li a {
+        width: 100%;
+        font-weight: 700; }
+    #nav #uppernav a, #nav #mobile-nav a {
+      border: none;
+      float: left;
+      padding: 15px 10px;
+      text-transform: uppercase;
+      color: #fbfbfb;
+      letter-spacing: 3px;
+      font-size: 0.750em; }
+      #nav #uppernav a:hover, #nav #mobile-nav a:hover {
+        color: #ff5b54 !important; }
+    #nav #uppernav:after, #nav #mobile-nav:after {
+      width: 0px;
+      height: 0px;
+      position: absolute;
+      top: 0%;
+      content: '';
+      transform: translate(0%, -100%); }
+  #nav li {
+    display: block; }
+  #nav a {
+    display: block; }
+  @media screen and (min-width: 768px) {
+    #nav {
+      height: auto;
+      z-index: 1000;
+      display: block;
+      text-align: auto;
+      position: fixed; }
+      #nav #uppernav, #nav #mobile-nav {
+        height: auto;
+        background: none;
+        padding: 0;
+        text-align: right;
+        position: relative; }
+        #nav #uppernav li, #nav #mobile-nav li {
+          width: auto;
+          margin-top: 0; }
+          #nav #uppernav li:first-child, #nav #mobile-nav li:first-child {
+            display: block;
+            float: left;
+            width: auto; }
+            #nav #uppernav li:first-child a, #nav #mobile-nav li:first-child a {
+              text-align: center;
+              width: 100%; } }
+
+.scrolling li a {
+  color: black !important; }
+
+.active {
+  color: #ff5b54 !important; }
+
+/*----------------------------------------------------------------------------------------
+3. 	Specific pages
 ----------------------------------------------------------------------------------------*/
 /*------------------------------------------------------------------------------------
 	Homepage
 ------------------------------------------------------------------------------------*/
-#title {
-  text-align: center;
-  margin: 1.5em auto 0 auto;
-  padding-bottom: 1.5em; }
-  #title h1 {
-    font-size: 2em;
-    border: none;
-    margin: 0; }
-
-#about p:last-child {
-  color: #37a247; }
-  #about p:last-child a {
-    border-bottom: 1px solid #37a247; }
-    #about p:last-child a:hover {
-      color: #37a247;
-      border: none; }
-
 .avatar {
   background: url("../img/avatar.jpg") no-repeat;
   width: 100%;
@@ -846,15 +621,65 @@ footer {
   background-position: 0;
   padding-top: 40%;
   padding-bottom: 20%; }
+  @media screen and (min-width: 640px) {
+    .avatar {
+      -webkit-border-radius: 50%;
+      -moz-border-radois: 50%;
+      border-radius: 50%;
+      background: url("../images/avatar.jpg") no-repeat;
+      height: 130px;
+      width: 130px;
+      border: none;
+      background-size: cover;
+      margin: 0 auto;
+      padding: 0; } }
 
 #ballAnimation {
   display: none; }
+  @media screen and (min-width: 640px) {
+    #ballAnimation {
+      display: block;
+      background: #f1f1f1;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: -100; } }
+
+.home-header section {
+  width: 100%; }
+.home-header p {
+  padding: 35px; }
+@media screen and (min-width: 640px) {
+  .home-header {
+    position: absolute;
+    width: 100%;
+    opacity: 1;
+    padding: 0 5%;
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .home-header p {
+      width: 28em;
+      padding: 1em 0 0 0;
+      margin: 0 auto;
+      text-align: center; } }
 
 /*------------------------------------------------------------------------------------
 	Blog list
 ------------------------------------------------------------------------------------*/
 #blog {
   padding-top: 20%; }
+  @media screen and (min-width: 640px) {
+    #blog {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 65.88078%;
+      margin-left: 17.05961%; }
+      #blog:last-child {
+        margin-right: 0; } }
   #blog a {
     border: none; }
   #blog hr {
@@ -865,6 +690,15 @@ footer {
 ------------------------------------------------------------------------------------*/
 #post {
   padding-top: 20%; }
+  @media screen and (min-width: 640px) {
+    #post {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 65.88078%;
+      margin-left: 17.05961%; }
+      #post:last-child {
+        margin-right: 0; } }
   #post h1 {
     margin-bottom: 1em; }
   #post p:first-of-type {
@@ -872,167 +706,239 @@ footer {
     line-height: 1.5; }
 
 /*----------------------------------------------------------------------------------------
-	Article page
+4. 	Other
 ----------------------------------------------------------------------------------------*/
-.download {
-  float: left;
-  clear: both;
-  margin-right: 2em;
-  display: inline-block;
-  margin-bottom: 1em;
-  position: relative;
-  border-radius: 5px;
-  margin-top: -0.75em;
-  width: 100%;
-  height: 175px; }
-  .download h5 {
-    position: absolute;
-    bottom: 20px;
-    width: 100%;
-    right: 0;
-    text-align: center; }
-    .download h5 small {
-      position: absolute;
-      bottom: 0;
-      width: 100%;
-      text-align: center;
-      right: 0;
-      font-size: 0.5em; }
-
-.sketch {
-  background: url("../img/sketch_icon.png") no-repeat;
-  background-position: 50% -5%; }
-  @media (min--moz-device-pixel-ratio: 1.3), (-o-min-device-pixel-ratio: 2.6 / 2), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
-    .sketch {
-      /* on retina, use image that's scaled by 2 */
-      background-image: url("../img/sketch_icon@2x");
-      background-size: 100px 125px; } }
-
-.content img {
-  margin-left: -13%;
-  max-width: 126%; }
-
-/*----------------------------------------------------------------------------------------
-	Media Queries
-----------------------------------------------------------------------------------------*/
-/*	Mobile
-------------------------------------------------------------------------------------*/
-/*	640 and up
-------------------------------------------------------------------------------------*/
-@media screen and (min-width: 640px) {
-  /*	Global Styles
-  --------------------------------------------------------------------------------*/
-  /*	ID's & classes
-  ----------------------------------------------------------------------------*/
-  .slidey form input {
-    width: 75%; }
-
-  #top {
-    border-bottom: 5px solid #ff5b54; }
-
-  .push-down {
-    margin-top: 10em; }
-
-  .home-header {
-    max-width: 100%;
-    height: 100%;
-    padding: 0 !important;
-    min-width: 100%;
-    display: -webkit-box;
-    -webkit-box-align: center;
-    -webkit-box-pack: center;
-    display: -ms-flexbox;
-    -ms-flex-align: center;
-    -ms-flex-pack: center;
-    display: box;
-    box-align: center;
-    box-pack: center; }
-
-  @-moz-document url-prefix() {
-    .home-header {
-      padding-top: 15% !important; } }
-  /*	Home page
-  --------------------------------------------------------------------------------*/
-  #ballAnimation {
-    display: block;
-    background: #f1f1f1;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: -100; }
-
-  /*	Avatar and title row
-  ----------------------------------------------------------------------------*/
-  .avatar {
-    -webkit-border-radius: 50%;
-    -moz-border-radois: 50%;
-    border-radius: 50%;
-    background: url("../images/avatar.jpg") no-repeat;
-    height: 130px;
-    width: 130px;
-    border: none;
-    background-size: cover;
-    margin: 0 auto;
-    padding: 0; }
-
-  /*	LHS navigation
-  ----------------------------------------------------------------------------*/
-  #main {
-    margin-bottom: 1em; }
-    #main ul {
-      margin: 0 auto; }
-
-  /*	Body copy
-  ----------------------------------------------------------------------------*/
-  #freelance a:hover {
-    color: #37a247;
-    border: none; }
-
-  #recentblog {
-    margin-top: 2.5em; }
-
-  /*	Article page
-  --------------------------------------------------------------------------------*/
-  .download {
-    width: 100px;
-    background-position: 0 0;
-    height: 175px; }
-
-  .content {
-    margin-top: 0; } }
-/*	810 and up
-------------------------------------------------------------------------------------*/
-@media screen and (min-width: 768px) {
-  /*--------------------------------------------------------------------------------
-  	Projects
-  --------------------------------------------------------------------------------*/
-  #post p:first-of-type {
-    font-size: 1.250em;
-    line-height: 1.5; } }
-/*	1024 and up
-------------------------------------------------------------------------------------*/
-@media (min-width: 1024px) {
-  /*	Uppernav
-  --------------------------------------------------------------------------------*/
-  #uppernav #monogram {
-    width: 58px;
-    height: 58px;
-    margin-top: 0;
-    margin-left: 10px;
-    -webkit-transition: all .5s ease-in-out; }
-
-  #title {
-    margin: 2em auto 0 auto; }
-
-  .avatar {
-    height: 155px;
-    width: 155px; } }
-/*	Retina styles
-------------------------------------------------------------------------------------*/
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dppx), only screen and (min-resolution: 2dppx) {
   .avatar {
     background: url("../images/avatar_@2x.jpg") no-repeat;
     background-size: cover;
     background-position: top; } }
+#projects .banner {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  height: 100vh; }
+  #projects .banner a {
+    color: white; }
+
+.heading-section {
+  position: absolute;
+  width: 100%;
+  opacity: 1;
+  padding: 0 5%;
+  width: 100vw;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .heading-section button {
+    margin-top: 5%; }
+  .heading-section p {
+    padding-top: 1em; }
+    @media screen and (min-width: 640px) {
+      .heading-section p {
+        width: 28em;
+        margin: 0 auto; } }
+
+/*----------------------------------------------------------------------------------------
+	Project page - mobile first
+----------------------------------------------------------------------------------------*/
+.slide {
+  background-attachment: fixed;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  margin-bottom: 4em;
+  padding-top: 1.5em; }
+  .slide img {
+    margin: 0 !important; }
+
+.banner {
+  color: white;
+  position: relative;
+  width: 100%;
+  height: 700px;
+  text-align: center;
+  margin-bottom: 5%; }
+  .banner small {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 31.76157%;
+    margin: 0 auto !important;
+    float: none;
+    line-height: 1.6;
+    padding-bottom: 20px; }
+    .banner small:last-child {
+      margin-right: 0; }
+
+.img-pull {
+  width: 118%;
+  margin-left: -9%; }
+  @media screen and (min-width: 640px) {
+    .img-pull {
+      width: 100%;
+      margin-left: 0; } }
+
+.project-copy {
+  clear: both;
+  overflow: hidden; }
+  .project-copy hr {
+    opacity: 0; }
+  .project-copy iframe {
+    width: 100%; }
+  @media screen and (min-width: 640px) {
+    .project-copy section {
+      position: relative;
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 65.88078%;
+      margin-left: 17.05961%; }
+      .project-copy section:last-child {
+        margin-right: 0; }
+    .project-copy small {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 31.76157%;
+      text-align: right;
+      margin-top: 2em;
+      padding-bottom: 30px;
+      position: absolute;
+      left: -35%;
+      color: #ff5b54;
+      line-height: 1.4; }
+      .project-copy small:last-child {
+        margin-right: 0; } }
+
+.slick-prev {
+  margin-right: 1%;
+  margin-top: 0;
+  background: url(../images/arrow-left.svg) no-repeat;
+  border: none;
+  box-shadow: none;
+  width: 50px !important;
+  height: 50px;
+  padding: 0; }
+  .slick-prev:hover {
+    background: url(../images/arrow-left.svg) no-repeat;
+    margin-right: 2% !important; }
+
+.slick-next {
+  margin-left: 1%;
+  margin-top: 0;
+  background: url(../images/arrow-right.svg) no-repeat;
+  border: none;
+  box-shadow: none;
+  width: 50px !important;
+  height: 50px;
+  padding: 0; }
+  .slick-next:hover {
+    background: url(../images/arrow-right.svg) no-repeat;
+    margin-left: 2% !important; }
+
+.photography-gallery, .product-gallery {
+  text-align: center; }
+  .photography-gallery .slick-slide img, .product-gallery .slick-slide img {
+    padding: 0 10px; }
+  .photography-gallery .slick-next, .product-gallery .slick-next {
+    margin-left: 1%;
+    width: auto; }
+
+.product-gallery .slick-slide {
+  width: 768px; }
+.product-gallery .slick-slide {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  opacity: 0.2; }
+.product-gallery .slick-center {
+  opacity: 1; }
+
+/*----------------------------------------------------------------------------------------
+	Movements
+----------------------------------------------------------------------------------------*/
+.movements-banner {
+  background: url(../images/work/movements/movements-photography.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+/*----------------------------------------------------------------------------------------
+	Compare the Market
+----------------------------------------------------------------------------------------*/
+.ctm-banner {
+  background: url(../images/work/ctm/ctm-bg.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+/*----------------------------------------------------------------------------------------
+	Chemist Direct
+----------------------------------------------------------------------------------------*/
+.cd-banner {
+  background: url(../images/work/chemistdirect/cd-bg.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+/*----------------------------------------------------------------------------------------
+	Icarus
+----------------------------------------------------------------------------------------*/
+.icarus-banner {
+  background: url(../images/work/icarus/icarus-photography.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+@media screen and (min-width: 640px) {
+  .icarus-watch {
+    background: url(../images/work/icarus/icarus-watch.png) no-repeat center center fixed;
+    background-size: 20%;
+    overflow: hidden; } }
+/*----------------------------------------------------------------------------------------
+	Rival Kingdoms
+----------------------------------------------------------------------------------------*/
+.rk-banner {
+  background: url(../images/work/rivalkingdoms/rk-bg.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+  .rk-banner .heading-section {
+    background: rgba(0, 0, 0, 0.4) !important; }
+
+@media screen and (min-width: 640px) {
+  .rk-illustration-one {
+    background: url(../images/work/rivalkingdoms/rk-tiamat.jpg) no-repeat center center fixed;
+    background-size: 30%;
+    overflow: hidden; }
+
+  .rk-illustration-two {
+    background: url(../images/work/rivalkingdoms/rk-gm.jpg) no-repeat center center fixed;
+    background-size: 30%;
+    overflow: hidden; } }
+/*----------------------------------------------------------------------------------------
+	MightyBee
+----------------------------------------------------------------------------------------*/
+.mb-banner {
+  background: url(../images/work/mightybee/mightybee-photography1.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+@media screen and (min-width: 640px) {
+  .mb-illustration {
+    background: url(../images/work/mightybee/mightybee-illustration.png) no-repeat center center fixed;
+    background-size: 20%;
+    overflow: hidden; } }
 
 /*# sourceMappingURL=style.min.css.map */

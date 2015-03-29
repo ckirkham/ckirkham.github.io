@@ -1,14 +1,14 @@
 ---
-layout: project
+layout: default
 title: Chemist Direct
 ---
 
-<div class="cd-banner banner" data-0="background-position:0px 0px;" data-100000="background-position:0px -50000px;">
-	<div class="heading-section" data-0="top: 200px; opacity: 1;" data-450="top: 370px; opacity:0;">
-		<h1>{{ page.title }}</h1>
-		<h3>E-Commerce Platform</h3>
-		<h4>UX, Visual design</h4>
-		<p>Case study of the Chemist Direct e-commerce site being re-built from the ground up for the responsive web, in a sprint led, agile workflow.</p>
+<div id="project-page" class="cd-banner banner" data-0="background-position: 0px 0px;" data-100000="background-position:0px -50000px;">
+	<div class="heading-section">
+		<div data-0="top: 200px; opacity: 1;" data-450="top: 370px; opacity:0;">
+			<h1>{{ page.title }}</h1>
+			<h4>UX, Visual design</h4>
+		</div>
 	</div>
 </div>
 

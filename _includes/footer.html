@@ -1,10 +1,10 @@
-	
 		<!-- JS -->
 		<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
 		<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 		{% capture root %}{% if page.root %}{{ page.root }}{% else %}{{ post.root }}{% endif %}{%endcapture%}
 		<script type="text/javascript" src="{{ root }}/assets/js/site.min.js"></script>
 		<script type="text/javascript">
+			// Modernizr initialisation
 			if (Modernizr.touch) {
 				skrollr.init().destroy();
 			} else {   
@@ -15,35 +15,35 @@
 				);
 			}
 
-			$(document).ready(function(){
-				$('.photography-gallery').slick({
+			// Slick initialisation
+			$('.photography-gallery').slick({
 				centerMode: true,
 				centerPadding: '60px',
 				slidesToShow: 3,
 				prevArrow: '<button type="button" class="slick-prev"></button>',
 				nextArrow: '<button type="button" class="slick-next"></button>',
 				responsive: [
-					{
-						breakpoint: 768,
-						settings: {
-						arrows: false,
-						centerMode: true,
-						centerPadding: '40px',
-						slidesToShow: 3
-					}
-				},
 				{
-					breakpoint: 480,
+					breakpoint: 768,
 					settings: {
-					    arrows: false,
-					    centerMode: true,
-					    centerPadding: '40px',
-					    slidesToShow: 1
-					}
+					arrows: false,
+					centerMode: true,
+					centerPadding: '40px',
+					slidesToShow: 3
 				}
-				]
-				});
-				$('.product-gallery').slick({
+			},
+			{
+				breakpoint: 480,
+				settings: {
+				    arrows: false,
+				    centerMode: true,
+				    centerPadding: '40px',
+				    slidesToShow: 1
+				}
+			}
+			]
+			});
+			$('.product-gallery').slick({
 				centerMode: true,
 				centerPadding: '60px',
 				slidesToShow: 3,
@@ -51,29 +51,51 @@
 				prevArrow: '<button type="button" class="slick-prev"></button>',
 				nextArrow: '<button type="button" class="slick-next"></button>',
 				responsive: [
-					{
-						breakpoint: 768,
-						settings: {
-						arrows: false,
-						centerMode: true,
-						centerPadding: '40px',
-						slidesToShow: 3
-					}
-				},
 				{
-					breakpoint: 480,
+					breakpoint: 768,
 					settings: {
-					    arrows: false,
-					    centerMode: true,
-					    centerPadding: '40px',
-					    slidesToShow: 1
-					}
+					arrows: false,
+					centerMode: true,
+					centerPadding: '40px',
+					slidesToShow: 3
 				}
-				]
-				});
+			},
+			{
+				breakpoint: 480,
+				settings: {
+				    arrows: false,
+				    centerMode: true,
+				    centerPadding: '40px',
+				    slidesToShow: 1
+				}
+			}
+			]
 			});
+
+			// Waypoints
+			$('#project-page').waypoint(function() {
+			    $('#uppernav').removeClass('scrolling');
+			}, {
+			    offset: '-70%'
+			});
+			$('#project-content').waypoint(function() {
+			    $('#uppernav').addClass('scrolling');
+			}, {
+			    offset: '5%'
+			});
+
+			// 
+			jQuery(document).ready(function() {
+			    jQuery('.toggle-nav').click(function(e) {
+			        jQuery(this).toggleClass('active');
+			        jQuery('#nav').toggleClass('active');
+			        e.preventDefault();
+			    });
+			});
+			
 		</script>
- 		{% if page.url == "/index.html" %}
+ 		{% if page.url == "/about.html" %}
+
 		<!-- PaperScript animation -->
 		<script type="text/paperscript" canvas="ballAnimation">
 			function getRandomArbitrary(min, max) {

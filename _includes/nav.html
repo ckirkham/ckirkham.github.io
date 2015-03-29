@@ -1,19 +1,14 @@
-<nav role="main" id="nav">
-{% if page.url != "/index.html" %}
-	<div id="uppernav">
-		<a href="/">
-			<svg id="monogram" class="white-label" xmlns="http://www.w3.org/2000/svg" viewBox="253.699 136.576 58 58">
-				<path d="M270.683,151.872c3.732,0,7.115,1.493,9.587,3.912l2.321-2.321c-3.065-3.014-7.269-4.874-11.907-4.874
-					c-9.381,0-16.986,7.605-16.986,16.986c0,9.381,7.605,16.986,16.986,16.986c4.638,0,8.842-1.86,11.907-4.874l-2.321-2.321
-					c-2.471,2.42-5.854,3.912-9.587,3.912c-7.569,0-13.704-6.136-13.704-13.704C256.979,158.007,263.115,151.872,270.683,151.872z"/>
-				<polygon points="311.701,148.59 307.058,148.59 292.389,163.259 292.389,163.258 290.067,165.579 290.068,165.58 290.067,165.581 
-					292.389,167.902 292.389,167.901 307.05,182.561 311.692,182.561 294.711,165.58 	"/>
-			</svg>
-		</a>
-		<ul>
-			<li><a href="http://ckirkham.github.io/blog.html" title="Blog">Blog</a></li>
-		    <li><a href="http://ckirkham.github.io/projects.html" title="Projects">Projects</a></li>
-		</ul>
-	</div>
-{% endif %}
+<nav role="main" id="nav" class="active">
+	<ul id="uppernav">
+		<li><a id="link-home" href="http://ckirkham.github.io">Christian Kirkham</a></li>
+		<li><a id="link-about" href="http://ckirkham.github.io/about.html" title="About">About</a></li>
+		<li><a id="link-blog" href="http://ckirkham.github.io/essays.html" title="Blog">Essays</a></li>
+	    <li><a id="link-projects" href="http://ckirkham.github.io" title="Projects">Projects</a></li>
+	    <li><a id="link-photography" href="#" title="Photography"><strike>Photography</strike></a></li>
+	</ul>
 </nav>
+
+<ul id="mobile-nav">
+	<li><a id="link-home" href="http://ckirkham.github.io">Christian Kirkham</a></li>
+	<li><a class="toggle-nav" href="#">Menu</a></li>
+</ul>

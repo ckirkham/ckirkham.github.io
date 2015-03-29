@@ -1,15 +1,15 @@
 ---
-layout: project
+layout: default
 title: Movements
 visible: 1
 ---
 
-<div class="movements-banner banner" data-0="background-position: 0px 0px;" data-100000="background-position:0px -50000px;">
-	<div class="heading-section" data-0="top: 200px; opacity: 1;" data-450="top: 370px; opacity:0;">
-		<h1>{{ page.title }}</h1>
-		<h3>Web application service</h3>
-		<h4>UX, Visual design</h4>
-		<p>Movements is crowdsourcing human rights. It connects human rights activists in closed societies with those with skills to help them around the world.</p>
+<div id="project-page" class="movements-banner banner" data-0="background-position: 0px 0px;" data-100000="background-position:0px -50000px;">
+	<div class="heading-section">
+		<div data-0="top: 200px; opacity: 1;" data-450="top: 370px; opacity:0;">
+			<h1>{{ page.title }}</h1>
+			<h4>UX, Visual design</h4>
+		</div>
 	</div>
 </div>
 

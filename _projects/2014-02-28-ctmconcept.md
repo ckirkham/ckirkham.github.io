@@ -1,15 +1,15 @@
 ---
-layout: project
+layout: default
 title: Compare the Market Meerkat App
 visible: 1
 ---
 
-<div class="ctm-banner banner" data-0="background-position:0px 0px;" data-100000="background-position:0px -50000px;">
-	<div class="heading-section" data-0="top: 200px; opacity: 1;" data-450="top: 370px; opacity:0;">
-		<h1>{{ page.title }}</h1>
-		<h3>Vision Service design</h3>
-		<h4>UX, Visual design</h4>
-		<p>Meerkat app was a conceptual piece, created to work out the future stepping stones for the Compare the Market service proposition.</p>
+<div id="project-page" class="ctm-banner banner" data-0="background-position: 0px 0px;" data-100000="background-position:0px -50000px;">
+	<div class="heading-section">
+		<div data-0="top: 200px; opacity: 1;" data-450="top: 370px; opacity:0;">
+			<h1>{{ page.title }}</h1>
+			<h4>UX, Visual design</h4>
+		</div>
 	</div>
 </div>
 
