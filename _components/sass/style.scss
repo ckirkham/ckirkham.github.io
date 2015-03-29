@@ -14,7 +14,9 @@
 ------------------------------------------------------------------------------------*/
 .wrapper {
 	@include outer-container;
+	padding: 0 30px;
 	@media screen and (min-width: 640px) {
+		padding: 0;
 		.col-three {	@include span-columns(3); }
 		.col-four {	@include span-columns(4); }
 		.col-four-shift-one { @include span-columns(4); @include shift(1) }
@@ -116,12 +118,12 @@
 		@extend #uppernav;
 	    display:none;
 		width: 100%;
-		padding: 0 15px;
+		padding: 0 20px;
 	    float: left;
 		border-top: 5px solid #ff5b54;
 	    display:inline-block;
 	    position: fixed;
-	    z-index: 10000;
+	    z-index: 1000000000;
 	    a {
 	    	border: none;
 	    	float: left;
@@ -217,6 +219,7 @@
 	}
 	.scrolling li a { color: black !important; }
 	.active { color: $coral-red !important; }
+	.noscroll { overflow: hidden; }
 
 /*----------------------------------------------------------------------------------------
 3. 	Specific pages
@@ -250,7 +253,7 @@
 			position: fixed;
 			top: 0;
 			left: 0;
-			z-index: -100;
+			z-index: -100000000000;
 		}
 	}
 	.home-header {
@@ -265,7 +268,7 @@
     		}
     	}
     	p {
-			padding: 35px;
+			padding: 30px;
 		}
 		@media screen and (min-width: 640px) {
 			background: none;
@@ -289,17 +292,18 @@
 		}
 	}
 	#home-social {
-		text-align: center;
+		text-align: left;
 		width: 100%;
 		clear: both;
 		padding-top: 1.5em;
-		padding-bottom: 8%;
+		padding: 0 30px 8% 10px;
 		position: relative;
 		bottom: 0;
 		left: 0;
 		@media screen and (min-width: 640px) {
-			padding-bottom: 3%;
 			position: absolute;
+			text-align: center;
+			padding: 0 0 3% 0;
 		}
 		ul { list-style: none; }
 		li { font-size: 14px; }
@@ -373,6 +377,7 @@
 			font-weight: 700;
 			margin-top: 5px;
 			text-transform: uppercase;
+			text-align: center;
 			@media screen and (min-width: 640px) {
 				float: left;
 				width: auto;
@@ -417,6 +422,15 @@
 		@media screen and (min-width: 640px) {
 			section { position: relative; @include span-columns(8);	@include shift(2); }
 			small {	@include span-columns(4); text-align: right; margin-top: 2em; padding-bottom: 30px;	position: absolute; left: -35%;	color: #ff5b54;	line-height: 1.4; } } }
+	#project-page {
+		.heading-section {
+			div {
+				position: absolute;
+				width: 100%;
+				left: 0;
+			}
+		}
+	}
 	/*----------------------------------------------------------------------------------------
 		Movements
 	----------------------------------------------------------------------------------------*/

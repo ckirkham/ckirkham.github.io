@@ -194,6 +194,7 @@ a, a img {
   max-width: 68em;
   margin-left: auto;
   margin-right: auto;
+  padding: 0 30px;
 }
 .wrapper {
   *zoom: 1;
@@ -206,6 +207,9 @@ a, a img {
   clear: both;
 }
 @media screen and (min-width: 640px) {
+  .wrapper {
+    padding: 0;
+  }
   .wrapper .col-three {
     float: left;
     display: block;
@@ -574,12 +578,12 @@ button:hover a {
 #mobile-nav {
   display: none;
   width: 100%;
-  padding: 0 15px;
+  padding: 0 20px;
   float: left;
   border-top: 5px solid #ff5b54;
   display: inline-block;
   position: fixed;
-  z-index: 10000;
+  z-index: 1000000000;
 }
 #mobile-nav a {
   border: none;
@@ -703,6 +707,10 @@ button:hover a {
   color: #ff5b54 !important;
 }
 
+.noscroll {
+  overflow: hidden;
+}
+
 /*----------------------------------------------------------------------------------------
 3. 	Specific pages
 ----------------------------------------------------------------------------------------*/
@@ -742,7 +750,7 @@ button:hover a {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: -100;
+    z-index: -100000000000;
   }
 }
 
@@ -761,7 +769,7 @@ button:hover a {
   }
 }
 .home-header p {
-  padding: 35px;
+  padding: 30px;
 }
 @media screen and (min-width: 640px) {
   .home-header {
@@ -787,19 +795,20 @@ button:hover a {
 }
 
 #home-social, footer {
-  text-align: center;
+  text-align: left;
   width: 100%;
   clear: both;
   padding-top: 1.5em;
-  padding-bottom: 8%;
+  padding: 0 30px 8% 10px;
   position: relative;
   bottom: 0;
   left: 0;
 }
 @media screen and (min-width: 640px) {
   #home-social, footer {
-    padding-bottom: 3%;
     position: absolute;
+    text-align: center;
+    padding: 0 0 3% 0;
   }
 }
 #home-social ul, footer ul {
@@ -898,6 +907,7 @@ footer p:first-child {
   font-weight: 700;
   margin-top: 5px;
   text-transform: uppercase;
+  text-align: center;
 }
 @media screen and (min-width: 640px) {
   footer p:first-child {
@@ -1062,6 +1072,12 @@ footer ul li a {
   .project-copy small:last-child {
     margin-right: 0;
   }
+}
+
+#project-page .heading-section div {
+  position: absolute;
+  width: 100%;
+  left: 0;
 }
 
 /*----------------------------------------------------------------------------------------
