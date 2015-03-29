@@ -657,8 +657,11 @@ footer {
     padding: 0 5%;
     width: 100vw;
     height: 100%;
+    display: -webkit-flex;
     display: flex;
+    -webkit-align-items: center;
     align-items: center;
+    -webkit-justify-content: center;
     justify-content: center; }
     .home-header p {
       width: 28em;
@@ -728,8 +731,11 @@ footer {
   width: 100vw;
   height: 100%;
   background: rgba(0, 0, 0, 0.7);
+  display: -webkit-flex;
   display: flex;
+  -webkit-align-items: center;
   align-items: center;
+  -webkit-justify-content: center;
   justify-content: center; }
   .heading-section button {
     margin-top: 5%; }

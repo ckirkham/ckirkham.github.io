@@ -300,8 +300,11 @@
 		    padding: 0 5%;
 		    width: 100vw;
 		    height: 100%;
+			display: -webkit-flex;
 			display: flex;
+			-webkit-align-items: center;
 			align-items: center;
+			-webkit-justify-content: center;
 			justify-content: center;
 	    	p {
 		    	width: 28em;
@@ -425,8 +428,11 @@ only screen and (                min-resolution: 2dppx) {
     width: 100vw;
     height: 100%;
 	background: rgba(0,0,0,0.7);
+	display: -webkit-flex;
 	display: flex;
+	-webkit-align-items: center;
 	align-items: center;
+	-webkit-justify-content: center;
 	justify-content: center;
     button {
 		margin-top: 5%;
