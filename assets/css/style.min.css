@@ -773,7 +773,6 @@ button:hover a {
 }
 @media screen and (min-width: 640px) {
   .home-header {
-    background: none;
     width: 100%;
     opacity: 1;
     padding: 0 5%;
@@ -785,6 +784,7 @@ button:hover a {
     align-items: center;
     -webkit-justify-content: center;
     justify-content: center;
+    z-index: -10;
   }
   .home-header p {
     width: 28em;
@@ -1036,7 +1036,6 @@ footer ul li a {
 
 .project-copy {
   clear: both;
-  overflow: hidden;
 }
 .project-copy hr {
   opacity: 0;
@@ -1045,6 +1044,9 @@ footer ul li a {
   width: 100%;
 }
 @media screen and (min-width: 640px) {
+  .project-copy {
+    overflow: hidden;
+  }
   .project-copy section {
     position: relative;
     float: left;
