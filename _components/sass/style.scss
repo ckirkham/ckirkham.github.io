@@ -6,7 +6,6 @@
 @import 'reset.scss';
 @import 'mixins.scss';
 @import 'slick.scss';
-@import 'projects.scss';
 @import url("http://fonts.googleapis.com/css?family=Lato:300,400,400italic,700");
 
 /*------------------------------------------------------------------------------------
@@ -47,7 +46,7 @@
 	h3 { font-size: 0.750em; font-weight: 700; margin-bottom: 0.5em; text-transform: uppercase; letter-spacing: 1px; line-height: 2.5;
 		@media screen and (min-width: 810px) { font-size: 1em; } }
 	h4 { @extend h3; font-size: 0.750em; color: $coral-red;	}
-	a {	color: $off-black; text-decoration: none; border-bottom: 1px solid $coral-red; }
+	a {	color: $off-black; text-decoration: none; border-bottom: 1px solid $coral-red; padding-bottom: 3px; }
 	a:hover { color: #ff5b54; border: none; }
 	p {	line-height: 1.75em; margin-bottom: 1em; font-weight: 400;
 		&:last-child { margin-bottom: 2em; } }
@@ -87,11 +86,11 @@
 	------------------------------------------------------------------------------------*/
 	@font-face {
 		font-family: 'icomoon';
-		src:url('../fonts/icomoon.eot?-u3lgtw');
-		src:url('../fonts/icomoon.eot?#iefix-u3lgtw') format('embedded-opentype'),
-			url('../fonts/icomoon.woff?-u3lgtw') format('woff'),
-			url('../fonts/icomoon.ttf?-u3lgtw') format('truetype'),
-			url('../fonts/icomoon.svg?-u3lgtw#icomoon') format('svg');
+		src:url('../fonts/icomoon.eot?-4o7ij6');
+		src:url('../fonts/icomoon.eot?#iefix-4o7ij6') format('embedded-opentype'),
+			url('../fonts/icomoon.woff?-4o7ij6') format('woff'),
+			url('../fonts/icomoon.ttf?-4o7ij6') format('truetype'),
+			url('../fonts/icomoon.svg?-4o7ij6#icomoon') format('svg');
 		font-weight: normal;
 		font-style: normal;
 	}
@@ -107,10 +106,13 @@
 		-webkit-font-smoothing: antialiased;
 		-moz-osx-font-smoothing: grayscale;
 	}
+	.icon-arrow-right:before { content: "\ea3c"; }
+	.icon-arrow-left:before { content: "\ea40"; }
 	.icon-twitter:before { content: "\ea91"; }
 	.icon-dribbble:before { content: "\eaa6"; }
 	.icon-github:before { content: "\eab2"; }
 	.icon-linkedin:before { content: "\eac9"; }
+
 	/*----------------------------------------------------------------------------------------
 		Navigation
 	----------------------------------------------------------------------------------------*/
@@ -227,24 +229,6 @@
 	/*------------------------------------------------------------------------------------
 		Homepage
 	------------------------------------------------------------------------------------*/
-	.avatar {
-		background: url('../img/avatar.jpg') no-repeat;
-		width: 100%;
-		background-size: cover;
-		background-position: 0;
-		padding-top: 40%;
-		padding-bottom: 20%;
-		@media screen and (min-width: 640px) {
-			@include circle(50%);
-			background: url('../images/avatar.jpg') no-repeat;
-			height: 130px;
-			width: 130px;
-			border: none;
-			background-size: cover;
-			margin: 0 auto;
-			padding: 0;
-		}
-	}
 	#ballAnimation {
 		display: none;
 		@media screen and (min-width: 640px) {
@@ -257,23 +241,41 @@
 		}
 	}
 	.home-header {
-		position: relative;
 		color: white;
 		background: $off-black;
 		section {
     		width: 100%;
     		@media screen and (min-width: 640px) {
-    			position: absolute;
     			left: 0;
     		}
     	}
     	p {
 			padding: 30px;
+			width: 100%;
+			padding-top: 100px;
+			a {
+				color: white;
+				&:hover {
+					color: $coral-red;
+				}
+			}
+			@media screen and (min-width: 640px) {
+				width: 100%;
+				font-size: 1.5em;
+				line-height: 1.5;
+				padding: 0 40px;
+			}
+			@media screen and (min-width: 768px) {
+				width: 70%;
+			}
+			@media screen and (min-width: 1024px) {
+				width: 55%;
+			}
 		}
 		@media screen and (min-width: 640px) {
 		    width: 100%;
 		    opacity: 1;
-		    padding: 0 5%;
+		    padding: 0;
 		    width: 100vw;
 		    height: 95%;
 			display: -webkit-flex;
@@ -282,43 +284,7 @@
 			align-items: center;
 			-webkit-justify-content: center;
 			justify-content: center;
-			z-index: -10;
-	    	p {
-		    	width: 28em;
-				padding: 1em 0 0 0;
-				margin: 0 auto;
-				text-align: center;
-		    }
-		}
-	}
-	#home-social {
-		text-align: left;
-		width: 100%;
-		clear: both;
-		padding-top: 1.5em;
-		padding: 0 30px 8% 10px;
-		position: relative;
-		bottom: 0;
-		left: 0;
-		@media screen and (min-width: 640px) {
-			position: absolute;
-			text-align: center;
-			padding: 0 0 3% 0;
-		}
-		ul { list-style: none; }
-		li { font-size: 14px; }
-		.social {
-			text-decoration: none;
-			color: $cloud-white;
-			border: none;
-			font-size: 0.750em;
-			padding: 5%;
-			@media screen and (min-width: 640px) {
-				padding: 2%;
-			}
-			&:hover {
-				color: $coral-red;
-			}
+			background: none;
 		}
 	}
 	#projects {
@@ -367,8 +333,7 @@
 		Footer
 	------------------------------------------------------------------------------------*/
 	footer {
-		@extend #home-social;
-		position: relative !important;
+		
 		background: $cloud-white;
 		padding: 30px;
 		p:first-child {
@@ -390,8 +355,18 @@
 			}
 			li {
 				display: inline;
-				a {
+				.social {
+					text-decoration: none;
+					border: none;
+					font-size: 0.750em;
+					padding: 5%;
 					color: $off-black !important;
+					&:hover {
+						color: $coral-red !important;
+					}
+					@media screen and (min-width: 640px) {
+						padding: 2%;
+					}
 				}
 			}
 		}
@@ -399,200 +374,197 @@
 	/*------------------------------------------------------------------------------------
 		Project page - mobile first
 	------------------------------------------------------------------------------------*/
-	.slick-prev { margin-right: 1%; margin-top: 0; background: url(../images/arrow-left.svg) no-repeat;	border: none; box-shadow: none;	width: 50px !important;	height: 50px; padding: 0;
-		&:hover { background: url(../images/arrow-left.svg) no-repeat; margin-right: 2% !important;	} }
-	.slick-next { margin-left: 1%; margin-top: 0; background: url(../images/arrow-right.svg) no-repeat; border: none; box-shadow: none; width: 50px !important; height: 50px; padding: 0;
-		&:hover { background: url(../images/arrow-right.svg) no-repeat; margin-left: 2% !important; } }
-	.photography-gallery { text-align: center;
-		.slick-slide img { padding: 0 10px; }
-		.slick-next { margin-left: 1%; width: auto;	} }
-	.product-gallery { @extend .photography-gallery;
-		.slick-slide { width: 768px; }
-		.slick-slide { -webkit-transition: all 0.3s ease; -moz-transition: all 0.3s ease; -o-transition: all 0.3s ease; -ms-transition: all 0.3s ease; transition: all 0.3s ease; opacity: 0.2; }
-		.slick-center { opacity: 1; } }
+	.gallery { @include outer-container; }
+	.slick-prev, .slick-next { -webkit-transition: all 0.3s ease; -moz-transition: all 0.3s ease; -o-transition: all 0.3s ease; -ms-transition: all 0.3s ease; transition: all 0.3s ease; }
+	.slick-prev { display: inline; float: left; border: none; cursor: pointer; padding-left: 5%;
+		&:hover { color: $coral-red; }
+		@media screen and (min-width: 1100px) {
+			padding: 0;
+		}
+	}
+	.slick-next { display: inline; float: right; border: none; cursor: pointer; padding-right: 5%;
+		&:hover { color: $coral-red; }
+		@media screen and (min-width: 1100px) {
+			padding: 0;
+		}
+	}
 	.img-pull { width: 118%; margin-left: -9%;
 		@media screen and (min-width: 640px) { width: 100%;	margin-left: 0;	} }
 	.slide { background-attachment: fixed; width:100%; height:100%;	position: relative;	margin-bottom: 4em;	padding-top: 1.5em;
 		img { margin: 0 !important; } }
 	.banner { color: white; position: relative; width: 100%; height: 700px;	text-align: center; margin-bottom: 5%;
 		small {	@include span-columns(4); margin: 0 auto !important; float: none; line-height: 1.6;	padding-bottom: 20px; } }
-	.project-copy {	clear: both;
+	.project-copy {	clear: both; overflow: hidden;
 		hr { opacity: 0; }
 		iframe { width: 100%; }
 		@media screen and (min-width: 640px) {
-			overflow: hidden;
+			overflow: visible;
 			section { position: relative; @include span-columns(8);	@include shift(2); }
-			small {	@include span-columns(4); text-align: right; margin-top: 2em; padding-bottom: 30px;	position: absolute; left: -35%;	color: #ff5b54;	line-height: 1.4; } } }
-	#project-page {
-		.heading-section {
-			div {
-				position: absolute;
-				width: 100%;
-				left: 0;
+		}
+		@media screen and (min-width: 810px) {
+			small {	@include span-columns(3); text-align: right; margin-top: 1em; padding-bottom: 30px;	position: absolute; left: -25%;	color: #ff5b54;	line-height: 1.4;
 			}
 		}
 	}
-	/*----------------------------------------------------------------------------------------
-		Movements
-	----------------------------------------------------------------------------------------*/
-	.movements-banner {
-		background: url(../images/work/movements/movements-photography.jpg) no-repeat center center;
-		-webkit-background-size: cover;	-moz-background-size: cover; -o-background-size: cover;	background-size: cover;
-	}
-	/*----------------------------------------------------------------------------------------
-		Compare the Market
-	----------------------------------------------------------------------------------------*/
-	.ctm-banner {
-		background: url(../images/work/ctm/ctm-bg.jpg) no-repeat center center;
-		-webkit-background-size: cover;	-moz-background-size: cover; -o-background-size: cover;	background-size: cover;
-	}
-	/*----------------------------------------------------------------------------------------
-		Chemist Direct
-	----------------------------------------------------------------------------------------*/
-	.cd-banner {
-		background: url(../images/work/chemistdirect/cd-bg.jpg) no-repeat center center;
-		-webkit-background-size: cover;	-moz-background-size: cover; -o-background-size: cover;	background-size: cover;
-	}
-	/*----------------------------------------------------------------------------------------
-		Icarus
-	----------------------------------------------------------------------------------------*/
-	.icarus-banner {
-		background: url(../images/work/icarus/icarus-photography.jpg) no-repeat center center;
-		-webkit-background-size: cover;	-moz-background-size: cover; -o-background-size: cover;	background-size: cover;
-	}
-	@media screen and (min-width: 640px) {
-		.icarus-watch {
-			background: url(../images/work/icarus/icarus-watch.png) no-repeat center center;
-			background-size: 20%;
-			overflow: hidden;
+	.heading-section {
+	    position: absolute;
+	    width: 100%;
+	    opacity: 1;
+	    padding: 0 5%;
+	    width: 100vw;
+	    height: 100%;
+		background: rgba(0,0,0,0.7);
+		display: -webkit-flex;
+		display: flex;
+		-webkit-align-items: center;
+		align-items: center;
+		-webkit-justify-content: center;
+		justify-content: center;
+		div {
+			width: 100%;
 		}
-	}
-	/*----------------------------------------------------------------------------------------
-		Rival Kingdoms
-	----------------------------------------------------------------------------------------*/
-	.rk-banner {
-		background: url(../images/work/rivalkingdoms/rk-bg.jpg) no-repeat center center;
-		-webkit-background-size: cover;	-moz-background-size: cover; -o-background-size: cover;	background-size: cover;
-		.heading-section {
-			background: rgba(0,0,0,0.4) !important;
+	    button {
+			margin-top: 5%;
 		}
-	}
-	@media screen and (min-width: 640px) {
-		.rk-illustration-one {
-			background: url(../images/work/rivalkingdoms/rk-tiamat.jpg) no-repeat center center;
-			background-size: 30%;
-			overflow: hidden;
-		}
-		.rk-illustration-two {
-			background: url(../images/work/rivalkingdoms/rk-gm.jpg) no-repeat center center;
-			background-size: 30%;
-			overflow: hidden;
-		}
-	}
-	/*----------------------------------------------------------------------------------------
-		MightyBee
-	----------------------------------------------------------------------------------------*/
-	.mb-banner {
-		background: url(../images/work/mightybee/mightybee-photography1.jpg) no-repeat center center;
-		-webkit-background-size: cover;	-moz-background-size: cover; -o-background-size: cover;	background-size: cover;
-	}
-	@media screen and (min-width: 640px) {
-		.mb-illustration {
-			background: url(../images/work/mightybee/mightybee-illustration.png) no-repeat center center;
-			background-size: 20%;
-			overflow: hidden;
-		}
-	}
-
-/*----------------------------------------------------------------------------------------
-4. 	Other
-----------------------------------------------------------------------------------------*/
-@media
-only screen and (-webkit-min-device-pixel-ratio: 2),
-only screen and (   min--moz-device-pixel-ratio: 2),
-only screen and (     -o-min-device-pixel-ratio: 2/1),
-only screen and (        min-device-pixel-ratio: 2),
-only screen and (                min-resolution: 192dppx),
-only screen and (                min-resolution: 2dppx) { 
-	.avatar {
-		background: url('../images/avatar_@2x.jpg') no-repeat;
-		background-size: cover;
-		background-position: top;
-	}
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.heading-section {
-    position: absolute;
-    width: 100%;
-    opacity: 1;
-    padding: 0 5%;
-    width: 100vw;
-    height: 100%;
-	background: rgba(0,0,0,0.7);
-	display: -webkit-flex;
-	display: flex;
-	-webkit-align-items: center;
-	align-items: center;
-	-webkit-justify-content: center;
-	justify-content: center;
-    button {
-		margin-top: 5%;
-	}
-	p {
-		padding-top: 1em;
-    	@media screen and (min-width: 640px) {
-   	    	width: 28em;
-			margin: 0 auto;
+		p {
+			padding-top: 1em;
+	    	@media screen and (min-width: 640px) {
+	   	    	width: 28em;
+				margin: 0 auto;
+		    }
 	    }
-    }
-}
+	}
+	/*----------------------------------------------------------------------------------------
+		Project specifics
+	----------------------------------------------------------------------------------------*/
+		/*----------------------------------------------------------------------------------------
+			Movements
+		----------------------------------------------------------------------------------------*/
+		.movements-banner {
+			background: url(../images/work/movements/movements-photography.jpg) no-repeat center center;
+			-webkit-background-size: cover;	-moz-background-size: cover; -o-background-size: cover;	background-size: cover;
+		}
+		/*----------------------------------------------------------------------------------------
+			Compare the Market
+		----------------------------------------------------------------------------------------*/
+		.ctm-banner {
+			background: url(../images/work/ctm/ctm-bg.jpg) no-repeat center center;
+			-webkit-background-size: cover;	-moz-background-size: cover; -o-background-size: cover;	background-size: cover;
+		}
+		/*----------------------------------------------------------------------------------------
+			Chemist Direct
+		----------------------------------------------------------------------------------------*/
+		.cd-banner {
+			background: url(../images/work/chemistdirect/cd-bg.jpg) no-repeat center center;
+			-webkit-background-size: cover;	-moz-background-size: cover; -o-background-size: cover;	background-size: cover;
+		}
+		/*----------------------------------------------------------------------------------------
+			Icarus
+		----------------------------------------------------------------------------------------*/
+		.icarus-banner {
+			background: url(../images/work/icarus/icarus-photography.jpg) no-repeat center center;
+			-webkit-background-size: cover;	-moz-background-size: cover; -o-background-size: cover;	background-size: cover;
+		}
+		@media screen and (min-width: 640px) {
+			.icarus-watch {
+				background: url(../images/work/icarus/icarus-watch.png) no-repeat center center;
+				background-size: 20%;
+				overflow: hidden;
+			}
+		}
+		/*----------------------------------------------------------------------------------------
+			Rival Kingdoms
+		----------------------------------------------------------------------------------------*/
+		.rk-banner {
+			background: url(../images/work/rivalkingdoms/rk-bg.jpg) no-repeat center center;
+			-webkit-background-size: cover;	-moz-background-size: cover; -o-background-size: cover;	background-size: cover;
+		}
+		@media screen and (min-width: 640px) {
+			.rk-illustration-one {
+				background: url(../images/work/rivalkingdoms/rk-tiamat.jpg) no-repeat center center;
+				background-size: 30%;
+				overflow: hidden;
+			}
+			.rk-illustration-two {
+				background: url(../images/work/rivalkingdoms/rk-gm.jpg) no-repeat center center;
+				background-size: 30%;
+				overflow: hidden;
+			}
+		}
+		/*----------------------------------------------------------------------------------------
+			MightyBee
+		----------------------------------------------------------------------------------------*/
+		.mb-banner {
+			background: url(../images/work/mightybee/mightybee-photography1.jpg) no-repeat center center;
+			-webkit-background-size: cover;	-moz-background-size: cover; -o-background-size: cover;	background-size: cover;
+		}
+		@media screen and (min-width: 640px) {
+			.mb-illustration {
+				background: url(../images/work/mightybee/mightybee-illustration.png) no-repeat center center;
+				background-size: 20%;
+				overflow: hidden;
+			}
+		}
+
+	/*----------------------------------------------------------------------------------------
+		Photography specifics
+	----------------------------------------------------------------------------------------*/
+		/*----------------------------------------------------------------------------------------
+			Bangkok
+		----------------------------------------------------------------------------------------*/
+		.bangkok-banner {
+			background: url(../images/photography/covers/bangkok-cover.jpg) no-repeat center center;
+			-webkit-background-size: cover;	-moz-background-size: cover; -o-background-size: cover;	background-size: cover;
+		}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 		
 

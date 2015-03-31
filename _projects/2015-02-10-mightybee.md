@@ -40,7 +40,7 @@ visible: 1
 		</section>
 	</section>
 
-	<div class="photography-gallery">
+	<div class="gallery">
 		<div><img src="{{ root }}/assets/images/work/mightybee/mightybee-photography1.jpg"></div>
 		<div><img src="{{ root }}/assets/images/work/mightybee/mightybee-photography2.jpg"></div>
 		<div><img src="{{ root }}/assets/images/work/mightybee/mightybee-photography3.jpg"></div>

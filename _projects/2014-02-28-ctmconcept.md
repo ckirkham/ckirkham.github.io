@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Compare the Market Meerkat App
+title: Meerkat App
 visible: 1
 ---
 
@@ -45,7 +45,7 @@ visible: 1
 		</section>
 	</section>
 
-	<div class="product-gallery">
+	<div class="gallery">
 		<div><img src="{{ root }}/assets/images/work/ctm/ctm-1.jpg"></div>
 		<div><img src="{{ root }}/assets/images/work/ctm/ctm-2.jpg"></div>
 		<div><img src="{{ root }}/assets/images/work/ctm/ctm-3.jpg"></div>

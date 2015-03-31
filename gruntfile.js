@@ -64,19 +64,19 @@ module.exports = function(grunt){
         //         src: ['index.html']
         //     }
         // },
-        imagemin: {
-            options: {
-                cache: false
-            },
-            dist: {
-                files: [{
-                    expand: true,
-                    cwd: '_components/images/',
-                    src: ['**/*.{png,jpg,gif}'],
-                    dest: 'assets/images/'
-                }]
-            }
-        },
+        // imagemin: {
+        //     options: {
+        //         cache: false
+        //     },
+        //     dist: {
+        //         files: [{
+        //             expand: true,
+        //             cwd: '_components/images/',
+        //             src: ['**/*.{png,jpg,gif}'],
+        //             dest: 'assets/images/'
+        //         }]
+        //     }
+        // },
         watch: {
             // html: {
             //     files: ['index.html'],
@@ -94,7 +94,8 @@ module.exports = function(grunt){
     });
     
     grunt.registerTask('default',   []);
-    grunt.registerTask('build',     ['buildcss', 'buildjs', 'imagemin']);
+    grunt.registerTask('build',     ['buildcss', 'buildjs']);
+    // grunt.registerTask('build',     ['buildcss', 'buildjs', 'imagemin']);
     grunt.registerTask('buildcss',  ['sass']);
     // grunt.registerTask('buildjs',   ['jshint', 'concat', 'uglify']);
     grunt.registerTask('buildjs',   ['jshint', 'concat']);

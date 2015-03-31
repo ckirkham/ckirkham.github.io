@@ -413,6 +413,7 @@ a {
   color: #262626;
   text-decoration: none;
   border-bottom: 1px solid #ff5b54;
+  padding-bottom: 3px;
 }
 
 a:hover {
@@ -538,8 +539,8 @@ button:hover a {
 ------------------------------------------------------------------------------------*/
 @font-face {
   font-family: 'icomoon';
-  src: url("../fonts/icomoon.eot?-u3lgtw");
-  src: url("../fonts/icomoon.eot?#iefix-u3lgtw") format("embedded-opentype"), url("../fonts/icomoon.woff?-u3lgtw") format("woff"), url("../fonts/icomoon.ttf?-u3lgtw") format("truetype"), url("../fonts/icomoon.svg?-u3lgtw#icomoon") format("svg");
+  src: url("../fonts/icomoon.eot?-4o7ij6");
+  src: url("../fonts/icomoon.eot?#iefix-4o7ij6") format("embedded-opentype"), url("../fonts/icomoon.woff?-4o7ij6") format("woff"), url("../fonts/icomoon.ttf?-4o7ij6") format("truetype"), url("../fonts/icomoon.svg?-4o7ij6#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -554,6 +555,14 @@ button:hover a {
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-arrow-right:before {
+  content: "\ea3c";
+}
+
+.icon-arrow-left:before {
+  content: "\ea40";
 }
 
 .icon-twitter:before {
@@ -717,29 +726,6 @@ button:hover a {
 /*------------------------------------------------------------------------------------
 	Homepage
 ------------------------------------------------------------------------------------*/
-.avatar {
-  background: url("../img/avatar.jpg") no-repeat;
-  width: 100%;
-  background-size: cover;
-  background-position: 0;
-  padding-top: 40%;
-  padding-bottom: 20%;
-}
-@media screen and (min-width: 640px) {
-  .avatar {
-    -webkit-border-radius: 50%;
-    -moz-border-radois: 50%;
-    border-radius: 50%;
-    background: url("../images/avatar.jpg") no-repeat;
-    height: 130px;
-    width: 130px;
-    border: none;
-    background-size: cover;
-    margin: 0 auto;
-    padding: 0;
-  }
-}
-
 #ballAnimation {
   display: none;
 }
@@ -755,7 +741,6 @@ button:hover a {
 }
 
 .home-header {
-  position: relative;
   color: white;
   background: #262626;
 }
@@ -764,18 +749,43 @@ button:hover a {
 }
 @media screen and (min-width: 640px) {
   .home-header section {
-    position: absolute;
     left: 0;
   }
 }
 .home-header p {
   padding: 30px;
+  width: 100%;
+  padding-top: 100px;
+}
+.home-header p a {
+  color: white;
+}
+.home-header p a:hover {
+  color: #ff5b54;
+}
+@media screen and (min-width: 640px) {
+  .home-header p {
+    width: 100%;
+    font-size: 1.5em;
+    line-height: 1.5;
+    padding: 0 40px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .home-header p {
+    width: 70%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .home-header p {
+    width: 55%;
+  }
 }
 @media screen and (min-width: 640px) {
   .home-header {
     width: 100%;
     opacity: 1;
-    padding: 0 5%;
+    padding: 0;
     width: 100vw;
     height: 95%;
     display: -webkit-flex;
@@ -784,53 +794,8 @@ button:hover a {
     align-items: center;
     -webkit-justify-content: center;
     justify-content: center;
-    z-index: -10;
+    background: none;
   }
-  .home-header p {
-    width: 28em;
-    padding: 1em 0 0 0;
-    margin: 0 auto;
-    text-align: center;
-  }
-}
-
-#home-social, footer {
-  text-align: left;
-  width: 100%;
-  clear: both;
-  padding-top: 1.5em;
-  padding: 0 30px 8% 10px;
-  position: relative;
-  bottom: 0;
-  left: 0;
-}
-@media screen and (min-width: 640px) {
-  #home-social, footer {
-    position: absolute;
-    text-align: center;
-    padding: 0 0 3% 0;
-  }
-}
-#home-social ul, footer ul {
-  list-style: none;
-}
-#home-social li, footer li {
-  font-size: 14px;
-}
-#home-social .social, footer .social {
-  text-decoration: none;
-  color: #fbfbfb;
-  border: none;
-  font-size: 0.750em;
-  padding: 5%;
-}
-@media screen and (min-width: 640px) {
-  #home-social .social, footer .social {
-    padding: 2%;
-  }
-}
-#home-social .social:hover, footer .social:hover {
-  color: #ff5b54;
 }
 
 #projects .banner {
@@ -897,7 +862,6 @@ button:hover a {
 	Footer
 ------------------------------------------------------------------------------------*/
 footer {
-  position: relative !important;
   background: #fbfbfb;
   padding: 30px;
 }
@@ -926,67 +890,79 @@ footer ul {
 footer ul li {
   display: inline;
 }
-footer ul li a {
+footer ul li .social {
+  text-decoration: none;
+  border: none;
+  font-size: 0.750em;
+  padding: 5%;
   color: #262626 !important;
+}
+footer ul li .social:hover {
+  color: #ff5b54 !important;
+}
+@media screen and (min-width: 640px) {
+  footer ul li .social {
+    padding: 2%;
+  }
 }
 
 /*------------------------------------------------------------------------------------
 	Project page - mobile first
 ------------------------------------------------------------------------------------*/
-.slick-prev {
-  margin-right: 1%;
-  margin-top: 0;
-  background: url(../images/arrow-left.svg) no-repeat;
-  border: none;
-  box-shadow: none;
-  width: 50px !important;
-  height: 50px;
-  padding: 0;
+.gallery {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
 }
-.slick-prev:hover {
-  background: url(../images/arrow-left.svg) no-repeat;
-  margin-right: 2% !important;
+.gallery {
+  *zoom: 1;
 }
-
-.slick-next {
-  margin-left: 1%;
-  margin-top: 0;
-  background: url(../images/arrow-right.svg) no-repeat;
-  border: none;
-  box-shadow: none;
-  width: 50px !important;
-  height: 50px;
-  padding: 0;
+.gallery:before, .gallery:after {
+  content: "";
+  display: table;
 }
-.slick-next:hover {
-  background: url(../images/arrow-right.svg) no-repeat;
-  margin-left: 2% !important;
+.gallery:after {
+  clear: both;
 }
 
-.photography-gallery, .product-gallery {
-  text-align: center;
-}
-.photography-gallery .slick-slide img, .product-gallery .slick-slide img {
-  padding: 0 10px;
-}
-.photography-gallery .slick-next, .product-gallery .slick-next {
-  margin-left: 1%;
-  width: auto;
-}
-
-.product-gallery .slick-slide {
-  width: 768px;
-}
-.product-gallery .slick-slide {
+.slick-prev, .slick-next {
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  opacity: 0.2;
 }
-.product-gallery .slick-center {
-  opacity: 1;
+
+.slick-prev {
+  display: inline;
+  float: left;
+  border: none;
+  cursor: pointer;
+  padding-left: 5%;
+}
+.slick-prev:hover {
+  color: #ff5b54;
+}
+@media screen and (min-width: 1100px) {
+  .slick-prev {
+    padding: 0;
+  }
+}
+
+.slick-next {
+  display: inline;
+  float: right;
+  border: none;
+  cursor: pointer;
+  padding-right: 5%;
+}
+.slick-next:hover {
+  color: #ff5b54;
+}
+@media screen and (min-width: 1100px) {
+  .slick-next {
+    padding: 0;
+  }
 }
 
 .img-pull {
@@ -1036,6 +1012,7 @@ footer ul li a {
 
 .project-copy {
   clear: both;
+  overflow: hidden;
 }
 .project-copy hr {
   opacity: 0;
@@ -1045,7 +1022,7 @@ footer ul li a {
 }
 @media screen and (min-width: 640px) {
   .project-copy {
-    overflow: hidden;
+    overflow: visible;
   }
   .project-copy section {
     position: relative;
@@ -1058,16 +1035,18 @@ footer ul li a {
   .project-copy section:last-child {
     margin-right: 0;
   }
+}
+@media screen and (min-width: 810px) {
   .project-copy small {
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 31.76157%;
+    width: 23.23176%;
     text-align: right;
-    margin-top: 2em;
+    margin-top: 1em;
     padding-bottom: 30px;
     position: absolute;
-    left: -35%;
+    left: -25%;
     color: #ff5b54;
     line-height: 1.4;
   }
@@ -1076,12 +1055,40 @@ footer ul li a {
   }
 }
 
-#project-page .heading-section div {
+.heading-section {
   position: absolute;
   width: 100%;
-  left: 0;
+  opacity: 1;
+  padding: 0 5%;
+  width: 100vw;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+.heading-section div {
+  width: 100%;
+}
+.heading-section button {
+  margin-top: 5%;
+}
+.heading-section p {
+  padding-top: 1em;
+}
+@media screen and (min-width: 640px) {
+  .heading-section p {
+    width: 28em;
+    margin: 0 auto;
+  }
 }
 
+/*----------------------------------------------------------------------------------------
+	Project specifics
+----------------------------------------------------------------------------------------*/
 /*----------------------------------------------------------------------------------------
 	Movements
 ----------------------------------------------------------------------------------------*/
@@ -1143,9 +1150,6 @@ footer ul li a {
   -o-background-size: cover;
   background-size: cover;
 }
-.rk-banner .heading-section {
-  background: rgba(0, 0, 0, 0.4) !important;
-}
 
 @media screen and (min-width: 640px) {
   .rk-illustration-one {
@@ -1179,41 +1183,17 @@ footer ul li a {
   }
 }
 /*----------------------------------------------------------------------------------------
-4. 	Other
+	Photography specifics
 ----------------------------------------------------------------------------------------*/
-@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dppx), only screen and (min-resolution: 2dppx) {
-  .avatar {
-    background: url("../images/avatar_@2x.jpg") no-repeat;
-    background-size: cover;
-    background-position: top;
-  }
-}
-.heading-section {
-  position: absolute;
-  width: 100%;
-  opacity: 1;
-  padding: 0 5%;
-  width: 100vw;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.7);
-  display: -webkit-flex;
-  display: flex;
-  -webkit-align-items: center;
-  align-items: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-}
-.heading-section button {
-  margin-top: 5%;
-}
-.heading-section p {
-  padding-top: 1em;
-}
-@media screen and (min-width: 640px) {
-  .heading-section p {
-    width: 28em;
-    margin: 0 auto;
-  }
+/*----------------------------------------------------------------------------------------
+	Bangkok
+----------------------------------------------------------------------------------------*/
+.bangkok-banner {
+  background: url(../images/photography/covers/bangkok-cover.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 /*# sourceMappingURL=style.min.css.map */
