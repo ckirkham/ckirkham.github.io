@@ -1,4 +1,6 @@
-// Modernizr
+/*------------------------------------------------------------------------------------------------------
+1. Modernizr
+------------------------------------------------------------------------------------------------------*/
 if (Modernizr.touch) {
 	skrollr.init().destroy();
 } else {   
@@ -8,15 +10,23 @@ if (Modernizr.touch) {
 		}
 	);
 }
-			
-// Slick initialisation
-
+/*------------------------------------------------------------------------------------------------------
+2. Slick initialisation
+------------------------------------------------------------------------------------------------------*/
 $('.gallery').slick({
 	prevArrow: '<span class="icon-arrow-left slick-prev"></span>',
 	nextArrow: '<span class="icon-arrow-right slick-next"></span>'
 });
+$('.photography-gallery').slick({
+	arrows: false
+});
 
-// Waypoints
+/*------------------------------------------------------------------------------------------------------
+3. Waypoints
+------------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------
+	3.1 Black to white transition
+------------------------------------------------------------------------------------------------------*/
 $('#project-page').waypoint(function() {
     $('#uppernav').removeClass('scrolling');
     $('#mobile-nav').removeClass('scrolling');
@@ -29,8 +39,21 @@ $('#project-content').waypoint(function() {
 }, {
     offset: '5%'
 });
+/*------------------------------------------------------------------------------------------------------
+	3.2 Home page projects active transition
+------------------------------------------------------------------------------------------------------*/
+$('#top').waypoint(function() {
+    $('#nav #uppernav li a#link-projects').removeClass('active');
+}, {
+    offset: '-90%'
+});
+$('#projects').waypoint(function() {
+    $('#nav #uppernav li a#link-projects').addClass('active');
+});
 
-// Mobile navigation
+/*------------------------------------------------------------------------------------------------------
+4. Mobile navigation
+------------------------------------------------------------------------------------------------------*/
 $('.toggle-nav').click(function(e) {
 	var $this = $(this);
 	$(this).toggleClass('active');
@@ -44,14 +67,25 @@ $('.toggle-nav').click(function(e) {
 	$('#nav').fadeToggle('active');
 	e.preventDefault();
 });
-// Remove 'display: none' caused by fadeToggle class
+/*------------------------------------------------------------------------------------------------------
+	4.1 Remove 'display: none' caused by fadeToggle class
+------------------------------------------------------------------------------------------------------*/
 $(window).resize(function(){
 	if(window.outerWidth >= 768){
 		$('#nav').css('display', '');
 	} else {
 	}
 });
-	
+
+/*------------------------------------------------------------------------------------------------------
+5. Smooth scroll anchors
+------------------------------------------------------------------------------------------------------*/
+$('.anchor').click(function(){
+    $('html, body').animate({
+        scrollTop: $( $(this).attr('href') ).offset().top
+    }, 500);
+    return false;
+});
 
 
 
