@@ -14,6 +14,25 @@ title: Christian Kirkham
 </section>
 
 <div id="projects">
+<!-- 
+
+	<div class="heading-section">
+		<h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+	</div> -->
+
+	<section class="wrapper" style="background: white;">
+		<ul id="blog">
+			{% for post in site.posts %}
+				<li>
+					<small>Posted on </small>
+					<small>{{ post.date | date: "%B %d, %Y" }}</small>
+					<h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+				</li>
+				<hr>
+		  	{% endfor %}
+		</ul>
+	</section>
+
 
 	<div class="ctm-banner banner">
 		<div class="heading-section">
