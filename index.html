@@ -13,100 +13,43 @@ title: Christian Kirkham
 	<canvas id="ballAnimation" resize="true" keepalive="true" width="100%" style="background-color: #262626"></canvas>
 </section>
 
-<div id="projects">
-<!-- 
+<hr class="seperator">
 
-	<div class="heading-section">
-		<h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
-	</div> -->
+<section id="projects">
+	<ul class="wrapper">
+		<li><a href="">Nike Training Club 5.0</a></li><hr>
+		<li><a href="">Meerkat</a></li><hr>
+		<li><a href="">Icarus Concierge</a></li><hr>
+		<li><a href="">Google Material Design</a></li><hr>
+		<li><a href="">Alara</a></li>
+	</ul>
+</section>
 
-	<section class="wrapper" style="background: white;">
-		<ul id="blog">
-			{% for post in site.posts %}
-				<li>
-					<small>Posted on </small>
-					<small>{{ post.date | date: "%B %d, %Y" }}</small>
-					<h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
-				</li>
-				<hr>
-		  	{% endfor %}
-		</ul>
-	</section>
+<hr class="seperator">
 
+<section id="attribution">
+	<h2>Awards / Nominations</h2>
+	<ul class="items">
+		<li>D&amp;AD Nomination</li>
+		<li>Featured work on Al Jazeera</li>
+		<li>Featured work on Wall Street Journal</li>
+	</ul>
 
-	<div class="ctm-banner banner">
-		<div class="heading-section">
-			<div>
-				<h1>Meerkat App</h1>
-				<p>Meerkat app was a conceptual piece, created to work out the future stepping stones for the Compare the Market service proposition.</p>
-				<button>
-					<a href="{{ root }}/projects/2014-02-28-ctmconcept.html">View project</a>
-				</button>
-			</div>
-		</div>
-	</div>
+	<h2>Work history</h2>
+	<ul class="items">
+		<li>Reason Digital</li>
+		<li>Albion</li>
+		<li>Gin + Bourbon</li>
+		<li>AKQA</li>
+	</ul>
 
-	<div class="icarus-banner banner">
-		<div class="heading-section">
-			<div>
-				<h1>Icarus Concierge</h1>
-				<p>Icarus is an exclusive members concierge service that caters to high-quality lifestyle individuals.</p>
-				<button>
-					<a href="{{ root }}/projects/2014-02-23-icarus.html">View project</a>
-				</button>
-			</div>
-		</div>
-	</div>
-
-	<div class="cd-banner banner">
-		<div class="heading-section">
-			<div>
-				<h1>Chemist Direct</h1>
-				<p>Case study of the Chemist Direct e-commerce site being re-built from the ground up for the responsive web, in a sprint led, agile workflow.</p>
-				<button>
-					<a href="{{ root }}/projects/2013-07-14-chemistdirect.html">View project</a>
-				</button>
-			</div>
-		</div>
-	</div>
-
-	<div class="movements-banner banner">
-		<div class="heading-section">
-			<div>
-				<h1>Movements</h1>
-				<p>Movements is crowdsourcing human rights. It connects human rights activists in closed societies with those with skills to help them around the world.</p>
-				<button>
-					<a href="{{ root }}/projects/2014-06-21-movements.html">View project</a>
-				</button>
-			</div>
-		</div>
-	</div>
-
-	<div class="rk-banner banner">
-		<div class="heading-section">
-			<div>
-				<h1>Rival Kingdoms</h1>
-				<p>Responsive &amp; interactive launch site for Rival Kingdoms, the new iOS MMO strategy game created by Space Ape games.</p>
-				<button>
-					<a href="{{ root }}/projects/2014-11-14-rivalkingdoms.html">View project</a>
-				</button>
-			</div>
-		</div>
-	</div>
-
-	<div class="mb-banner banner">
-		<div class="heading-section">
-			<div>
-				<h1>MightyBee</h1>
-				<p>MightyBee is an organic coconut water brand dealing in London.</p>
-				<button>
-					<a href="{{ root }}/projects/2015-02-10-mightybee.html">View project</a>
-				</button>
-			</div>
-		</div>
-	</div>
-
-</div>
+	<h2>Other</h2>
+	<ul class="items">
+		<li>CV Download</li>
+		<li>???</li>
+		<li>???</li>
+	</ul>
+</section>
 
 <script type="text/javascript">
     // $('#nav #uppernav li a#link-projects').addClass('active');
