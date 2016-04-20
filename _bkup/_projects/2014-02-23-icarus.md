@@ -1,0 +1,72 @@
+---
+layout: default
+title: Icarus Concierge
+visible: 1
+---
+
+<div id="project-page" class="icarus-banner banner" data-0="background-position: 0px 0px;" data-100000="background-position:0px 50000px;">
+	<div class="heading-section">
+		<div data-0="top: 200px; opacity: 1;" data-450="top: 370px; opacity:0;">
+			<h1>{{ page.title }}</h1>
+			<h4>UX, Visual design, Front-end development, Animation</h4>
+			<p>Icarus is an exclusive members concierge service that caters to high-quality lifestyle individuals.</p>
+		</div>
+	</div>
+</div>
+
+<div id="project-content" class="icarus-watch" data-0="background-position: 95% 5500px;" data-100000="background-position: 95% -50000px;">
+	<section class="wrapper project-copy">
+		<section>
+			<h2>Overview</h2>
+			<p>Short term project for concierge service Icarus. The design of the site was crafted from the original brand identity, designed by Alex Reed.</p>
+			<p>The primary goal for the site was to show a stylish and high class service, that would act as a holding page that we could expand upon and grow with them over time.</p>
+			<p>A short video was created to showcase the tone of Icarus offering, to be played on the home page of the website to give people an introductory feel to the company.</p>
+			<iframe src="https://player.vimeo.com/video/120904044?color=d89842&title=0&byline=0&portrait=0" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+		</section>
+
+		<hr />
+
+		<section>
+			<h2>UX Process</h2>
+			<p>The user experience process was quite a simple one, being that the site could primarily sit on a single page. Quite a lot of information was required to be presented on one page however, including functionality such as a membership application form, carousels, video &amp; fixed imagery.</p>
+			<p>As requirements changed clientside, we adapted existing layouts and included new sections such as membership variant information to co-incide with the businesses changing KPI's.</p>
+		</section>
+		<img class="img-pull" src="{{ root }}/assets/images/work/icarus/icarus-onepage.png">
+		<section>
+			<small>The membership form had to work as a modal overlay on the page.</small>
+			<img src="{{ root }}/assets/images/work/icarus/icarus-form.png">
+		</section>
+		<section>
+			<small>A new membership section was required with a clearer layout.</small>
+			<img src="{{ root }}/assets/images/work/icarus/icarus-membership.png">
+		</section>
+
+		<hr />
+
+		<section>
+			<h2>UI Design &amp; Front-end development</h2>
+			<p>Site design was completed for a responsive approach, mobile first. Designs were constructed for mobile, tablet and desktop, with an emphasis on functionality on breakpoints over 768px.</p>
+			<p>When it came to developing the site, we used the <a href="http://flask.pocoo.org">Flask Python microframework</a> due to it's simplicity and versatility. We knew that at a later date we would be building in a members back-end system and the ability to purchase a membership through the website, and Flask allows this flexibility with ease.</p>
+			<button>
+				<a href="http://www.icarusconcierge.com" title="Icarus Concierge">Go to icarusconcierge.com</a>
+			</button>
+			<br /><br />
+			<a href="https://twitter.com/share" class="twitter-share-button" data-via="Chris_Kirkham" data-text="<?php echo article_title(); ?>" data-related="Chris_Kirkham" data-hashtags="<?php echo category_title(); ?>">Tweet</a>
+			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+		</section>
+
+		<hr />
+
+		<img class="col-twelve img-pull" src="{{ root }}/assets/images/work/icarus/icarus-online.png">
+
+		<hr />
+
+		<section>
+			<h2>Future development</h2>
+			<p>Currently we are working to create a new product for Icarus that will work seamlessly with an iPhone app and companion Apple Watch application. The goal of this product is to give customers of Icarus a service which they can interface directly with when they want something, at a tap.</p>
+		</section>
+
+		<hr />
+
+	</div>
+</section>
