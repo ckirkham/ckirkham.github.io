@@ -1,0 +1,69 @@
+/*	Screen sizes mobile and up
+----------------------------------------------------------------------------------------*/
+.grid-container {
+	@extend .clearfix;
+	/* padding: 0 10%; */
+	padding: 0 5%;
+	margin: 0 auto;
+	position: relative;
+	overflow: hidden;
+}
+
+/*	Screen sizes 640px and up
+----------------------------------------------------------------------------------------*/
+@media (min-width: 640px) {
+
+	.grid-container {
+		padding: 0;
+		max-width: 1024px;
+		padding-left: 1% !important;
+		padding-right: 1% !important;
+	}
+	
+	.grid-1 {
+		@include column(1);
+	}
+	.grid-2 {
+		@include column(2);
+	}
+	.grid-3 {
+		@include column(3);
+	}
+	.grid-4 {
+		@include column(4);
+	}
+	.grid-5 {
+		@include column(5);
+	}
+	.grid-6 {
+		@include column(6);
+	}
+	.grid-7 {
+		@include column(7);
+	}
+	.grid-8 {
+		@include column(8);
+	}
+	.grid-9 {
+		@include column(9);
+	}
+	.grid-10 {
+		@include column(10);
+	}
+	.grid-11 {
+		@include column(11);
+	}
+	.grid-12 {
+		@include column(12);
+	}
+	
+	.grid-1,
+	.grid-2,
+	.grid-3,
+	.grid-4,
+	.grid-5,
+	.grid-6 {
+		margin-bottom: 1em;
+	}
+
+}

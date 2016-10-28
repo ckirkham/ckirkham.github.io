@@ -1,0 +1,117 @@
+/* -------------------------------------------------------------------------------------------------
+	Imports
+--------------------------------------------------------------------------------------------------*/
+/* ---------------------------------------------------------------------------------------------
+	Libraries
+----------------------------------------------------------------------------------------------*/
+
+#logo {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 10000;
+	width: 100%;
+	margin-top: 2%;
+	margin-left: 2%;
+	opacity: 0.5;
+}
+
+#logo svg {
+	width: 150px;
+	height: 100%;
+}
+
+#contact {
+	list-style-type: none;
+	position: absolute;
+	margin-top: 2%;
+	z-index: 10000;
+	float: right;
+	padding-right: 2%;
+	text-align: right;
+	right: 0;
+}
+#contact li {
+	margin-bottom: 20px;
+}
+#contact a {
+	font-size: 0.5em;
+	color: white;
+	opacity: 0.5;
+	text-decoration: underline;
+	display: block;
+}
+#contact a:hover {
+	-webkit-animation: all;
+	opacity: 1;
+	text-decoration: none;
+}
+
+
+
+
+
+
+
+#slides {
+  position: relative;
+}
+#slides .slides-container {
+  display: none;
+}
+#slides .scrollable {
+  *zoom: 1;
+  position: relative;
+  top: 0;
+  left: 0;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  height: 100%;
+}
+#slides .scrollable:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.slides-navigation {
+	position: absolute;
+	z-index: 10000;
+	width: 102px;
+	bottom: 0;
+	right: 0;
+	margin-right: 2%;
+	margin-bottom: 2%;
+	opacity: 0.5;
+}
+.slides-navigation:hover {
+	opacity: 1;
+}
+.slides-navigation .next img {
+	width: 50%;
+	float: right;
+	-webkit-transform: rotate(180deg);
+	-moz-transform: rotate(180deg);
+	position: relative;
+	bottom: 14px;
+}
+.slides-navigation .prev img {
+	width: 50%;
+	float: left;
+}
+
+@media screen and (max-width: 640px) {
+
+	#logo {
+		bottom: 0;
+		top: auto;
+		margin-bottom: 2%;
+	}
+	#logo svg {
+		width: 100px;
+	}
+	
+	#contact {
+		display: none;
+	}
+
+}

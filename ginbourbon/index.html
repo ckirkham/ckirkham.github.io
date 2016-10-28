@@ -1,0 +1,116 @@
+<!DOCTYPE HTML>
+<!--[if IEMobile 7 ]><html class="no-js iem7" manifest="default.appcache?v=1"><![endif]--> 
+<!--[if lt IE 7 ]><html class="no-js ie6" lang="en"><![endif]--> 
+<!--[if IE 7 ]><html class="no-js ie7" lang="en"><![endif]--> 
+<!--[if IE 8 ]><html class="no-js ie8" lang="en"><![endif]--> 
+<!--[if (gte IE 9)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<html>
+	<head>
+	
+		<title>Gin + Bourbon</title>
+	
+		<!-- Meta -->
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta http-equiv="ClearType" content="true">
+		<meta name="description" content="Closer, Live in Lagos is a live performance based off of the hit play "Closer" by Patrick Marber.">
+		<meta name="viewport" content="width=device-width">
+		<meta property="og:title" content="Closer, Live in Lagos">
+		<meta property="og:type" content="website">
+		<meta property="og:url" content="http://www.closerlagos.com">
+		<meta property="og:site_name" content="Closer, Live in Lagos">
+		<meta property="og:description" content="Closer, Live in Lagos is a live performance based off of the hit play "Closer" by Patrick Marber.">
+		
+		<!-- DNS prefetch -->
+		<link rel="dns-prefetch" href="//ajax.googleapis.com">
+		<link rel="dns-prefetch" href="//www.google-analytics.com">
+		
+		<!-- Primary stylesheet -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/superslides.css">
+		<link rel="stylesheet" href="css/style.css">
+		
+		<!-- Google fonts -->
+		<link href='http://fonts.googleapis.com/css?family=Muli:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
+		
+		<!-- Favicon solutions respectively; apple touch icons, PNG favicon for FF, Chrome & Opera, .ico for IE < 10, Windows 8 tileicon for Metro interfaces -->
+		<link rel="apple-touch-icon" href="images/apple-touch-icon-iphone.png" />
+		<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-ipad.png" />
+		<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-iphone-retina.png" />
+		<link rel="apple-touch-icon" sizes="144x144" href="images/apple-touch-icon-ipad-retina.png" />
+		<link rel="icon" href="images/favicon.png">
+		<!--[if IE]><link rel="shortcut icon" href="images/favicon.ico"><![endif]-->
+		<!-- or, set /favicon.ico for IE10 win -->
+		<meta name="msapplication-TileColor" content="#ff5b54">
+		<meta name="msapplication-TileImage" content="images/tileicon.png">
+		
+		<!-- Logo SVG; see http://relogo.org -->
+		<link rel="logo" type="image/svg" href="http://www.wergb.co/images/monogram.svg"/>
+		
+		<!--[if lt IE 9]>
+			<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+	
+	</head>
+	
+	<body>
+	
+		<?php include_once("analyticstracking.php") ?>
+	
+		<div id="slides">
+		
+			<div id="logo">
+				
+				<img src="images/Logo.svg" style="width: 100px">
+			
+			</div>
+			
+			<!-- <nav class="slides-navigation">
+		      <a href="#" class="next"><img src="images/arrow.svg" /></a>
+		      <a href="#" class="prev"><img src="images/arrow.svg" /></a>
+		    </nav> -->
+		
+			<div class="slides-container">
+				<img src="images/01.jpg">
+				<img src="images/02.jpg">
+				<img src="images/03.jpg">
+				<img src="images/04.jpg">
+				<img src="images/05.jpg">
+				<img src="images/06.jpg">
+				<img src="images/07.jpg">
+				<img src="images/08.jpg">
+				<img src="images/09.jpg">
+				<img src="images/10.jpg">
+				<img src="images/11.jpg">
+			</div>
+			
+		</div>
+	
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="js/jquery.easing.1.3.js"></script>
+		<script src="js/jquery.animate-enhanced.min.js"></script>
+		<script src="js/hammer.min.js"></script>
+		<script src="js/jquery.superslides.js"></script>
+		<script>
+			$(function() {
+				
+				var $slides = $('#slides').superslides({
+					pagination: false
+				});
+				
+				Hammer($slides[0]).on("swipeleft", function(e) {
+					$slides.data('superslides').animate('next');
+				});
+				
+				Hammer($slides[0]).on("swiperight", function(e) {
+					$slides.data('superslides').animate('prev');
+				});
+				
+				$slides.superslides({
+					hashchange: true
+				});
+			});
+		</script>
+	
+	</body>
+</html>
