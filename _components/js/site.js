@@ -11,35 +11,6 @@ if (Modernizr.touch) {
 	);
 }
 /*------------------------------------------------------------------------------------------------------
-2. Slick initialisation
-------------------------------------------------------------------------------------------------------*/
-$('.gallery').slick({
-	prevArrow: '<span class="icon-arrow-left slick-prev"></span>',
-	nextArrow: '<span class="icon-arrow-right slick-next"></span>'
-});
-$('.photography-gallery').slick({
-	arrows: false
-});
-
-/*------------------------------------------------------------------------------------------------------
-3. Waypoints
-------------------------------------------------------------------------------------------------------*/
-/*------------------------------------------------------------------------------------------------------
-	3.1 Black to white transition
-------------------------------------------------------------------------------------------------------*/
-$('#project-page').waypoint(function() {
-    $('#uppernav').removeClass('scrolling');
-    $('#mobile-nav').removeClass('scrolling');
-}, {
-    offset: '-70%'
-});
-$('#project-content').waypoint(function() {
-    $('#uppernav').addClass('scrolling');
-    $('#mobile-nav').addClass('scrolling');
-}, {
-    offset: '5%'
-});
-/*------------------------------------------------------------------------------------------------------
 	3.2 Home page projects active transition
 ------------------------------------------------------------------------------------------------------*/
 $('#top').waypoint(function() {
@@ -91,7 +62,29 @@ $('.anchor').click(function(){
 
 
 
-
+$(document).ready(function() {
+    
+    /* Every time the window is scrolled ... */
+    $(window).scroll( function(){
+    
+        /* Check the location of each desired element */
+        $('.hideme').each( function(i){
+            
+            var bottom_of_object = $(this).offset().top + $(this).outerHeight() - $(window).height()/1.3;
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            
+            /* If the object is completely visible in the window, fade it it */
+            if( bottom_of_window > bottom_of_object ){
+                
+                $(this).animate({'opacity':'1'},500);
+                    
+            }
+            
+        }); 
+    
+    });
+    
+});
 
 
 

@@ -7,5 +7,3 @@ repository: https://github.com/ckirkham/ckirkham.github.io
 collections:
   projects:
     output: true
-  photography:
-    output: true
