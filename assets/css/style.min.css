@@ -1034,8 +1034,13 @@ footer ul li .social:hover {
 }
 
 .project-wrapper {
-  margin-top: -10%;
+  margin-top: -100%;
   position: relative;
+}
+@media screen and (min-width: 640px) {
+  .project-wrapper {
+    margin-top: -10%;
+  }
 }
 
 .data {
