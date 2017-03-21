@@ -7,7 +7,7 @@ visible: 1
 description: Working at <a href="http://www.akqa.com">AKQA</a>, I worked to rehaul the Nike Training experience. Our aim was to create a fitness experience for everybody, that can transcend cultures and guide users to greatness.
 ---
 
-<div id="project-page" class="ntc-banner banner" data-0="background-position: 0px 0px;" data-100000="background-position:0px 50000px;">
+<div id="project-page" class="ntc-banner banner">
 	<div class="heading-section">
 	</div>
 </div>

@@ -927,7 +927,7 @@ footer ul li .social:hover {
   color: white;
   position: relative;
   width: 100%;
-  height: 700px;
+  height: 50%;
   text-align: center;
 }
 .banner small {
@@ -1034,7 +1034,7 @@ footer ul li .social:hover {
 }
 
 .project-wrapper {
-  margin-top: -100%;
+  margin-top: -50%;
   position: relative;
 }
 @media screen and (min-width: 640px) {
