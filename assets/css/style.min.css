@@ -188,14 +188,24 @@ h1, h2, h3, h4, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 1.5em;
+  font-size: 1.25em;
   margin-bottom: 2rem;
   hyphens: none;
   font-family: 'Vollkorn', serif;
 }
-@media screen and (min-width: 640px) {
+@media (min-width: 35em) {
   h1 {
-    font-size: 2.25em;
+    font-size: 1.5em;
+  }
+}
+@media (min-width: 48em) {
+  h1 {
+    font-size: 1.75em;
+  }
+}
+@media (min-width: 70em) {
+  h1 {
+    font-size: 2em;
   }
 }
 h1 a {
@@ -582,35 +592,7 @@ button:hover a {
 .home-header {
   position: relative;
 }
-.home-header h1 {
-  padding: 25% 0 5% 0;
-  width: calc(100% - 2rem);
-  float: left;
-  margin-left: 1rem;
-}
-@media (min-width: 48em) {
-  .home-header h1 {
-    width: calc(62.5% - 32.5px);
-    float: left;
-    margin-left: 20px;
-    position: fixed;
-    padding: 0;
-  }
-}
-@media (min-width: 70em) {
-  .home-header h1 {
-    width: calc(66.66667% - 33.33333px);
-    float: left;
-    margin-left: 20px;
-  }
-}
-.home-header h1 a {
-  color: white;
-}
-.home-header h1 a:hover {
-  color: #ff5b54;
-}
-@media screen and (min-width: 640px) {
+@media (min-width: 35em) {
   .home-header {
     opacity: 1;
     height: 95%;
@@ -620,6 +602,55 @@ button:hover a {
     align-items: center;
     background: none;
   }
+}
+@media (min-width: 35em) {
+  .home-header div {
+    position: fixed;
+  }
+}
+.home-header h1 {
+  width: calc(100% - 2rem);
+  float: left;
+  margin-left: 1rem;
+}
+.home-header h1:first-child {
+  padding-top: 25%;
+}
+.home-header h1:last-child {
+  padding-bottom: 5%;
+}
+@media (min-width: 35em) {
+  .home-header h1 {
+    width: calc(100% - 40px);
+    float: left;
+    margin-left: 20px;
+  }
+  .home-header h1:first-child {
+    padding-top: 0;
+  }
+  .home-header h1:last-child {
+    padding-bottom: 0;
+  }
+}
+@media (min-width: 48em) {
+  .home-header h1 {
+    width: calc(87.5% - 37.5px);
+    float: left;
+    margin-left: 20px;
+  }
+}
+@media (min-width: 70em) {
+  .home-header h1 {
+    width: calc(75% - 35px);
+    float: left;
+    margin-left: 20px;
+  }
+}
+.home-header h1 a {
+  color: white;
+}
+.home-header h1 a:hover {
+  color: #ff5b54;
 }
 
 #projects {
@@ -720,7 +751,11 @@ footer div, footer .copyright {
 footer .copyright {
   position: absolute;
   bottom: 5%;
-  width: 90%;
+  max-width: 90%;
+}
+footer .copyright small {
+  display: block;
+  line-height: 1.4;
 }
 @media screen and (max-height: 730px) {
   footer {
@@ -735,39 +770,51 @@ footer .copyright {
   }
 }
 
-/*------------------------------------------------------------------------------------
-	Project page - mobile first
-------------------------------------------------------------------------------------*/
-/*--------------------------------------------------------------------------------------------
-	Project specifics
---------------------------------------------------------------------------------------------*/
 /*----------------------------------------------------------------------------------------
-	Nike
+	Projects
 ----------------------------------------------------------------------------------------*/
 .ntc-banner {
-  background: url(../images/work/ntc/hero.jpg) no-repeat center center;
+  background: url(../images/hero-ntc.jpg) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 
-/*----------------------------------------------------------------------------------------
-	Tag Heuer Connected
-----------------------------------------------------------------------------------------*/
 .tag-banner {
-  background: url(../images/work/tag/hero.png) no-repeat center center;
+  background: url(../images/hero-tag.jpg) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 
-/*----------------------------------------------------------------------------------------
-	Matchpint
-----------------------------------------------------------------------------------------*/
 .ctm-banner {
-  background: url(../images/work/ctm/hero.png) no-repeat center center;
+  background: url(../images/hero-ctm.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.mb-banner {
+  background: url(../images/hero-mb.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.rr-banner {
+  background: url(../images/hero-rr.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.matchpint-banner {
+  background: url(../images/hero-matchpint.jpg) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
