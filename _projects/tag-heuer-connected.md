@@ -7,10 +7,7 @@ visible: 1
 description: Coming soon.
 ---
 
-<div id="project-page" class="tag-banner banner" data-0="background-position: 0px 0px;" data-100000="background-position:0px 50000px;">
-	<div class="heading-section">
-	</div>
-</div>
+<div id="project-page" class="tag-banner banner"><div class="heading-section"></div></div>
 
 <div class="wrapper project-wrapper">
 	
@@ -18,4 +15,13 @@ description: Coming soon.
 	<h4 class="col-eight shift-two">User Experience, Prototyping, Information Architecture</h4>
 	<p class="col-eight shift-two project-study-introduction">{{ page.description }}</p>
 
+</div>
+
+<div class="ntc-banner banner hideme">
+	<div>
+		<h1>Nike Training Club 5.0</h1>
+		<button>
+			<a href="{{ root }}/projects/nike-training-club.html">View project</a>
+		</button>
+	</div>
 </div>

@@ -7,10 +7,7 @@ visible: 1
 description: Working at <a href="http://www.akqa.com">AKQA</a>, I worked to rehaul the Nike Training experience. Our aim was to create a fitness experience for everybody, that can transcend cultures and guide users to greatness.
 ---
 
-<div id="project-page" class="ntc-banner banner">
-	<div class="heading-section">
-	</div>
-</div>
+<div id="project-page" class="ntc-banner banner"><div class="heading-section"></div></div>
 
 <div class="wrapper project-wrapper">
 	
@@ -67,7 +64,7 @@ description: Working at <a href="http://www.akqa.com">AKQA</a>, I worked to reha
 	<hr />
 
 	<video src="{{ root }}/assets/images/work/ntc/ntc-plan.mp4" class="col-four project-nomobile" autoplay loop></video>
-	<h2 class="col-seven">The Plan</h2>
+	<h2 class="col-seven">The 'Workout Plan'</h2>
 	<section class="col-seven">
 		<p>One of the most advanced and consistently refined experiences was 'The Plan'. This allowed users to create an intelligent system that guided them to workout at specific times of the work, and provided them the most apporopriate workout level and time for their preferences.</p>
 		<p>We developed an adaptive training engine that learns from behaviour. Tell us how hard you pushed and we’ll combine it with personal data, to give you training at the right intensity and focus, next time.</p>
@@ -82,10 +79,11 @@ description: Working at <a href="http://www.akqa.com">AKQA</a>, I worked to reha
 ">Instrument</a>, another agency in Portland, Oregon. Together we came up with a concept of a unified brand experience language for Nike.</p>
 	<p class="col-eight shift-two">One day soon – This may become a reality.</p>
 	<img src="{{ root }}/assets/images/work/ntc/ntc-architecture.jpeg" class="col-twelve">
-	<small class="col-twelve centralise">A snapshot of the digital architecture atomic system.</small>
+	<small class="col-twelve centralise">A snapshot of the atomic digital architecture system.</small>
 
-	<h2 class="col-eight shift-two">The Conclusion</h2>
-	<p class="col-eight shift-two">Training is life, not an hour in the gym. The app connects you with experts for advice, recommends product and drops community challenges. All personalised to the user. I feel we accomplished out brief. And I feel the reviews and the ratings speak for themselves.</p>
+	<h2 class="col-eight shift-two">The ROI</h2>
+	<p class="col-eight shift-two">Training is life, not an hour in the gym. The app connects you with experts for advice, recommends product and drops community challenges. All personalised to the user.</p>
+	<p class="col-eight shift-two">With over 21 million downloads, the new Nike Training Club app has been a wild success. It is available in 19 languages in over 200 countries, and has 1.8 million active users, doing over 500,000 workouts per week.</p>
 	<p class="col-eight shift-two">Check out the app on the <a href="https://play.google.com/store/apps/details?id=com.nike.ntc&hl=en">Google App Store</a> and the <a href="https://itunes.apple.com/us/app/nike-training-club-workouts-fitness-plans/id301521403?mt=8">Apple App Store</a> and see for yourselves. ☺️</p>
 
 </div>

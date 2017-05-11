@@ -7,10 +7,7 @@ visible: 1
 description: Coming soon.
 ---
 
-<div id="project-page" class="rr-banner banner" data-0="background-position: 0px 0px;" data-100000="background-position:0px 50000px;">
-	<div class="heading-section">
-	</div>
-</div>
+<div id="project-page" class="rr-banner banner"><div class="heading-section"></div></div>
 
 <div class="wrapper project-wrapper">
 	

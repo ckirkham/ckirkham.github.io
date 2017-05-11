@@ -1,24 +1,31 @@
-<footer>
-	<p>© Copyright 2017</p>
-	<ul>
-		<li>
-			<a href="https://dribbble.com/ckirkham" class="social"><span class="icon-dribbble"></span></a>
-		</li>
-		<li>
-			<a href="http://www.linkedin.com/in/christiankirkham/" class="social"><span class="icon-linkedin"></span></a>
-		</li>
-		<li>
-			<a href="https://github.com/ckirkham" class="social"><span class="icon-github"></span></a>
-		</li>
-	</ul>
-</footer>
+		<footer class="outer-container banner">
+			
+			<div>
+				<h1>Thank you for looking. If you would like to discuss more, share feedback or ask any questions, please <a href="#">get in touch</a>.</h1>
+				<a class="chunky-link" href="mailto:cfkirkham@gmail.com">cfkirkham@gmail.com</a>
+				<a class="chunky-link"" href="tel:+447900328275">+44 7900 328275</a>
+			</div>
+
+			<section class="copyright">
+				<small>This website is set in Vollkorn and Lato served by <a href="#">Typekit</a>, and <a href="#">Google Fonts</a>. All other content on this website is produced by and copyright 2017 by Christian Kirkham.</small>
+				<small>All assets are hosted by <a href="#">Linode</a> in London, UK. Stats are tracked using <a href="#">Google Analytics</a>. <a id="show-grid">Show columns</a>.</small>
+			</section>
+
+		</footer>
+
+		<!-- This section contains an overlay grid which can be activated from a link in the footer -->
+		<section class="overlay-grid show-hide-grid">
+			<section class="outer-container">
+				<div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+			</section>
+		</section>
 
 		<!-- JS -->
 		<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
 		<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 		<script type="text/javascript" src="{{ root }}/assets/js/site.min.js"></script>
 
- 		{% if page.url == "/" %}
+			{% if page.url == "/" %}
 		<!-- PaperScript animation -->
 		<script type="text/paperscript" canvas="ballAnimation">
 			function getRandomArbitrary(min, max) {
@@ -59,29 +66,6 @@
 			ga('create', 'UA-41178080-1', 'ckirkham.com');
 			ga('send', 'pageview');
 		</script>
+
 	</body>
 </html>
-
-<!--
-... ... ... ... ... ... ... ... ... ... ... ... ... ...|... ... ... ... ... ... ... ... .._,,-~~~-,-,,_ 
-... ... ... ... ... ... ... ... ... ... ... ... ... ...|... ... ... ,,---,,_... ...,-~",-":__-,: : :"-,:::"'~,, 
-.,,-~~--,, ... ... ... ... ... ... ... ... ... ... ...|... ... ,~": : --,,:"~,,-"::::/:,-". . ."'~-,,: \,::::_,,"~-,, 
-/: : : : : : :"'~-,,... ... ... ... ... ... ... ... ... |... ... /: : : : :~"'\,: \::__/:|o--,,. . . . .\,: ¯¯: : : : : :"-, 
-\: : : : : : : : : : :""~,,... ... ... ... ... ... ... |... ... .\: : : : : :,,-"~": : : "'~~-,:"'~-,,_|: : :,-"¯¯¯¯"-,:| 
-.'~,: : : : : : : : : : : : :"'~-,,_... ... ... ... ...|... ... .."-,_: ,-" : : : : : : : : : : : "~,--~": : (o~--,,_. . |:| 
-... ."'~-,,: : : : : : : : : : : : :"-,~--,... ... ... |... ... ... ...,/: : : : : : ,,--,-,~-,,: : :"~-,,: : :"~,___:"-/,/__ 
-... ... ...,"~"~--,,_,,-~"`"`": : "-,::"'~~--,,_..| ... ... ... ..|: : : ,: :,-". ,-"./. . . ."-,,_: : :"~-~": : : :"'-,,~,:"-,, 
-... ... .,/: : : : --,,:|: : : : : : : : :"-,,::::::::::::"~--,,_... ... \: : :|: /. .,/. . |. . . ,-".|. "~,,_____,,,,,__:\: : : : | 
-... ... .|: : : : : : : "|: : : : : : :,: : : :\:::::::::::::::::::::"'~~-,,"-,:|: |. /. . . .|. .,-". . |. ,-"'. \. . .,/|. . . .",:\: : ,/ 
-... ... ..\, : : : : : ,/ : : : : : : :|: : : ,/::::::::::::::::::::::::::::::::::"\: "-,,___,\,/___,,\/___. |,-". |. . . ,/.|: |,~" 
-... ... ... ",-,,,__/: : : : : : :,/,_~"-:::::::::::::::::::::::::::::::::::::"-,,____,, : : : : : : : : : "'~,,,/.,,~". ,/: / 
-... ... ... /: : : : :"-,,___,,-": : ,"-,-:::::::::::::::::::::::::::::::::::::::::::'\: : : : : : : : : : : : : : : "-"__,-":,-" 
-... ... ... '\,_: : : : : : /-,,___,,"~-----~~~~,~---,,__::::::::::::::::::::::|: : : : : : : : __,,--~"~,,___,,-" 
-... ... ... ... ."'~---~"... ... ... ... ... ... ...|---~"::::"'~-::::::::::::::::,/: : : : : : : : : :\"~,, 
-... ... ... ... ... ... ... ... ... ... ... ... ... .|::::::::::::::::::::::::::::,,": : : : : : : : : : : |:::::"-,, 
-... ... ... ... ... ... ... ... ... ... ... ... ... .|:::::::::::::::::::::::,,-": : : : : : : : : : : : :,|:::::::::"-, 
-... ... ... ... ... ... ... ... ... ... ... ... ... .|::::::::::_,,,--~~": : : : : : : : : : : : : : :,/::::::::::::::\, 
-... ... ... ... ... ... ... ... ... ... ... ... ... .|----~~" : : : : : : : : : : : : : : : : : : : :,/::::::::::::::::::\, 
-... ... ... ... ... ... ... ... ... ... ... ... ... .|: : : : : : : : : : : : : : : : : : : : : : :,-,"::::::::::::::::::::::\ 
-... ... ... ... ... ... ... ... ... ... ... ... ... |: : : : : : : : : : : : : : : : : : : _,,~"SL'\,::::::::::::::::::::::\ 
-... ... ... ... ... ... ... ... ... ... ... ... ... |: : : : : : : : : : : : : : : : :,,-"... ... ... .\:::::::::::::::::::::::\ -->

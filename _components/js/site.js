@@ -1,5 +1,5 @@
 /*------------------------------------------------------------------------------------------------------
-1. Modernizr
+	Modernizr
 ------------------------------------------------------------------------------------------------------*/
 if (Modernizr.touch) {
 	skrollr.init().destroy();
@@ -11,19 +11,65 @@ if (Modernizr.touch) {
 	);
 }
 /*------------------------------------------------------------------------------------------------------
-	3.2 Home page projects active transition
+	Home page projects active transition
 ------------------------------------------------------------------------------------------------------*/
 $('#top').waypoint(function() {
-    $('#nav #uppernav li a#link-projects').removeClass('active');
+    $('#nav .outer-container #uppernav li a#link-projects').removeClass('active');
 }, {
-    offset: '-90%'
+    offset: '-80%'
 });
 $('#projects').waypoint(function() {
-    $('#nav #uppernav li a#link-projects').addClass('active');
+    $('#nav .outer-container #uppernav li a#link-projects').addClass('active');
+});
+$('footer').waypoint(function() {
+    $('#nav .outer-container #uppernav li a#link-projects').removeClass('active');
+});
+/*------------------------------------------------------------------------------------------------------
+	Smooth scroll anchors
+------------------------------------------------------------------------------------------------------*/
+$(".anchor").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#projects").offset().top
+    }, 2000);
+});
+/*------------------------------------------------------------------------------------------------------
+	Show / hide grid
+------------------------------------------------------------------------------------------------------*/
+$('#show-grid').on('click', function() {
+    $('.overlay-grid').toggleClass('show-hide-grid');
+});
+/*------------------------------------------------------------------------------------------------------
+	Show projects on scroll
+------------------------------------------------------------------------------------------------------*/
+$(document).ready(function() {
+    /* Every time the window is scrolled ... */
+    $(window).scroll( function(){
+        /* Check the location of each desired element */
+        $('.hideme').each( function(i){
+            var bottom_of_object = $(this).offset().top + $(this).outerHeight() - $(window).height()/1.3;
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            /* If the object is completely visible in the window, fade it it */
+            if( bottom_of_window > bottom_of_object ){
+                $(this).animate({'opacity':'1'},500);
+            }
+        });
+    });
 });
 
+
+
+
+
+
+
+
+
+
+
+
+
 /*------------------------------------------------------------------------------------------------------
-4. Mobile navigation
+	Mobile navigation
 ------------------------------------------------------------------------------------------------------*/
 $('.toggle-nav').click(function(e) {
 	var $this = $(this);
@@ -35,56 +81,34 @@ $('.toggle-nav').click(function(e) {
 		$this.text('Menu');
 		$('body').removeClass('noscroll');
 	}
-	$('#nav').fadeToggle('active');
+	$('#uppernav').fadeToggle('active');
 	e.preventDefault();
 });
 /*------------------------------------------------------------------------------------------------------
-	4.1 Remove 'display: none' caused by fadeToggle class
+	Remove 'display: none' caused by fadeToggle class
 ------------------------------------------------------------------------------------------------------*/
-$(window).resize(function(){
-	if(window.outerWidth >= 768){
-		$('#nav').css('display', '');
-	} else {
-	}
-});
-
-/*------------------------------------------------------------------------------------------------------
-5. Smooth scroll anchors
-------------------------------------------------------------------------------------------------------*/
-$('.anchor').click(function(){
-    $('html, body').animate({
-        scrollTop: $( $(this).attr('href') ).offset().top
-    }, 500);
-    return false;
-});
+// $(window).resize(function(){
+// 	if(window.outerWidth >= 768){
+// 		$('#nav').css('display', '');
+// 	} else {
+// 	}
+// });
 
 
 
 
 
-$(document).ready(function() {
-    
-    /* Every time the window is scrolled ... */
-    $(window).scroll( function(){
-    
-        /* Check the location of each desired element */
-        $('.hideme').each( function(i){
-            
-            var bottom_of_object = $(this).offset().top + $(this).outerHeight() - $(window).height()/1.3;
-            var bottom_of_window = $(window).scrollTop() + $(window).height();
-            
-            /* If the object is completely visible in the window, fade it it */
-            if( bottom_of_window > bottom_of_object ){
-                
-                $(this).animate({'opacity':'1'},500);
-                    
-            }
-            
-        }); 
-    
-    });
-    
-});
+
+
+
+
+
+
+
+
+
+
+
 
 
 

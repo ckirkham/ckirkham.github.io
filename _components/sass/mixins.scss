@@ -2,17 +2,17 @@
 ----------------------------------------------------------------------------------------*/
 $coral-red: #ff5b54;
 $cloud-white: #fbfbfb;
-$off-black: #262626;
+$off-black: #221E20;
 $coral-border: 5px solid $coral-red;
-$project-border: 1px solid $off-black;
+// $project-border: 1px solid $off-black;
 
 /*	Mixins
 ----------------------------------------------------------------------------------------*/
-@mixin circle($radius) {
-	-webkit-border-radius: $radius;
-	-moz-border-radois: $radius;
-	border-radius: $radius;
-}
+// @mixin circle($radius) {
+// 	-webkit-border-radius: $radius;
+// 	-moz-border-radois: $radius;
+// 	border-radius: $radius;
+// }
 @mixin hyphenate() {
 	-ms-word-break: break-all;
 	word-break: break-all;
