@@ -1,0 +1,122 @@
+[
+
+    
+        {
+            "title": The Software, The Hardware,
+            "content": I know that everyone has done a post like this at some point, however I felt it would be good to share my viewpoint on the way in which I work, what tools I use and how I compose myself on a day to day basis. My thoughts are that it would be nice to help even one person to find something that they don’t already use on a daily basis.
+
+That said, there will be a lot here you hopefully recognise and should be using daily if you’re a designer or a hacker. Regarding hardware, I’ve always tried to keep the amount of objects that I own (in general) down as I don’t like owning a lot of stuff, only things.
+
+If I miss anything please let me know in the comments below! I’ll also try and keep this article updated:
+
+
+
+Design
+
+  Adobe CC – Needs no introduction, suffice to say that the Adobe suite has a lot of great design apps.
+  Sketch – I use this mainly for wire framing prototypes, but as a complex UI design tool when I’m doing a full design to front-end process myself.
+  FontCase (Recently culled) – The new Fonts app looks interesting, but not very powerful yet.
+  Skala Preview – For previewing UI designs on the iPhone. This is extremely useful to keep open during the design process.
+  Composite – Perfect for iPhone prototyping – very powerful app.
+
+
+
+
+Development
+
+  Processing – Probably the most enjoyable programming language I’ve played with, and surprisingly simple to get to grips with. My article I, Processing touches on this.
+  Coda – Sublime Text is great and all, but I personally enjoy working inside of Coda as an IDE more than other apps.
+  Xcode – Endless possibilities for his application, to which I’m only just beginning to learn. There’s a great article here on prototyping using this great app.
+  Quartz Composer – Another app I’m just touching the surface with, but one that ties very closely into Xcode. Great for prototyping, but the learning curve is quite steep.
+  Codekit – Keeps track of your development folders and compiles code on the fly. Perfect for use in tandem with SASS &amp; Compass.
+  Sequel Pro – I don’t actually use this application any more, but it’s a really simple way of keeping track of databases in an application, as opposed to in a web browser using phpMyAdmin.
+  Dash – Indispensable application for storing snippets of code and development doc sets.
+
+
+
+
+Animation
+
+  Adobe After Effects – The best tool for motion graphics, especially combined with Cinema 4D
+  Cinema 4D – An application I’m still getting to grips with, but probably one of the most powerful apps for doing 3D development and animation.
+
+
+
+
+General
+
+  1Password 4 – An invaluable app for storing logins, passwords, application codes &amp; personas.
+  Merlin – Create detailed task and project plans with beautiful gantt charts!
+  CleanMyMac – Great for cleaning out redundant files, application leftovers, and large files throughout your computer. Also available for PC.
+  Spotify – Unlimited music!
+  Evernote – Invaluable for collecting
+  Caffeine – A small app that keeps your computer awake so you can put it to sleep whenever you want to.
+  Things – A to-do list app I’ve used for over 3 years now, and that no matter how many others I’ve tried, I always come back to.
+  IA Writer – The best and most simple writing application for the macintosh.
+
+
+
+
+,
+            "link": "/blog/the-software-the-hardware",
+            "date": 2013-10-18 01:00:00 +0100,
+            "excerpt": Being seated next to new people at weddings, birthdays etc. the go-to conversation starters pop up early on: 'So, how do you know x?', 'What do you do for a living?'
+        }
+    
+
+    
+        ,{
+            "title": I, Processing,
+            "content": A new site and a new blog.  I'd like to talk you through a side project I started working on a few weeks ago; a scripting language called Processing.
+
+Being a self-teacher for as long as I can remember, I'm constantly learning something new and working on different projects – I think in an industry that is changing every day, there's no better way to stay ahead of the curve and to remain inspired than to experience new technologies. So I've set out on a new learning obsession with the Processing scripting language and the freedom that it offers me to explore in my workflow.
+
+
+
+Looking at the language
+
+Processing is an Open Source visual scripting language, created to teach the fundamentals of computer programming concepts to people. John Resig wrote a brilliant summary article on the subject and touches on the key principles and core concepts – give this a read if you've got time, it covers everything you need to know to get started.
+
+For pure designers especially, the words "Open source", "Scripting language" and "computer programming" can be daunting and I think that's what puts most people off trying something new. Even if you're not a designer, a developer, etc, learning a computer language can be beneficial for a multitude of purposes; maybe you want to make that big app idea you've thought about, perhaps you want a new job in the myriad of new positions that have opened up in the digital space that are ever increasing, even if you just want to learn a new skill. Especially for the future generations, I can't see that this shit isn't going to be optional 10 years from now.
+
+Why am I learning processing? Why not? Installations, Idea logging, artistic visions. Although daunting and quite a large task, the results can be astounding. Ultimately, I'd like to be able to present a new skill offering to the agency I work at – bringing an interactive element to our diverse skill set would be interesting to incorporate into our future projects.
+
+Processing is a powerful programming tool – in comparison to hard core programming it is easier to pick up, and it helps beginner programmers to get started. This is due to the "instant feedback through interaction" style that Processing is built around. Write a few lines of code.. hit play.. see your "bouncing ball" animation. This instant feedback is what helps it to appeal to beginners and novices alike, as the learning curve is lower, and the trial and error reduced, helping forego the frustration a lot of people arrive at when attempting to learn a programming language. Check out this link for a mesmerising example of what it can do. For more simplified examples visit Open Source Processing, an incredible library full of other peoples processing code.
+
+I'd also recommend the book, "Learning Processing" by Daniel Shiffman as it is an excellent read; simple to understand for a beginner, but getting into the grit of it quick enough for a more seasoned programmer. I'm following this book as I go and I'm finding it invaluable, and I think that it perfectly encapsulates the reasons and how to's for learning the language.
+
+This book tells a story. It’s a story of liberation, of taking the first steps towards understanding the foundations of computing, writing your own code, and creating your own media without the bonds of existing software tools. This story is not reserved for computer scientists and engineers. This story is for you.
+
+Watch this space and, along with other projects, I intend to log my progress with the Processing language, and hopefully craft something interesting, and possibly provide some tutorials on getting into the world of Processing.
+,
+            "link": "/blog/i-processing",
+            "date": 2013-04-16 01:00:00 +0100,
+            "excerpt": Being seated next to new people at weddings, birthdays etc. the go-to conversation starters pop up early on: 'So, how do you know x?', 'What do you do for a living?'
+        }
+    
+
+
+
+    
+        {
+            "title": About,
+            "content": Hello world.,
+            "link": "/about.html",
+            "date": 2017-05-26 22:27:00 +0100,
+            "excerpt": 
+        }
+    
+
+    
+        ,{
+            "title": Home,
+            "content": 			Hello 🙂 I'm Christian, an English Product Designer currently living in London.		I’ve had the honour of doing work for the likes of Nike, TAG Heuer, Volvo, Rolls Royce, Google and many others around the world. For me, there’s no better experience than travelling to learn and apply new culture.		Please get in touch or just browse my work below.													Nike Training Club 5.0 is the ultimate personal trainer, loaded with over 100+ workouts, available in over 200 countries and available for both iOS and Android.									View project																				At AKQA we partnered with TAG Heuer, Intel, and Google to introduce the configurable TAG Heuer Connected Modular 45 with Android Wear 2.0.									View project																				Meerkat is a groundbreaking product aiming to simplify the collection, purchase, and management of all of your insurance products by combining them into one place.									View project										,
+            "link": "/",
+            "date": ,
+            "excerpt": 
+        }
+    
+
+    
+
+]
