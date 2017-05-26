@@ -1,5 +1,4 @@
 ---
-layout: project
 title: TAG Heuer Connected
 date: 2014-02-28 00:00:00 Z
 layout: project

@@ -1,6 +1,6 @@
 ---
-layout: default
 title: MightyBee
+layout: default
 visible: 1
 description: MightyBee is an organic coconut water brand dealing in London.
 ---

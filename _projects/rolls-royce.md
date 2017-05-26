@@ -1,5 +1,4 @@
 ---
-layout: project
 title: Rolls Royce Car Configurator
 date: 2014-02-28 00:00:00 Z
 layout: project

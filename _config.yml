@@ -1,9 +1,23 @@
+---
+title: Ckirkham.Github.Io
+timezone: UTC
+collections:
+  posts:
+    title: Posts
+    output: true
+  projects:
+    title: Projects
+    output: true
+  uploads:
+    title: Uploads
+    output: true
 highlighter: pygments
 markdown: kramdown
-exclude: ['node_modules','gruntfile.js','package.json','README.md','Vagrantfile','Gemfile','Gemfile.lock']
-
-# repository: https://github.com/ckirkham/ckirkham.github.io
-
-collections:
-  projects:
-    output: true
+exclude:
+- node_modules
+- gruntfile.js
+- package.json
+- README.md
+- Vagrantfile
+- Gemfile
+- Gemfile.lock

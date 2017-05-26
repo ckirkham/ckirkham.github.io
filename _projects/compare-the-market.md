@@ -1,10 +1,10 @@
 ---
-layout: project
 title: Meerkat App
 date: 2014-02-28 00:00:00 Z
 layout: project
 visible: 1
-description: Meerkat app was a conceptual piece, created to work out the future stepping stones for the Compare the Market service proposition.
+description: Meerkat app was a conceptual piece, created to work out the future stepping
+  stones for the Compare the Market service proposition.
 ---
 
 <div id="project-page" class="ctm-banner banner"><div class="heading-section"></div></div>

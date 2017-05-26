@@ -1,7 +1,8 @@
 ---
-layout: default
 title: Chemist Direct
-description: Case study of the Chemist Direct e-commerce site being re-built from the ground up for the responsive web, in a sprint led, agile workflow.
+layout: default
+description: Case study of the Chemist Direct e-commerce site being re-built from
+  the ground up for the responsive web, in a sprint led, agile workflow.
 ---
 
 <div id="project-page" class="cd-banner banner"><div class="heading-section"></div></div>
