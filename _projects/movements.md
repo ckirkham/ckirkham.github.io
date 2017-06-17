@@ -1,10 +1,10 @@
 ---
-layout: project
 title: Movements
 date: 2014-02-28 00:00:00 Z
 layout: project
 visible: 1
-description: Movements is crowdsourcing human rights. It connects human rights activists in closed societies with those with skills to help them around the world.
+description: Movements is crowdsourcing human rights. It connects human rights activists
+  in closed societies with those with skills to help them around the world.
 ---
 
 <div id="project-page" class="movements-banner banner"><div class="heading-section"></div></div>

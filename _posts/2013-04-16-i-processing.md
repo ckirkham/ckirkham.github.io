@@ -1,9 +1,10 @@
 ---
-layout: post
-permalink: blog/i-processing
 title: I, Processing
-
-snippet: "Being seated next to new people at weddings, birthdays etc. the go-to conversation starters pop up early on: 'So, how do you know x?', 'What do you do for a living?'"
+date: 2013-04-16 00:00:00 Z
+permalink: blog/i-processing
+layout: post
+snippet: 'Being seated next to new people at weddings, birthdays etc. the go-to conversation
+  starters pop up early on: ''So, how do you know x?'', ''What do you do for a living?'''
 ---
 
 <p>A new site and a new blog.  I'd like to talk you through a side project I started working on a few weeks ago; a scripting language called Processing.</p>

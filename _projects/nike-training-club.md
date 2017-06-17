@@ -1,10 +1,11 @@
 ---
-layout: project
 title: Nike Training Club 5.0
 date: 2014-02-28 00:00:00 Z
 layout: project
 visible: 1
-description: Working at <a href="http://www.akqa.com">AKQA</a>, I worked to rehaul the Nike Training experience. Our aim was to create a fitness experience for everybody, that can transcend cultures and guide users to greatness.
+description: Working at <a href="http://www.akqa.com">AKQA</a>, I worked to rehaul
+  the Nike Training experience. Our aim was to create a fitness experience for everybody,
+  that can transcend cultures and guide users to greatness.
 ---
 
 <div id="project-page" class="ntc-banner banner"><div class="heading-section"></div></div>

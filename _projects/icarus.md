@@ -1,10 +1,10 @@
 ---
-layout: project
 title: Icarus Concierge
 date: 2014-02-28 00:00:00 Z
 layout: project
 visible: 1
-description: Icarus is an exclusive members concierge service that caters to high-quality lifestyle individuals.
+description: Icarus is an exclusive members concierge service that caters to high-quality
+  lifestyle individuals.
 ---
 
 <div id="project-page" class="icarus-banner banner"><div class="heading-section"></div></div>

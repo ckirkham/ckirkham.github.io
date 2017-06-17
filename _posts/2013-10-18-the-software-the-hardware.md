@@ -1,9 +1,10 @@
 ---
-layout: post
-permalink: blog/the-software-the-hardware
 title: The Software, The Hardware
-
-snippet: "Being seated next to new people at weddings, birthdays etc. the go-to conversation starters pop up early on: 'So, how do you know x?', 'What do you do for a living?'"
+date: 2013-10-18 00:00:00 Z
+permalink: blog/the-software-the-hardware
+layout: post
+snippet: 'Being seated next to new people at weddings, birthdays etc. the go-to conversation
+  starters pop up early on: ''So, how do you know x?'', ''What do you do for a living?'''
 ---
 
 I know that *everyone* has done a post like this at some point, however I felt it would be good to share my viewpoint on the way in which I work, what tools I use and how I compose myself on a day to day basis. My thoughts are that it would be nice to help even one person to find something that they don't already use on a daily basis.
