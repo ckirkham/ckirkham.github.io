@@ -821,4 +821,15 @@ footer .copyright small {
   background-size: cover;
 }
 
+#clients {
+  background: #ff5b54;
+  position: relative;
+}
+#clients ul {
+  text-align: center;
+}
+#clients ul li {
+  display: inline-block;
+}
+
 /*# sourceMappingURL=style.min.css.map */
