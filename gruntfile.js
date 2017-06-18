@@ -22,7 +22,7 @@ module.exports = function(grunt){
             },
             minified: {
                 files: {
-                    'assets/css/style.min.css': '_components/sass/style.scss'
+                    'assets/style.min.css': '_components/sass/style.scss'
                 }
             }
         },
@@ -35,7 +35,7 @@ module.exports = function(grunt){
             },
             minified: {
                 src: projectConfig.js_files,
-                dest: 'assets/js/site.min.js'
+                dest: 'assets/site.min.js'
             }
         },
         // uglify: {
