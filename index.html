@@ -9,10 +9,11 @@ layout: default
 		<h1>Hello 🙂 I'm Christian, an English Product Designer currently living in Seoul, South Korea 🇰🇷</h1>
 		<h1>I’ve had the honour of doing work for the likes of Nike, TAG Heuer, Volvo, Rolls Royce, Google and many others around the world. For me, there’s no better experience than travelling to learn and apply new culture.</h1>
 		<h1>Please <a href="mailto:christian.kirkham@toptal.com">get in touch</a> or just <a class="anchor" href="{{ root }}/index.html#projects" title="Projects">browse my work below</a>.</h1>
-		{% for page in site.pages %}	
-    <h3><a href="{{ page.url }}">{{ page.title }}</a></h3>		
-{% endfor %}
 	</div>
+
+	<!-- {% for page in site.pages %}
+		<h3><a href="{{ page.url }}">{{ page.title }}</a></h3>		
+	{% endfor %} -->
 
 	<!-- Background Canvas animation using PaperScript -->
 	<canvas id="ballAnimation" resize="true" keepalive="true" width="100%" style="background-color: #221E20"></canvas>
@@ -32,39 +33,6 @@ layout: default
 		</div>
 	</div>
 	{% endfor %}
-
-	<!-- <div class="ntc-banner banner">
-		<div class="outer-container heading-section">
-			<div>
-				<h1>Nike Training Club 5.0 is the ultimate personal trainer, loaded with over 100+ workouts, available in over 200 countries and available for both iOS and Android.</h1>
-				<button>
-					<a href="https://www.toptal.com/designers/resume/christian-kirkham#project=3">View project</a>
-				</button>
-			</div>
-		</div>
-	</div>
-
-	<div class="tag-banner banner hideme">
-		<div class="outer-container heading-section">
-			<div>
-				<h1>At AKQA we partnered with TAG Heuer, Intel, and Google to introduce the configurable TAG Heuer Connected Modular 45 with Android Wear 2.0.</h1>
-				<button>
-					<a href="https://www.toptal.com/designers/resume/christian-kirkham#project=1">View project</a>
-				</button>
-			</div>
-		</div>
-	</div>
-
-	<div class="ctm-banner banner hideme">
-		<div class="outer-container heading-section">
-			<div>
-				<h1>Meerkat is a groundbreaking product aiming to simplify the collection, purchase, and management of all of your insurance products by combining them into one place.</h1>
-				<button>
-					<a href="https://www.toptal.com/designers/resume/christian-kirkham#project=6">View project</a>
-				</button>
-			</div>
-		</div>
-	</div> -->
 
 </div>
 
