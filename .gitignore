@@ -6,7 +6,6 @@ site/vendor/*
 .vagrant/*
 _site
 _drafts/
-_site/
 *.swp
 node_modules/
 *.lock
