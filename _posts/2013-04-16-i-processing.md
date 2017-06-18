@@ -1,6 +1,6 @@
 ---
 title: I, Processing
-date: 2013-04-16 00:00:00 
+date: 2013-04-16 01:00:00 +01:00
 permalink: blog/i-processing
 layout: post
 snippet: 'Being seated next to new people at weddings, birthdays etc. the go-to conversation
