@@ -1,9 +1,11 @@
 ---
 title: Meerkat App
-date: 2014-02-28
+date: 2014-02-28 00:00:00 +00:00
 layout: project
 visible: 1
-description: Meerkat is a groundbreaking product aiming to simplify the collection, purchase, and management of all of your insurance products by combining them into one place.
+description: Meerkat is a groundbreaking product aiming to simplify the collection,
+  purchase, and management of all of your insurance products by combining them into
+  one place.
 toptal: https://www.toptal.com/designers/resume/christian-kirkham#project=6
 shortcode: ctm
 order: 3

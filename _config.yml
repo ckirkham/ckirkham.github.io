@@ -21,7 +21,3 @@ exclude:
 - Vagrantfile
 - Gemfile
 - Gemfile.lock
-
-
-
-
