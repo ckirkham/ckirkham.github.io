@@ -161,6 +161,9 @@ a, a img {
 	Global styles (across all pages) & Typography
 ----------------------------------------------------------------------------------------*/
 body {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: none;
+  -webkit-font-smoothing: subpixel-antialiased;
   margin: 0;
   padding: 0;
   height: 100%;
@@ -185,13 +188,13 @@ h1, h2, h3, h4, h4, h5, h6 {
   -webkit-hyphenate-before: 2;
   -webkit-hyphenate-after: 3;
   hyphenate-lines: 3;
+  font-family: 'Vollkorn', serif;
 }
 
 h1 {
   font-size: 1.25em;
   margin-bottom: 2rem;
   hyphens: none;
-  font-family: 'Vollkorn', serif;
 }
 @media (min-width: 35em) {
   h1 {
@@ -213,16 +216,13 @@ h1 a {
 }
 
 h2 {
-  text-transform: uppercase;
-  font-weight: bold;
-  letter-spacing: 0.1em;
   margin-top: 3em;
   margin-bottom: 0.5em;
 }
 @media screen and (min-width: 810px) {
   h2 {
     margin-top: 5em;
-    font-size: 1.25em;
+    font-size: 2em;
   }
 }
 
@@ -259,19 +259,23 @@ a:hover {
 }
 
 p {
+  font-family: 'Vollkorn', serif;
   line-height: 1.75em;
-  margin-bottom: 1em;
   font-weight: 400;
-}
-p:last-child {
-  margin-bottom: 2em;
-}
-
-p {
-  margin-bottom: 0.5em;
   font-weight: 400;
   font-size: 1.2em;
   line-height: 1.5em;
+  line-height: 1.5;
+  margin: 0 0 1em;
+  word-break: break-all;
+  word-break: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+}
+p:last-child {
+  margin-bottom: 2em;
 }
 @media screen and (min-width: 640px) {
   p {
@@ -280,25 +284,25 @@ p {
   }
 }
 
-q {
+p + p {
+  text-indent: 2em;
+}
+
+blockquote {
   display: block;
   border-left: 5px solid #ff5b54;
   padding-left: 25px;
   font-style: italic;
-  margin-left: -1.32em;
+  margin-left: -2em;
   margin-top: 2em;
   margin-bottom: 2em;
-  font-size: 1.4em;
   line-height: 1.3em;
   letter-spacing: 0.01em;
 }
 @media screen and (min-width: 640px) {
-  q {
+  blockquote {
     margin-left: -1.5em;
     padding-left: 20px;
-    position: relative;
-    left: -25px;
-    font-size: 2em;
     line-height: 1.250em;
   }
 }
@@ -700,6 +704,39 @@ button:hover a {
 }
 
 /*------------------------------------------------------------------------------------
+	Content
+------------------------------------------------------------------------------------*/
+.content {
+  padding-top: 20%;
+  margin-left: 20px;
+  position: relative;
+  width: calc(100% - 2rem);
+  float: left;
+  margin-left: 1rem;
+}
+@media (min-width: 35em) {
+  .content {
+    width: calc(100% - 40px);
+    float: left;
+    margin-left: 20px;
+  }
+}
+@media (min-width: 48em) {
+  .content {
+    width: calc(75% - 35px);
+    float: left;
+    margin-left: 20px;
+  }
+}
+@media (min-width: 70em) {
+  .content {
+    width: calc(58.33333% - 31.66667px);
+    float: left;
+    margin-left: 20px;
+  }
+}
+
+/*------------------------------------------------------------------------------------
 	Footer
 ------------------------------------------------------------------------------------*/
 footer {
@@ -709,6 +746,7 @@ footer {
   -webkit-align-items: center;
   align-items: center;
   position: relative;
+  clear: both;
   background: #221E20;
 }
 footer div > a {
@@ -717,9 +755,6 @@ footer div > a {
 @media (min-width: 48em) {
   footer div > a {
     display: inline-block;
-  }
-  footer div > a:last-child {
-    padding-left: 5%;
   }
 }
 footer div, footer .copyright {
@@ -795,41 +830,6 @@ footer .copyright small {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-}
-
-.mb-banner {
-  background: url(../images/hero-mb.jpg) no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
-.rr-banner {
-  background: url(../images/hero-rr.jpg) no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
-.matchpint-banner {
-  background: url(../images/hero-matchpint.jpg) no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
-#clients {
-  background: #ff5b54;
-  position: relative;
-}
-#clients ul {
-  text-align: center;
-}
-#clients ul li {
-  display: inline-block;
 }
 
 /*# sourceMappingURL=style.min.css.map */

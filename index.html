@@ -6,9 +6,12 @@ layout: default
 <!-- Full-bleed header section -->
 <section class="outer-container home-header" id="top">
 	<div>
-		<h1>Hello 🙂 I'm Christian, an English Product Designer currently living in London.</h1>
+		<h1>Hello 🙂 I'm Christian, an English Product Designer currently living in Seoul, South Korea 🇰🇷</h1>
 		<h1>I’ve had the honour of doing work for the likes of Nike, TAG Heuer, Volvo, Rolls Royce, Google and many others around the world. For me, there’s no better experience than travelling to learn and apply new culture.</h1>
-		<h1>Please <a href="mailto:cfkirkham@gmail.com">get in touch</a> or just <a class="anchor" href="{{ root }}/index.html#projects" title="Projects">browse my work below</a>.</h1>
+		<h1>Please <a href="mailto:christian.kirkham@toptal.com">get in touch</a> or just <a class="anchor" href="{{ root }}/index.html#projects" title="Projects">browse my work below</a>.</h1>
+		{% for page in site.pages %}	
+    <h3><a href="{{ page.url }}">{{ page.title }}</a></h3>		
+{% endfor %}
 	</div>
 
 	<!-- Background Canvas animation using PaperScript -->
@@ -17,7 +20,20 @@ layout: default
 
 <div id="projects">
 
-	<div class="ntc-banner banner">
+	{% for project in site.projects reversed %}
+	<div class="{{ project.shortcode }}-banner banner">
+		<div class="outer-container heading-section">
+			<div>
+				<h1>{{ project.description }}</h1>
+				<button>
+					<a href="{{ project.toptal }}">View project</a>
+				</button>
+			</div>
+		</div>
+	</div>
+	{% endfor %}
+
+	<!-- <div class="ntc-banner banner">
 		<div class="outer-container heading-section">
 			<div>
 				<h1>Nike Training Club 5.0 is the ultimate personal trainer, loaded with over 100+ workouts, available in over 200 countries and available for both iOS and Android.</h1>
@@ -48,21 +64,9 @@ layout: default
 				</button>
 			</div>
 		</div>
-	</div>
+	</div> -->
 
 </div>
-
-<section id="clients">
-	<ul>
-		<li>AKQA</li>
-		<li>Albion</li>
-		<li>Nike</li>
-		<li>TAG Heuer</li>
-		<li>Volvo</li>
-		<li>Rolls Royce</li>
-		<li>Virgin</li>
-	</ul>
-</section>
 
 <script type="text/javascript">
     // $('#nav #uppernav li a#link-projects').addClass('active');

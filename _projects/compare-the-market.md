@@ -1,10 +1,12 @@
 ---
 title: Meerkat App
-date: 2014-02-28 00:00:00 Z
+date: 2014-02-28
 layout: project
 visible: 1
-description: Meerkat app was a conceptual piece, created to work out the future stepping
-  stones for the Compare the Market service proposition.
+description: Meerkat is a groundbreaking product aiming to simplify the collection, purchase, and management of all of your insurance products by combining them into one place.
+toptal: https://www.toptal.com/designers/resume/christian-kirkham#project=6
+shortcode: ctm
+order: 3
 ---
 
 <div id="project-page" class="ctm-banner banner"><div class="heading-section"></div></div>
