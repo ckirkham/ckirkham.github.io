@@ -5,8 +5,14 @@
 @import "../neat/neat";
 @import 'reset.scss';
 @import 'mixins.scss';
+// @import url("http://fonts.googleapis.com/css?family=Lato:300,400,400italic,700");
+// @import url('https://fonts.googleapis.com/css?family=Vollkorn:400,700');
+
 @import url("http://fonts.googleapis.com/css?family=Lato:300,400,400italic,700");
-@import url('https://fonts.googleapis.com/css?family=Vollkorn:400,700');
+@import url('https://fonts.googleapis.com/css?family=Spectral:400,700');
+
+
+
 
 /*------------------------------------------------------------------------------------
 	Grid
@@ -91,13 +97,12 @@ body {
 h1,h2,h3,h4,h5,h6 {
 	line-height: 1.4;
 	@include hyphenate();
-	font-family: 'Vollkorn', serif;
+	font-family: 'Spectral', serif;
 }
 h1 {
 	font-size: 1.25em;
 	margin-bottom: 2rem;
 	hyphens: none;
-	// font-family: 'Vollkorn', serif;
 	@include grid-media($grid-tablet-mini) {
 		font-size: 1.5em;
 	}
@@ -125,7 +130,7 @@ h4 { @extend h3; font-size: 0.750em; color: $coral-red; margin-top: 1em; }
 a {	color: $cloud-white; text-decoration: none; border-bottom: 1px solid $coral-red; padding-bottom: 3px; }
 a:hover { color: #ff5b54; border: none; }
 p {
-	font-family: 'Vollkorn', serif;
+	font-family: 'Spectral', serif;
 	line-height: 1.75em;
 	font-weight: 400;
 	&:last-child {
