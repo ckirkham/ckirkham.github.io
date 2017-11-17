@@ -29,6 +29,26 @@ Adaptable size icons
 
 Instructions
 ============
-bundle exec jekyll serve
-npm install
-grunt watch
+'jekyll serve' or 'bundle exec jekyll serve'
+'npm install'
+'grunt watch'
+
+Other
+============
+// Clean up duplicate gems
+gem cleanup NAME
+gem list NAME
+gem uninstall
+// For jekyll exec errors
+bundle clean --force
+
+If Jekyll gem isn't working
+============
+$ gem sources --remove https://rubygems.org/
+$ gem sources -a http://rubygems.org/
+$ gem install jekyll
+
+If you need Bundler
+============
+gem install bundler
+bundle install

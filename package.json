@@ -1,21 +1,20 @@
 {
-    "name" : "ChristianKirkham",
-    "version" : "3.1.0",
-    "author" : "ChristianKirkham",
+    "name": "ChristianKirkham",
+    "version": "3.1.0",
+    "author": "ChristianKirkham",
     "repository": {
         "type": "git",
         "url": "git://github.com/ckirkham/ckirkham.github.io"
     },
-
     "devDependencies": {
-        "grunt-contrib-imagemin":       "*",
-        "grunt":                        "*",
-        "grunt-contrib-sass":           "*",
-        "grunt-contrib-uglify":         "*",
-        "grunt-contrib-watch":          "*",
-        "grunt-contrib-concat":         "*",
-        "grunt-contrib-jshint":         "*",
-        "grunt-htmlhint":               "*",
-        "matchdep":                     "*"
+        "grunt": "^1.0.1",
+        "grunt-contrib-concat": "*",
+        "grunt-contrib-imagemin": "*",
+        "grunt-contrib-jshint": "*",
+        "grunt-contrib-sass": "*",
+        "grunt-contrib-uglify": "*",
+        "grunt-contrib-watch": "*",
+        "grunt-htmlhint": "*",
+        "matchdep": "*"
     }
 }

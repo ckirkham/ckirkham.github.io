@@ -1,7 +1,7 @@
 		<footer class="outer-container banner">
-			
+
 			<div>
-				<h1>Thank you for stopping by. If you have a question, or want to work with me, please <a href="mailto:christian.kirkham@toptal.com">get in touch</a>.</h1>
+				<p>Thank you for stopping by. If you have a question, or want to work with me, please <a href="mailto:christian.kirkham@toptal.com">get in touch</a>. I'd love to hear from you.</p>
 				<a class="chunky-link" href="mailto:christian.kirkham@toptal.com">christian.kirkham@toptal.com</a>
 			</div>
 
@@ -24,36 +24,36 @@
 		<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 		<script type="text/javascript" src="{{ root }}/assets/site.min.js"></script>
 
-			{% if page.url == "/" %}
+		{% if page.url == "/" %}
 		<!-- PaperScript animation -->
 		<script type="text/paperscript" canvas="ballAnimation">
-			function getRandomArbitrary(min, max) {
-			    return Math.random() * (max - min) + min;
-			}
-			var count = 20;
-			for (var i = 0; i < count; i++) {
-				var center = Point.random() * view.size;
-				var path = new Path.Circle(center, Math.random() * 100);
-				path.fillColor = '#ff5b54';
-				path.strokeColor = null;
-			}
-			var children = project.activeLayer.children;
-			for (var i = 0; i < children.length; i++) {
-				var child = children[i];
-				child.opacity = Math.random();
-			}
-			var destination = Point.random() * view.size;
-			var decrementing = true;
-			function onFrame(event) {
-				for (var i = 0; i < count; i++) {
-					var item = project.activeLayer.children[i];
-					item.position.y -= item.bounds.height / 350;
-					if (item.bounds.top < 0-200) {
-						item.position.y = view.size.height+100;
-					}
-				}
-			}
-		</script>
+		function getRandomArbitrary(min, max) {
+  return Math.random() * (max - min) + min;
+}
+var count = 20;
+for (var i = 0; i < count; i++) {
+  var center = Point.random() * view.size;
+  var path = new Path.Circle(center, Math.random() * 100);
+  path.fillColor = "#ff5b54";
+  path.strokeColor = null;
+}
+var children = project.activeLayer.children;
+for (var i = 0; i < children.length; i++) {
+  var child = children[i];
+  child.opacity = Math.random();
+}
+var destination = Point.random() * view.size;
+var decrementing = true;
+function onFrame(event) {
+  for (var i = 0; i < count; i++) {
+    var item = project.activeLayer.children[i];
+    item.position.y -= item.bounds.height / 350;
+    if (item.bounds.top < 0 - 200) {
+      item.position.y = view.size.height + 100;
+    }
+  }
+}
+</script>
 		{% endif %}
 
 		<!-- Google analytics -->

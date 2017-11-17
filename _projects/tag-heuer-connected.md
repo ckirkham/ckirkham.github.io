@@ -1,30 +1,22 @@
 ---
 title: TAG Heuer Connected
-date: 2016-02-28 00:00:00 +00:00
+date: 2017-11-10 00:00:00 +01:00
 layout: project
 visible: 1
-description: At AKQA we partnered with TAG Heuer, Intel, and Google to introduce the
-  configurable TAG Heuer Connected Modular 45 with Android Wear 2.0.
-toptal: https://www.toptal.com/designers/resume/christian-kirkham#project=1
+description: At AKQA we partnered with TAG Heuer, Intel, and Google to introduce the configurable TAG Heuer Connected Modular 45 with Android Wear 2.0.
+url: https://www.toptal.com/designers/resume/christian-kirkham#project=2
 shortcode: tag
-order: 2
+order: 1
 ---
 
-<div id="project-page" class="tag-banner banner"><div class="heading-section"></div></div>
+<!-- https://{{ root }}/projects/tag-heuer-connected.html -->
+<!-- <div id="project-page" class="tag-banner banner"><div class="heading-section"></div></div> -->
 
-<div class="wrapper project-wrapper">
-	
-	<h1 class="col-eight shift-two">{{ page.title }}</h1>
-	<h4 class="col-eight shift-two">User Experience, Prototyping, Information Architecture</h4>
-	<p class="col-eight shift-two project-study-introduction">{{ page.description }}</p>
+## {{ page.title }} - Under construction
+<p class="project-disciplines">User Experience, Prototyping, User Testing</p>
 
-</div>
+{{ page.description }}
 
-<div class="ntc-banner banner hideme">
-	<div>
-		<h1>Nike Training Club 5.0</h1>
-		<button>
-			<a href="{{ root }}/projects/nike-training-club.html">View project</a>
-		</button>
-	</div>
-</div>
+The case study for this project is under construction. In the meantime, please check out the project images on my Toptal portfolio.
+
+<button><a href="https://www.toptal.com/designers/resume/christian-kirkham#project=2">View project on Toptal</a></button>

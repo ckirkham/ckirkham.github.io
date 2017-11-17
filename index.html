@@ -4,15 +4,15 @@ layout: default
 ---
 
 <!-- Full-bleed header section -->
-<section class="outer-container home-header" id="top">
+<section class="outer-container home-header heading-section" id="top">
 	<div>
-		<h1>Hello 🙂 I'm Christian, an English Product Designer currently living in Seoul, South Korea</h1>
-		<h1>I’ve had the honour of doing work for the likes of Nike, TAG Heuer, Volvo, Rolls Royce, Google and many others around the world. For me, there’s no better experience than travelling to learn and apply new culture.</h1>
-		<h1>Please <a href="mailto:christian.kirkham@toptal.com">get in touch</a> or just <a class="anchor" href="{{ root }}/index.html#projects" title="Projects">browse my work below</a>.</h1>
+		<p>Hello, I'm Christian, an English Product Designer currently living in Seoul, South Korea</p>
+		<p>I’ve had the honour of doing work for the likes of Nike, TAG Heuer, Volvo, Rolls Royce, Google and many others around the world. For me, there’s no better experience than travelling to learn and apply new culture.</p>
+		<p>Please <a href="mailto:christian.kirkham@toptal.com">get in touch</a> or just <a class="anchor" href="{{ root }}/index.html#projects" title="Projects">browse my work below</a>.</p>
 	</div>
 
 	<!-- Background Canvas animation using PaperScript -->
-	<canvas id="ballAnimation" resize="true" keepalive="true" width="100%" style="background-color: #221E20"></canvas>
+	<canvas id="ballAnimation" resize="true" keepalive="true" width="100%" style="background-color: #fbfbfb"></canvas>
 </section>
 
 <div id="projects">
@@ -21,9 +21,9 @@ layout: default
 	<div class="{{ project.shortcode }}-banner banner">
 		<div class="outer-container heading-section">
 			<div>
-				<h1>{{ project.description }}</h1>
+				<p style="color: white;">{{ project.description }}</p>
 				<button>
-					<a href="{{ project.toptal }}">View project</a>
+					<a href="{{ project.url }}">View project</a>
 				</button>
 			</div>
 		</div>
@@ -33,6 +33,6 @@ layout: default
 </div>
 
 <script type="text/javascript">
-    // $('#nav #uppernav li a#link-projects').addClass('active');
-    $('body').css('background', '#262626');
+// $("#nav #uppernav li a#link-projects").addClass("active");
+// $("body").css("background", "#fbfbfb");
 </script>
