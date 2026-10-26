@@ -1,8 +1,19 @@
+<style>
+button.contact-email {
+  display: inline; appearance: none; background: transparent;
+  border: 0; border-bottom: 1px solid #ff5b54; border-radius: 0;
+  box-shadow: none; color: inherit; cursor: pointer; font: inherit;
+  line-height: inherit; margin: 0; padding: 0; text-align: inherit;
+  text-transform: none; vertical-align: baseline;
+}
+button.contact-email:focus-visible { outline: 2px solid #ff5b54; outline-offset: 4px; }
+</style>
 		<footer class="outer-container banner">
 
 			<div>
-				<p>Thank you for stopping by. If you have a question, or want to work with me, please <a href="mailto:christian.kirkham@toptal.com">get in touch</a>. I'd love to hear from you.</p>
-				<a class="chunky-link" href="mailto:christian.kirkham@toptal.com">christian.kirkham@toptal.com</a>
+				<p>Thank you for stopping by. If you have a question, or want to work with me, please <button type="button" class="contact-email" data-email-contact>get in touch</button>. I'd love to hear from you.</p>
+				<span aria-live="polite"><button type="button" class="chunky-link contact-email" data-email-contact data-email-display>Reveal email address</button></span>
+				<noscript>Enable JavaScript to reveal my email address.</noscript>
 			</div>
 
 			<section class="copyright">
@@ -11,6 +22,27 @@
 			</section>
 
 		</footer>
+
+<script>
+(function () {
+  var controls = document.querySelectorAll('[data-email-contact]');
+  function revealEmail(event) {
+    var address = String.fromCharCode(99,102,107,105,114,107,104,97,109,64,103,109,97,105,108,46,99,111,109);
+    Array.prototype.forEach.call(controls, function (button) {
+      var link = document.createElement('a');
+      link.href = 'mailto:' + address;
+      link.className = button.className.replace(/\bcontact-email\b/, '').trim();
+      link.textContent = button.hasAttribute('data-email-display') ? address : button.textContent;
+      link.setAttribute('aria-label', 'Email Christian at ' + address);
+      button.parentNode.replaceChild(link, button);
+      if (event.currentTarget === button) { link.focus(); }
+    });
+  }
+  Array.prototype.forEach.call(controls, function (button) {
+    button.addEventListener('click', revealEmail);
+  });
+}());
+</script>
 
 		<!-- This section contains an overlay grid which can be activated from a link in the footer -->
 		<section class="overlay-grid show-hide-grid">
