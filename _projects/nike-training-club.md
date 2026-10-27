@@ -3,9 +3,7 @@ title: Nike Training Club 5.0
 date: 2016-06-01 00:00:00 +01:00
 layout: project
 visible: 1
-description: Nike Training Club 5.0 is the ultimate personal trainer, loaded with
-  over 100+ workouts, available in over 200 countries and available for both iOS and
-  Android.
+description: Worked on UX/UI, interaction guidelines and design libraries for Nike Training Club and Nike Run Club at AKQA. Nike+ Training Club was shortlisted in Digital Craft at Cannes Lions 2017.
 url: https://www.toptal.com/designers/resume/christian-kirkham#project=4
 shortcode: ntc
 order: 1
