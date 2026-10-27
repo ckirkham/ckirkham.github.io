@@ -15,9 +15,32 @@ layout: default
 	<canvas id="ballAnimation" resize="true" keepalive="true" width="100%" style="background-color: #fbfbfb"></canvas>
 </section>
 
+<style>
+#projects .text-project-banner .heading-section { background: transparent; }
+#projects .text-project-banner .heading-section h2 { margin: 0 0 1.6em; }
+#projects .text-project-banner .heading-section p,
+#projects .text-project-banner .heading-section a { color: #221e20; }
+</style>
+
 <div id="projects">
 
 	{% for project in site.projects reversed %}
+	{% if project.presentation == 'text' %}
+	<div class="{{ project.shortcode }}-banner banner text-project-banner">
+		<div class="outer-container heading-section">
+			<div>
+				<h2>{{ project.title }}</h2>
+				<p>{{ project.description }}</p>
+				<button><a href="{{ project.url }}">View project</a></button>
+			</div>
+		</div>
+	</div>
+	{% endif %}
+	{% endfor %}
+
+
+	{% for project in site.projects reversed %}
+	{% unless project.presentation == 'text' %}
 	<div class="{{ project.shortcode }}-banner banner">
 		<div class="outer-container heading-section">
 			<div>
@@ -28,6 +51,7 @@ layout: default
 			</div>
 		</div>
 	</div>
+	{% endunless %}
 	{% endfor %}
 
 </div>
