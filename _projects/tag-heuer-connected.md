@@ -3,8 +3,7 @@ title: TAG Heuer Connected
 date: 2017-11-09 23:00:00 +00:00
 layout: project
 visible: 1
-description: At AKQA we partnered with TAG Heuer, Intel, and Google to introduce the
-  configurable TAG Heuer Connected Modular 45 with Android Wear 2.0.
+description: Designed digital experiences for the configurable TAG Heuer Connected Modular 45 at AKQA, developed in partnership with Intel and Google on Android Wear 2.0. Work included watch-face complications and localised interfaces for the Shanghai watch experience. The project was shortlisted at the 2018 BIMA Awards and Creativepool Annual.
 url: https://www.toptal.com/designers/resume/christian-kirkham#project=2
 shortcode: tag
 order: 1
